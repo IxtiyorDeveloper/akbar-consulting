@@ -11,6 +11,7 @@ import {LinkHandler, toggle} from "../redux/reducers/reducer/universities";
 import {connect} from "react-redux";
 import React from "react";
 import {Link} from 'react-scroll'
+import {AiOutlineFileProtect} from "react-icons/ai";
 
 function Footer({LinkHandler}) {
     const LinkScrollHandler = p => {
@@ -86,6 +87,19 @@ function Footer({LinkHandler}) {
                       onClick={() =>LinkScrollHandler('davlatlarLink')}
                 >
                     <GiWorld className={styles.icon}/> Davlatlar
+                </Link>
+                <Link activeClass="active"
+                      to="sertifikatlar"
+                      smooth={true}
+                      className={`${styles.menu}`}
+                      offset={50}
+                      duration={500}
+                      isDynamic={true}
+                      ignoreCancelEvents={false}
+                      id='sertifikatlarLink'
+                      onClick={() =>LinkScrollHandler('sertifikatlarLink')}
+                >
+                    <AiOutlineFileProtect className={styles.icon}/> Sertifikatlar
                 </Link>
                 <Link activeClass="active"
                       to="talabalar"

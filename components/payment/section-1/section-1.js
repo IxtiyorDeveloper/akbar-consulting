@@ -116,20 +116,7 @@ function Section1() {
                     <div className={styles.display}>
                         <div className={styles.row}>
                             <div className={styles.title1}>
-                                UZCARD:1,000,000 so'm
-                            </div>
-                            <div className={styles.card}>
-                                <div className={styles.circle}/>
-                                8600 0123 4567 8910
-                            </div>
-                            <div className={styles.card}>
-                                <div className={styles.circle}/>
-                                Sharobiddinov Ixtiyor
-                            </div>
-                        </div>
-                        <div className={styles.row}>
-                            <div className={styles.title1}>
-                                VISA:100 $
+                                UZCARD
                             </div>
                             <div className={styles.card}>
                                 <div className={styles.circle}/>
@@ -139,6 +126,36 @@ function Section1() {
                                 <div className={styles.circle}/>
                                 Ibragimov Islom
                             </div>
+                        </div>
+                        <div className={styles.row}>
+                            <div className={styles.title1}>
+                                Bank malumotlari
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                  DAT "ASAKA BANK" XORAZM VIL., FIL
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                       X/R: 20208000405107718001
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                       VAL/X/R:20208840705107718001
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                       MFO:00581
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                       IFUT:79110
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                      STIR:306620600
+                            </div>
+
                         </div>
                     </div>
                     <div className={styles.title}>
