@@ -1,13 +1,14 @@
 export default  [
     {
         id: 1,
-        name: "Sinergiya Jumaniyazov",
+        name: "Jumaniyazov Ruslan",
         text: "Men O’sh Davlat Texnologiya unversiteti “Komputer texnologiyalari”" +
             " fakultetiga topshirdim. “Akbar Consulting “ firmasi yordami bilan talabalikka erishdim" +
             " va menga 1 yillik sug’urta polisini sovg’a sifatida taqdim qildi. " +
             "Men o’qish istagida bo’lgan yoshlarni “Akbar consulting “ firmasiga murojaat qilishlarini" +
             " tavsiya qilaman.",
-        img: "m1"
+        img: "m1",
+        url:"https://www.youtube.com/watch?v=eacD7gUbyKs"
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ export default  [
             "Qirg’iziston milliy universitetini tanladim va hujjat topshirdim. Men bundan juda ham xursadman. " +
             "O’qish istagida" +
             " bo’lgan yoshlarni men “Akbar Consulting“ kompaniyasi orqali talaba bo’lishlarini tavsiya qilaman.",
-        img: "m2"
+        img: "m2",
+        url: "https://www.youtube.com/watch?v=qFqxI79BDbk"
     },
     {
         id: 3,
@@ -26,6 +28,7 @@ export default  [
             " deb tushkunlikka tushib" +
             " o’tirmasdan xorijdagi nufuzli universitetlardan biriga “Akbar Consulting “ orqali" +
             " o’qishga kiring.",
-        img: "m3"
+        img: "m3",
+        url: "https://www.youtube.com/watch?v=Wvj2mKqaPhQ"
     },
 ]

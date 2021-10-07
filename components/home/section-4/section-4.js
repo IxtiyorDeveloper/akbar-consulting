@@ -6,6 +6,7 @@ import React, {useState} from "react";
 import {AiOutlineCloseSquare} from "react-icons/ai"
 import data from "./data/data"
 
+
 function Arrow(props) {
     let className = props.type === "next" ? "nextArrow1" : "prevArrow1";
     className += " arrow1";
@@ -20,6 +21,7 @@ function Arrow(props) {
 
 function Section4(props) {
     const [bool, setBool] = useState(false)
+    const [url, setUrl] = useState('https://www.youtube.com/watch?v=eacD7gUbyKs')
     const settings = {
         arrows: true,
         dots: false,
@@ -39,9 +41,18 @@ function Section4(props) {
         display: `${bool ? "block" : "none"}`,
         zIndex:500
     }
-    const handle = () => {
+    const handle = (a) => {
         document.body.style.overflow = "hidden";
         setBool(true)
+        if (a === "m1"){
+         setUrl('https://www.youtube.com/watch?v=eacD7gUbyKs')
+        }
+        if (a === "m2"){
+         setUrl('https://www.youtube.com/watch?v=qFqxI79BDbk')
+        }
+        if (a === "m3"){
+         setUrl('https://www.youtube.com/watch?v=Wvj2mKqaPhQ')
+        }
     }
     const handleDelete = () => {
         document.body.style.overflow = "auto";
@@ -71,7 +82,7 @@ function Section4(props) {
                                         <p className={styles.text}>
                                             {i.text}
                                         </p>
-                                        <div className={styles.videoWr} onClick={() => handle()}>
+                                        <div className={styles.videoWr} onClick={() => handle(i.img)}>
                                             <div className={styles.video}>Videoni tomosha qiling</div>
                                             <img src="/home/youtube.png" alt="" className={styles.youtube}/>
                                         </div>
@@ -89,7 +100,7 @@ function Section4(props) {
             </div>
             <ReactPlayer
                 style={style2}
-                url='https://www.youtube.com/watch?v=cBijyzYHTGs'
+                url={url}
                 width='100%'
                 height='92vh'
                 className="player"
