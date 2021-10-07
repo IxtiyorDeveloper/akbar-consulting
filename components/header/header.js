@@ -71,7 +71,7 @@ function Header({LinkHandler,toggle,sidebar}) {
                           ignoreCancelEvents={false}
                           onClick={() =>LinkScrollHandler('sertifikatlarLink')}
                     >
-                        Talabalar
+                       Sertifikatlar
                     </Link>
                     <Link activeClass="active"
                           to="talabalar"
