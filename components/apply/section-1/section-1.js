@@ -336,24 +336,9 @@ function Section1() {
                     <div className={styles.title2}>
                         Shartnoma shartlari
                     </div>
-                    <textarea className={styles.res}
-                              readOnly={true}
-                              placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque dolor dolores est, fugit nam non omnis recusandae saepe sequi. Consequuntur, delectus incidunt maiores  nisi quibusdam quis quo sed velit? Aliquam, assumenda, atque, cumque delectus
-                    dolores eaque magni molestias nulla quis quisquam reiciendis rem vero! Distinctio esse molestias nemo similique.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque dolor dolores  est, fugit nam non omnis recusandae saepe sequi. Consequuntur, delectus incidunt maiores
-                    nisi quibusdam quis quo sed velit? Aliquam, assumenda, atque, cumque delectus dolores eaque magni molestias nulla quis quisquam reiciendis rem vero! Distinctio esse
-                    molestias nemo similique.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque dolor dolores
-                    est, fugit nam non omnis recusandae saepe sequi. Consequuntur, delectus incidunt maiores nisi quibusdam quis quo sed velit? Aliquam, assumenda, atque, cumque delectus
-                    dolores eaque magni molestias nulla quis quisquam reiciendis rem vero! Distinctio esse molestias nemo similique.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque dolor dolores est, fugit nam non omnis recusandae saepe sequi. Consequuntur, delectus incidunt maiores
-                    nisi quibusdam quis quo sed velit? Aliquam, assumenda, atque, cumque delectus dolores eaque magni molestias nulla quis quisquam reiciendis rem vero! Distinctio esse
-                    molestias nemo similique.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque dolor dolore  est, fugit nam non omnis recusandae saepe sequi. Consequuntur, delectus incidunt maiores
-                    nisi quibusdam quis quo sed velit? Aliquam, assumenda, atque, cumque delectus dolores eaque magni molestias nulla quis quisquam reiciendis rem vero! Distinctio esse
-                    molestias nemo similique."
-                    >
-
-                </textarea>
+                    <div className={styles.ce}>
+                        <a href="/shar.docx">Yuklab olish</a>
+                    </div>
                     <div className={styles.radio}>
                         <Checkbox
                             checked={checked}

@@ -158,6 +158,12 @@
     text-align: center;
     margin-top: 20px;
   }
+  .ce{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+  }
   .res{
     width: 80%;
     border: 1px solid $main-color;
