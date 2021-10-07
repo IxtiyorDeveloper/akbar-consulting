@@ -3,11 +3,18 @@ import {FaCloudUploadAlt} from "react-icons/fa";
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import Phone from "../../phone/number";
+import axios from "axios";
+import ProgressBar from "../../apply/progress";
+import {message} from "antd";
 
 function Section1() {
     const router = useRouter();
+    const [uploadPercentage, setUploadPercentage] = useState(0);
+    const [name, setName] = useState('');
+    const [acc, setAcc] = useState('');
+
     const colorStyle = {
-        backgroundColor:router.query.country === undefined || router.query.country === "Tanlanmagan"?"white":"#03E603"
+        backgroundColor: router.query.country === undefined || router.query.country === "Tanlanmagan" ? "white" : "#03E603"
     }
     const text = () => {
         if (router.query.country === undefined || router.query.country === "Tanlanmagan") {
@@ -45,118 +52,161 @@ function Section1() {
     const [filename, setFilename] = useState('');
 
     const onChange = e => {
-        if (e.target.files !== undefined){
+        if (e.target.files !== undefined) {
             setFile(e.target.files[0]);
             setFilename(e.target.files[0].name);
         }
     };
-
+    const onSubmit = async e => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('name', name)
+        formData.append('num3', num3)
+        formData.append('num4', num4)
+        formData.append('account', acc)
+        try {
+            const res = await axios.post('http://localhost:5000/screenshot', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data boundary=${form._boundary}'
+                },
+                onUploadProgress: progressEvent => {
+                    setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
+                    setTimeout(() => setUploadPercentage(0), 10000);
+                }
+            })
+        } catch (err) {
+            if (err.response.status === 500) {
+                message.warn("There was a problem with the server")
+            } else {
+                message.warn(err.response.data.msg)
+            }
+        }
+        setName('');
+        setFile('');
+        setFilename('');
+        setAcc('')
+        setNum3('')
+        setNum4('')
+        setDone(true)
+    }
+    useEffect(() => {
+        if (num4 !== "" && num3 !== "" && acc !== "" && name !== "" && file !== "") {
+            setDone(false)
+        }
+    },[num3,num4,name,acc])
     return (
         <div className={styles.container}>
-            <div className={styles.wrapper}>
-                <div className={styles.process}>
-                    <div className={styles.part} style={colorStyle}>
-                        1-qism
-                    </div>
-                    <div className={styles.part}>
-                        2-qism
-                    </div>
-                </div>
-                <div>
-                    {text()}
-                </div>
-                <div className={styles.title}>
-                    1.Quyidagi kartalardan biriga to'lovni amalga oshirasiz:
-                </div>
-                <div className={styles.display}>
-                    <div className={styles.row}>
-                        <div className={styles.title1}>
-                            UZCARD:1,000,000 so'm
+            <form onSubmit={onSubmit}>
+                <div className={styles.wrapper}>
+                    <div className={styles.process}>
+                        <div className={styles.part} style={colorStyle}>
+                            1-qism
                         </div>
-                        <div className={styles.card}>
-                            <div className={styles.circle}/>
-                            8600 0123 4567 8910
-                        </div>
-                        <div className={styles.card}>
-                            <div className={styles.circle}/>
-                            Sharobiddinov Ixtiyor
+                        <div className={styles.part}>
+                            2-qism
                         </div>
                     </div>
-                    <div className={styles.row}>
-                        <div className={styles.title1}>
-                            VISA:100 $
-                        </div>
-                        <div className={styles.card}>
-                            <div className={styles.circle}/>
-                            8600 0201 6788 5065
-                        </div>
-                        <div className={styles.card}>
-                            <div className={styles.circle}/>
-                            Ibragimov Islom
-                        </div>
+                    <div>
+                        {text()}
                     </div>
-                </div>
-                <div className={styles.title}>
-                    2.To'lovingiz muvaffaqiyatli amalga oshganini tasdiqlovchi hujjatni skrinshot qilasiz
-                </div>
-                <div className={styles.title}>
-                    3.Va quyidagi anketani to'ldirasiz.
-                </div>
-                <div className={styles.form}>
-                    <div className={styles.in}>
-                        <div className={styles.col}>
-                            <div className={styles.label}>
-                                1.Ism familyangiz
+                    <div className={styles.title}>
+                        1.Quyidagi kartalardan biriga to'lovni amalga oshirasiz:
+                    </div>
+                    <div className={styles.display}>
+                        <div className={styles.row}>
+                            <div className={styles.title1}>
+                                UZCARD:1,000,000 so'm
                             </div>
-                            <input type="text" className={styles.input}/>
-                        </div>
-                        <div className={styles.col}>
-                            <div className={styles.label}>
-                                2.Tel nomer 1 (telegram bor)
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                8600 0123 4567 8910
                             </div>
-                            <Phone num3={num3} setNum3={setNum3} type={"third"}/>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                Sharobiddinov Ixtiyor
+                            </div>
+                        </div>
+                        <div className={styles.row}>
+                            <div className={styles.title1}>
+                                VISA:100 $
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                8600 0201 6788 5065
+                            </div>
+                            <div className={styles.card}>
+                                <div className={styles.circle}/>
+                                Ibragimov Islom
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.in}>
-                        <div className={styles.col}>
-                            <div className={styles.label}>
-                                3.Tel nomer 2
-                            </div>
-                            <Phone num4={num4} setNum4={setNum4} type={"fourth"}/>
-                        </div>
-                        <div className={styles.col}>
-                            <div className={styles.label}>
-                                4.telegram username - akkountingiz
-                            </div>
-                            <input type="text" className={styles.input}/>
-                        </div>
+                    <div className={styles.title}>
+                        2.To'lovingiz muvaffaqiyatli amalga oshganini tasdiqlovchi hujjatni skrinshot qilasiz
                     </div>
-                    <div className={styles.in}>
-                        <div className={styles.col}>
-                            <div className={styles.label}>
-                                5.To’lov cheki screenshoti
+                    <div className={styles.title}>
+                        3.Va quyidagi anketani to'ldirasiz.
+                    </div>
+                    <div className={styles.form}>
+                        <div className={styles.in}>
+                            <div className={styles.col}>
+                                <div className={styles.label}>
+                                    1.Ism familyangiz
+                                </div>
+                                <input type="text" className={styles.input} onChange={e => setName(e.target.value)}/>
                             </div>
-                            <label className={styles.inputF}>
-                                <input type="file" onChange={event => onChange(event)} accept="image/*"/>
-                                {
-                                    filename === '' ?
-                                        <span>
+                            <div className={styles.col}>
+                                <div className={styles.label}>
+                                    2.Tel nomer 1 (telegram bor)
+                                </div>
+                                <Phone num3={num3} setNum3={setNum3} type={"third"}/>
+                            </div>
+                        </div>
+                        <div className={styles.in}>
+                            <div className={styles.col}>
+                                <div className={styles.label}>
+                                    3.Tel nomer 2
+                                </div>
+                                <Phone num4={num4} setNum4={setNum4} type={"fourth"}/>
+                            </div>
+                            <div className={styles.col}>
+                                <div className={styles.label}>
+                                    4.telegram username - akkountingiz
+                                </div>
+                                <input type="text" className={styles.input} onChange={e => setAcc(e.target.value)}/>
+                            </div>
+                        </div>
+                        <div className={styles.in}>
+                            <div className={styles.col}>
+                                <div className={styles.label}>
+                                    5.To’lov cheki screenshoti
+                                </div>
+                                <label className={styles.inputF}>
+                                    <input type="file" onChange={event => onChange(event)} accept="image/*"/>
+                                    {
+                                        filename === '' ?
+                                            <span>
                                   <FaCloudUploadAlt className={styles.icon1}/>  rasm yuklang
-                               </span>:
-                                        <span>
+                               </span> :
+                                            <span>
                                     {filename}
                                 </span>
-                                }
-                            </label>
+                                    }
+                                </label>
+                            </div>
                         </div>
                     </div>
+                    <div style={{marginTop: "25px"}}>
+                        <ProgressBar percentage={uploadPercentage}/>
+                    </div>
+                    <div className={styles.buttonWr}>
+                        <button type="submit" className={`${styles.buttonS} ${done ? "" : styles.able}`}
+                                disabled={done}>
+                            Topshirish
+                        </button>
+                    </div>
                 </div>
-                <div className={styles.buttonWr}>
-                    <button type="submit" className={`${styles.buttonS} ${done ? "" : styles.able}`} disabled={done}>
-                        Topshirish
-                    </button>
-                </div>
-            </div>
+            </form>
         </div>
     );
 }
