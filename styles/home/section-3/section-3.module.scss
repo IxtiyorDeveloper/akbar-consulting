@@ -1,0 +1,103 @@
+@import "styles/constants";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+.container {
+  background: $black-one;
+  display: flex;
+  align-items: center;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    justify-content: space-between;
+    .box1{
+      padding: 20px;
+      background: $main-color;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        font-size: 30px;
+        color: $black-one;
+      }
+    }
+    .box2{
+      padding: 20px;
+      height: 80px;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      background: $main-color;
+      color: $black-one;
+      font-size: 20px;
+      font-family: $Montserrat-font;
+      background-image: linear-gradient(black, black);
+      background-position: center 70%;
+      background-repeat: no-repeat;
+      background-size: 65% 2%;
+      transition: background-size .5s, color .5s;
+
+      &:hover {
+        background-size: 100% 100%;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .text{
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Montserrat', sans-serif;
+      .then{
+        margin-left: 50px;
+        .text1{
+          background-color: green;
+          float: left;
+        }
+        .in{
+          margin-right: 20px;
+          color: orangered;
+          span{
+            color: orangered;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container{
+    .wrapper{
+      height: auto;
+      padding: 10px 0;
+      .text{
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .container{
+    .wrapper{
+      height: auto;
+      padding: 10px 0;
+      flex-direction: column;
+      .box1{
+        display: none;
+      }
+      .box2{
+        margin-top: 25px;
+      }
+      .text{
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import "styles/constants";
+
+.container {
+  width: 100%;
+  background-color: $col239;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  .cTitle {
+    font-family: $Montserrat-font;
+    font-size: 36px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .an {
+    display: flex;
+
+    .contacts {
+      width: 50%;
+      padding: 0 50px;
+      margin-top: 30px;
+      color: $black-one;
+
+      .line {
+        width: 100%;
+        background: rgba(220, 220, 220, 0.8);
+        height: 1px;
+        margin-top: 10px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        align-items: center;
+
+        .left {
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-family: $Lato-font;
+          font-weight: 700;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+
+        .right {
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-family: $Lato-font;
+          font-weight: 700;
+          color: $black-one;
+          &:hover{
+            cursor: pointer;
+            color: $dark-yellow;
+          }
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        margin-top: 40px;
+        font-family: $Lato-font;
+        font-weight: 700;
+      }
+    }
+
+    .mapWr {
+      width: 40% !important;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container{
+    .an{
+      flex-direction: column;
+      .contacts{
+        width: 100%;
+      }
+      .mapWr {
+        width: 90% !important;
+        margin-left: 5%!important;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .container{
+    .cTitle{
+      font-size: 24px;
+    }
+    .an{
+      flex-direction: column;
+      .contacts{
+        width: 100%;
+        .row{
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          .right{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

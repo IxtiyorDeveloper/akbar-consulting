@@ -1,0 +1,48 @@
+@import "styles/constants";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Signika&display=swap');
+
+.container{
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  .title{
+    font-size: 24px;
+    margin-left: 10%;
+    width: 80%;
+    font-family: $Montserrat-font;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .wrapper{
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    .circle{
+      width: 10px;
+      height: 10px;
+      border-radius: 5px!important;
+      background-color: $dark-yellow;
+      display: inline-block;
+    }
+    .icon{
+      font-size: 18px!important;
+      color:$greenColor;
+    }
+    .list{
+      font-size: 18px;
+      margin-left: 20px;
+      font-family: $Lato-font;
+      font-weight: 700;
+    }
+  }
+}
+@media (max-width:720px) {
+  .container{
+    .title{
+       font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+@import "styles/constants";
+@import "styles/fonts-1";
+
+.container {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
+  .modal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    justify-content: center;
+    z-index: 22;
+    background-color: $black-one;
+    color: white;
+    display: flex;
+    align-items: center;
+    .in{
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      padding: 0 25px;
+      background-color: rgb(206,62,18);
+      .icon{
+        font-size: 8vh;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .cTitle {
+    font-family: $Montserrat-font;
+    font-size: 36px;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .wr {
+    width: 100%;
+
+    .slideContainer {
+      width: 80%;
+      display: flex !important;
+      flex-direction: row;
+      margin-left: 10%;
+      margin-top: 4vh;
+      justify-content: center;
+      .img {
+        width: 20%;
+        height: 350px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .contentWr {
+        width: 55%;
+        float: left;
+        margin-left: 5%;
+        .name{
+          font-size: 24px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: $Oswald-font;
+          text-decoration-line: underline;
+          text-underline-offset: 4px;
+        }
+        .text{
+          margin-top: 30px;
+          font-size: 16px;
+          width: 70%;
+          line-height: 30px;
+          text-decoration-line: underline;
+          text-underline-offset: 4px;
+          text-decoration-color: gray;
+          text-indent: 20px;
+          font-family: $Lato-font;
+        }
+        .videoWr{
+          display: inline-flex;
+          background-color: $main-color;
+          padding: 0 20px;
+          align-items: center;
+          .video{
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family:$Oswald-font;
+          }
+          .youtube{
+            width: 50px;
+            max-height: 35px;
+            margin-left: 20px;
+          }
+          &:hover{
+            cursor: pointer;
+          }
+          &:hover .video{
+            color: #0070f3;
+            text-decoration-line: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: #0070f3;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .container{
+    .wr{
+      .slideContainer{
+        flex-direction: column;
+        .img {
+          margin-left: 25%;
+          width: 30%;
+        }
+        .contentWr{
+          width: 100% !important;
+          margin-top: 20px;
+          .videoWr{
+            max-width: 80%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container{
+    .wr{
+      .slideContainer{
+        flex-direction: column;
+        .img {
+          margin-left: 15%;
+          width: 50%;
+          height: 50vh;
+        }
+        .contentWr{
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container{
+    .wr{
+      .slideContainer{
+        flex-direction: column;
+        .img {
+          margin-left: 0%;
+          width: 80%;
+        }
+        .contentWr{
+          width: 100%;
+          margin-top: 20px;
+          .videoWr{
+            .video{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .container{
+    .wr{
+      .slideContainer{
+        flex-direction: column;
+        .img {
+          margin-left: 0%;
+          width: 80%;
+          height: 50vh;
+        }
+        .contentWr{
+          width: 100%;
+          margin-top: 20px;
+          .videoWr{
+            .video{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

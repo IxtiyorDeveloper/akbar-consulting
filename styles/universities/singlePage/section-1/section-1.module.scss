@@ -1,0 +1,509 @@
+
+@import "styles/constants";
+
+.wrapper {
+  margin-top: 80px;
+
+  .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .darkMaker {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(0, 0, 15, 0.5);
+
+      .name {
+        font-size: 40px;
+        font-family: $Montserrat-font;
+        color: white;
+        text-align: center;
+      }
+
+      .address {
+        font-size: 27px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        color: white;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border-radius: 3px;
+        background-color: $main-color;
+        color: black;
+        display: inline-block;
+        font-size: 16px;
+        border: 2px solid $main-color;
+        margin-top: 25px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        &:hover {
+          cursor: pointer;
+          background: transparent;
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .s2Wrapper {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 50px;
+    background-color: $col239;
+    .left {
+      width: 40%;
+      margin-left: 10%;
+      //border-right: 1px solid $black-one;
+
+      .advantages {
+        font-size: 27px;
+        padding-bottom: 15px;
+        color: black;
+        font-weight: 700;
+        font-family: $Lato-font;
+      }
+
+      .then {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        color: black;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+          margin-right: 10px;
+          color: #0070f3;
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      margin-right: 10%;
+      margin-left: 50px;
+
+      .advantages {
+        font-size: 27px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        color: black;
+        padding-bottom: 15px;
+      }
+
+      .then {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        color: black;
+        padding-left: 15px;
+        padding-bottom: 5px;
+        display: flex;
+        //align-items: center;
+
+        .icon {
+          margin-right: 10px;
+          color: #0070f3;
+          margin-top: 5px;
+        }
+
+        .inIt {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .nextS {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .nWr {
+      display: flex;
+      padding-left: 10%;
+      align-items: center;
+      margin-bottom: 10px;
+      .row{
+        display: flex;
+        .stage1{
+          font-size: 24px;
+          color: black;
+          font-weight: 700;
+          font-family: $Lato-font;
+          margin-left: 20px;
+        }
+        .dropdown{
+          padding: 7px 20px;
+          background-color: $col239;
+          border-radius: 4px;
+          margin-left: 10px;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: $Lato-font;
+          color: black;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          position: relative;
+          min-width: 150px;
+          &:hover{
+            cursor: pointer;
+          }
+          .flex{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $Lato-font;
+            color: black;
+          }
+          .icon1{
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $Lato-font;
+            color: black;
+            margin-left: 15px;
+          }
+          .drabs{
+            position: absolute;
+            top: 50px;
+            background-color: $col239;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $Lato-font;
+            color: black;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+            left: 0px;
+            z-index: 24;
+            .sum{
+              font-size: 18px;
+              font-weight: 700;
+              font-family: $Lato-font;
+              color: black;
+              width: 100%;
+              padding: 7px 20px;
+              &:hover{
+                color: $greenColor;
+                background-color: rgb(225,225,225);
+              }
+            }
+          }
+        }
+      }
+      .present {
+         color: $main-color;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $Lato-font;
+      }
+
+      .stage {
+         color:black;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        margin-left: 30px;
+      }
+    }
+  }
+  .addressWr{
+    width: 100%;
+    background-color: $col239;
+    padding-left: 5%;
+  }
+  .facultyWr{
+    width: 100%;
+    background-color: $col239;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    .faculty{
+      font-size: 27px;
+      font-weight: 700;
+      font-family: $Lato-font;
+      color: $main-color;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 10px;
+      .column {
+        .and{
+          font-size: 16px;
+          font-weight: 700;
+          font-family: $Lato-font;
+          color: rgb(64,63,39);
+          padding: 5px 0;
+          display: flex;
+          align-items: center;
+          .icon{
+            color: $main-color;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .infoWr{
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 50px;
+    display: flex;
+    //background-color: #1CA1F2;
+    .containerCar{
+      width: 50%;
+      height: 40vh;
+      overflow: hidden;
+      margin-top: 50px;
+      .carousel{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrS{
+          width: 100%;
+          height: 40vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+      }
+    }
+    .great1{
+      width: 50%;
+      height: 40vh;
+      margin-top: 50px;
+      margin-left: 30px;
+      .infoNext{
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $Lato-font;
+        color: rgb(64,63,39);
+      }
+    }
+    .info{
+      font-size: 18px;
+      font-weight: 700;
+      font-family: $Lato-font;
+      color: rgb(64,63,39);
+      div{
+        text-indent: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1125px) {
+  .wrapper{
+    .infoWr{
+      .great1{
+        width: 50%;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 30px;
+      }
+    }
+    .container {
+      .darkMaker {
+        .name {
+          font-size: 36px;
+        }
+        .address {
+          font-size: 24px;
+        }
+      }
+    }
+    .s2Wrapper {
+      .left {
+        width: 45%;
+        margin-left: 5%;
+
+        .advantages {
+          font-size: 24px;
+        }
+      }
+      .right {
+        width: 45%;
+        margin-right: 5%;
+        margin-left: 50px;
+
+        .advantages {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .wrapper{
+    .infoWr{
+      margin-top: 0;
+      width: 90%;
+      margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+      .containerCar{
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .carousel{
+          height: 40vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .wrS{
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+          }
+        }
+      }
+      .great1{
+        width: 90%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 30px;
+        .infoNext{
+          font-size: 18px;
+          font-weight: 700;
+          font-family: $Lato-font;
+          color: rgb(64,63,39);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .wrapper{
+    .s2Wrapper {
+      flex-direction: column;
+      .left {
+        width: 85%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        .advantages {
+          font-size: 20px;
+        }
+      }
+      .right {
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+        .advantages {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .nextS {
+    margin-top: 100px;
+    .nWr {
+      display: flex;
+      padding-left: 5% !important;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      justify-content: flex-start;
+      .present {
+        font-size: 16px;
+      }
+
+      .stage {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .wrapper{
+    .container {
+      .darkMaker {
+        .name {
+          font-size: 30px;
+        }
+        .address {
+          font-size: 20px;
+        }
+      }
+    }
+    .s2Wrapper {
+      flex-direction: column;
+      .left {
+        width: 85%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        .advantages {
+          font-size: 20px;
+        }
+      }
+      .right {
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+        .advantages {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .nextS {
+    margin-top: 50px;
+    .nWr {
+      display: flex;
+      padding-left: 5% !important;
+      align-items: flex-start!important;
+      margin-bottom: 10px;
+      flex-direction: column;
+
+      .present {
+        color: $main-color;
+        font-size: 16px;
+        font-family: 'Titillium Web', sans-serif;
+      }
+
+      .stage {
+        color: $black-one;
+        font-size: 14px!important;
+        font-family: 'Titillium Web', sans-serif;
+        margin-left: 0px!important;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "styles/constants";
+.container{
+  width: 200px;
+  background-color:$black-one;
+  height: 100vh;
+  position: fixed;
+  z-index: 102;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s;
+  left: -200px;
+  top: 0!important;
+  .title{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: $title-font;
+    font-size: 24px;
+  }
+  .menu{
+    padding:20px 10px;
+    font-size: 18px;
+    color: white;
+    font-family: $Lato-font;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    .icon{
+      font-size: 24px;
+      margin-right: 20px;
+    }
+    &.another{
+      cursor: pointer;
+      background-color: $main-color;
+      color: black;
+    }
+    &:hover{
+      cursor: pointer;
+      background-color: $main-color;
+      color: black!important;
+    }
+  }
+}

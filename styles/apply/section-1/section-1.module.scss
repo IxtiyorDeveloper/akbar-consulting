@@ -1,0 +1,261 @@
+@import "styles/constants";
+.container{
+  width: 100%;
+  background-color: $col239;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  .process{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    .part{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      &:first-child{
+        border-right: 1px solid black;
+        background-color: $greenColor;
+      }
+    }
+  }
+  .title{
+    font-size: 27px;
+    font-family: $Montserrat-font;
+    color: rgb(64,63,39);
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+
+    &:first-child {
+      margin-top: 30px;
+    }
+
+    .column {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      flex-direction: column;
+      position: relative;
+      .label {
+        font-size: 16px;
+        font-family: $Lato-font;
+        font-weight: 700;
+        color: rgb(64, 63, 39);
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      .inputF {
+        display: inline-block;
+        cursor: pointer;
+        background-color: white;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid rgb(200,200,200) !important;
+        padding: 10px 20px;
+        span{
+          .icon1{
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .input {
+        border-radius: 5px;
+        border: 1px solid rgb(200,200,200) !important;
+        padding: 10px 20px;
+        width: 80%;
+
+        &:hover {
+          border-color: $main-color;
+          outline: 0;
+        }
+
+        &:focus {
+          border-color: $main-color!important;
+          outline: 0;
+        }
+      }
+
+      .abswr {
+        font-size: 16px;
+        font-family: $Lato-font;
+        font-weight: 700;
+        color: rgb(64, 63, 39);
+        display: flex;
+        margin-bottom: 5px;
+        position: relative;
+        background-color: white;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid rgb(200,200,200) !important;
+        padding: 10px 20px;
+        justify-content: space-between;
+        max-height: 50px;
+        align-items: center;
+
+        .icon{
+          font-family: $Lato-font;
+          font-weight: 700;
+          color: rgb(64, 63, 39);
+          display: flex;
+        }
+        &:hover{
+          cursor: pointer;
+        }
+        .abs {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          background-color: white;
+          border-radius: 5px;
+          border: 1px solid $col239 !important;
+          width: 100%;
+          .absch {
+            width: 100%;
+            padding: 5px 20px;
+            &:hover{
+              color: $main-color;
+              background-color: rgb(230,230,230);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .input1{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  .title2{
+    font-size: 28px;
+    font-family: $Lato-font;
+    font-weight: 700;
+    color: rgb(64,63,39);
+    text-align: center;
+    margin-top: 20px;
+  }
+  .res{
+    width: 80%;
+    border: 1px solid $main-color;
+    padding: 20px;
+    margin-left: 10%;
+    margin-top: 10px;
+    background-color: white;
+    overflow-y: scroll;
+    height: 200px;
+    resize: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  .radio{
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    .button{
+      margin-right: 10px;
+      color: rgb(239,183,1);
+    }
+  }
+  .progress{
+    width: 60%;
+    margin-left: 20%;
+  }
+  .buttonWr{
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .buttonS{
+      padding: 10px 20px;
+      border: 2px solid $main-color;
+      background-color: transparent;
+      color: $black-two;
+      font-family: $Lato-font;
+      font-weight: 700;
+      border-radius: 3px;
+      &:hover{
+        pointer-events: auto! important;
+        cursor: not-allowed! important;
+      }
+      &.able{
+        background-color: $main-color;
+        &:hover{
+          background-color: $main-color;
+          cursor: pointer!important;
+          &:hover{
+            pointer-events: auto! important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1125px) {
+   .container{
+     .flex{
+       width: 90%;
+       margin-left: 5%;
+       .column{
+         .input{
+           width: 90%;
+         }
+         .inputF{
+           width: 90%;
+         }
+         .abswr{
+           width: 90%;
+         }
+       }
+     }
+   }
+}
+@media (max-width: 720px) {
+   .container{
+     .flex{
+       width: 90%;
+       margin-left: 5%;
+       flex-direction: column;
+       .column{
+         width: 100%;
+         .input{
+           width: 90%;
+         }
+         .inputF{
+           width: 90%;
+         }
+         .abswr{
+           width: 90%;
+         }
+       }
+     }
+   }
+}

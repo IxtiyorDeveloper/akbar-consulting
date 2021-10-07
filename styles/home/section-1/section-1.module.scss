@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import "styles/constants";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -1px;
+  padding-top: 1px;
+  position: relative;
+
+  .header {
+    width: 70%;
+    padding: 20px;
+    background-color: $black-one;
+    color: white;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    top: 40px;
+    height: 80px;
+    position: fixed;
+    z-index: 70 !important;
+    transition: all 0.3s;
+    .then{
+      display: flex;
+      .img {
+        height: 70px;
+        width: 70px;
+        margin-top: 5px;
+      }
+      .img1 {
+        height: 70px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5%;
+      }
+      .title{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: $main-color;
+        font-family: $title-font;
+        font-size: 20px;
+        margin-left: 15px;
+      }
+    }
+    .link {
+      float: right;
+      display: flex;
+      background-color: transparent;
+      position: absolute;
+      right: 50px;
+      height: 80px;
+      align-items: center;
+
+      .menu {
+        padding: 17px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $Montserrat-font;
+        font-size: 14px;
+
+        &.another {
+          background-color: $main-color;
+          color: $black-one!important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: $main-color!important;
+          color: $black-one!important;
+        }
+
+        &:last-child {
+          color: white;
+        }
+
+        &:last-child:hover {
+          background: transparent!important;
+          color: $greenColor!important;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+    .sidebarToggle{
+      float: right;
+      background-color: transparent;
+      position: absolute;
+      right: 20px;
+      height: 80px;
+      align-items: center;
+      display: none;
+      .sidebarIcon{
+        font-size: 32px;
+        color: white;
+      }
+    }
+  }
+
+  .sliderWrapper {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: -1px;
+    padding-top: 1px;
+
+    .contentWrapper {
+      //background-color: green;
+      margin-left: 10%;
+      margin-top: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .title {
+        padding: 20px;
+        font-family: $Montserrat-font;
+        font-size: 32px;
+        background-color: $main-color;
+      }
+
+      .text {
+        padding: 10px;
+        font-family: $Montserrat-font;
+        font-size: 24px;
+        background-color: $black-one;
+        color: white;
+      }
+
+      .apply {
+        display: flex;
+        margin-top: 3%;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .textApply {
+          padding: 8px 20px;
+          font-size: 18px;
+          background-color: $black-two;
+          color: white;
+          display: flex;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: $Montserrat-font;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          &:hover{
+            background-color:$main-color;
+            color: $black-two;
+          }
+        }
+
+        .iconWr {
+          padding: 5px 10px !important;
+          background-color: $main-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+
+          .icon {
+            color: black;
+            font-size: 18px;
+            z-index: 2;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    .then{
+      .img1{
+        width: 150px;
+      }
+    }
+    .header {
+      width: 70%;
+      .link {
+        .menu {
+          padding: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    .header {
+      width: 70%;
+
+      .link {
+        .menu {
+          padding: 16px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    .header {
+      width: 70%;
+
+      .link {
+        display: none;
+      }
+      .sidebarToggle{
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+
+    .sliderWrapper {
+
+      .contentWrapper {
+        .title {
+          font-size: 27px;
+        }
+
+        .text {
+          font-size: 20px;
+        }
+
+        .apply {
+          display: flex;
+          margin-top: 3%;
+
+          .textApply {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+
+    .sliderWrapper {
+
+      .contentWrapper {
+        width: 95%;
+        margin-left: 2.5%;
+        .title {
+          font-size: 22px;
+          padding: 15px;
+        }
+
+        .text {
+          font-size: 18px;
+        }
+
+        .apply {
+          display: flex;
+          margin-top: 3%;
+
+          .textApply {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
