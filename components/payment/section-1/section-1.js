@@ -66,7 +66,7 @@ function Section1() {
         formData.append('num4', num4)
         formData.append('account', acc)
         try {
-            const res = await axios.post('http://localhost:5000/screenshot', formData, {
+            const res = await axios.post('https://akbarconsulting.herokuapp.com/screenshot', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data boundary=${form._boundary}'
                 },
@@ -94,7 +94,7 @@ function Section1() {
         if (num4 !== "" && num3 !== "" && acc !== "" && name !== "" && file !== "") {
             setDone(false)
         }
-    },[num3,num4,name,acc])
+    },[num3,num4,name,acc,file])
     return (
         <div className={styles.container}>
             <form onSubmit={onSubmit}>

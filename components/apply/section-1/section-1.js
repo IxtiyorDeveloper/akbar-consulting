@@ -59,7 +59,7 @@ function Section1() {
         formData.append('university', un1)
         formData.append('country', country1)
         try {
-            const res = await axios.post('http://localhost:5000/upload', formData, {
+            const res = await axios.post('https://akbarconsulting.herokuapp.com/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data boundary=${form._boundary}'
                 },
