@@ -18,14 +18,14 @@ const Ymap = () =>{
             <YMaps>
                 <div>
                     <Map     defaultState={{
-                        center: [41.369219, 69.306060],
+                        center: [41.54511464579863, 60.616101453975695],
                         zoom: 10,
                         controls: ['zoomControl', 'fullscreenControl'],
                     }}
                              style={{width: '100%', height: h}}
                              modules={['control.ZoomControl', 'control.FullscreenControl']}
                     >
-                        <Placemark defaultGeometry={[41.369219, 69.306060]} />
+                        <Placemark defaultGeometry={[41.54511464579863, 60.616101453975695]} />
                     </Map>
                 </div>
             </YMaps>
