@@ -89,6 +89,7 @@ function Section1() {
         setNum3('')
         setNum4('')
         setDone(true)
+        router.push('/')
     }
     useEffect(() => {
         if (num4 !== "" && num3 !== "" && acc !== "" && name !== "" && file !== "") {
@@ -170,7 +171,7 @@ function Section1() {
                                 <div className={styles.label}>
                                     1.Ism familyangiz
                                 </div>
-                                <input type="text" className={styles.input} onChange={e => setName(e.target.value)}/>
+                                <input type="text" value={name} className={styles.input} onChange={e => setName(e.target.value)}/>
                             </div>
                             <div className={styles.col}>
                                 <div className={styles.label}>
@@ -190,7 +191,7 @@ function Section1() {
                                 <div className={styles.label}>
                                     4.telegram username - akkountingiz
                                 </div>
-                                <input type="text" className={styles.input} onChange={e => setAcc(e.target.value)}/>
+                                <input type="text" value={acc} className={styles.input} onChange={e => setAcc(e.target.value)}/>
                             </div>
                         </div>
                         <div className={styles.in}>
