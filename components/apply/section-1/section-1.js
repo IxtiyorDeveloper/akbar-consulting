@@ -65,7 +65,7 @@ function Section1() {
                 },
                 onUploadProgress: progressEvent => {
                     setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
-                    setTimeout(() => setUploadPercentage(0), 10000);
+                    setTimeout(() => setUploadPercentage(0), 100000);
                 }
             })
             const {fileName, filePath} = res.data;
@@ -90,6 +90,10 @@ function Section1() {
         setAddress('');
         setEmailError('');
         setFilename('');
+        router.push({
+            pathname: '/payment',
+            query: {un: un1, country: country1}
+        })
     }
     const bg = {
         display: `${dropdown ? "block" : "none"}`,
@@ -357,10 +361,6 @@ function Section1() {
                             type="submit" className={`${styles.buttonS} ${done ? "" : styles.able}`}
                             disabled={done}
                             value="Topshirish"
-                            onClick={() =>router.push({
-                                pathname: '/payment',
-                                query: {un: un1, country: country1}
-                            })}
                         />
                     </div>
 

@@ -72,7 +72,7 @@ function Section1() {
                 },
                 onUploadProgress: progressEvent => {
                     setUploadPercentage(parseInt(Math.round((progressEvent.loaded * 100) / progressEvent.total)));
-                    setTimeout(() => setUploadPercentage(0), 10000);
+                    setTimeout(() => setUploadPercentage(0), 100000);
                 }
             })
         } catch (err) {
