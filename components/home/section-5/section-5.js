@@ -4,6 +4,7 @@ import {AiOutlineMail} from "react-icons/ai";
 import {IoLocationOutline} from "react-icons/io5";
 import {FaTelegramPlane} from "react-icons/fa";
 import Ymap from "./map/map";
+import React from "react";
 
 function Section5(props) {
     return (
@@ -19,8 +20,8 @@ function Section5(props) {
                         <div className={styles.left}>
                             <FiPhoneCall/> Telefon
                         </div>
-                        <a className={styles.right} href="tel:+99893 093 26 26">
-                            +99893 093 26 26
+                        <a href="tel:+998942557777" className={styles.right}>
+                            +998 94 255 77 77
                         </a>
                     </div>
                     <div className={styles.line}/>
@@ -29,7 +30,9 @@ function Section5(props) {
                             <AiOutlineMail/> Email
                         </div>
                         <div className={styles.right}>
-                            consultation@gmail.com
+                            <a className={styles.right} href="mailto:info@akbarconsulting.uz">
+                                info@akbarconsulting.uz
+                            </a>
                         </div>
                     </div>
                     <div className={styles.line}/>
@@ -38,7 +41,7 @@ function Section5(props) {
                             <IoLocationOutline/> Adress
                         </div>
                         <div className={styles.right}>
-                            Urganch sh, Xonqa, eski Turizm kolleji
+                            Urganch sh, Xonqa ko'chasi, eski Turizm kolleji
                         </div>
                     </div>
                     <div className={styles.line}/>

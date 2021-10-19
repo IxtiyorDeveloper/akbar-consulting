@@ -986,41 +986,6 @@ export default [
 
     },
     {
-        id: 3,
-        name: "Tomsk Davlat Universiteti",
-        img: "three",
-        country: "Rossiya",
-        address: "Rossiya, Moskva",
-    },
-    {
-        id: 4,
-        name: "Tomsk Davlat Universiteti",
-        img: "four",
-        country: "Rossiya",
-        address: "Rossiya, Moskva",
-    },
-    {
-        id: 5,
-        name: "Tomsk Davlat Universiteti",
-        img: "five",
-        country: "Rossiya",
-        address: "Rossiya, Moskva",
-    },
-    {
-        id: 6,
-        name: "Tomsk Davlat Universiteti",
-        img: "six",
-        country: "Rossiya",
-        address: "Rossiya, Moskva",
-    },
-    {
-        id: 7,
-        name: "Tomsk Davlat Universiteti",
-        img: "seven",
-        country: "Rossiya",
-        address: "Rossiya, Moskva",
-    },
-    {
         id: 8,
         name: "SATBAYEV UNIVERSITETI",
         img: "satbayev",
@@ -2828,363 +2793,1712 @@ export default [
 
     },
     {
-        id: 17,
-        name: "SINERGIYA DUBAI UNIVERSITETI",
-        img: "sinegeriya_dubay",
-        country: "Dubay",
-        address: "Dubay, Platinum",
-        im_country: "dubay",
-        im_uni: "sinegeriyaDubay",
-        m_address: "Klaster I, Platinum minorasi, 32 qavat - Dubay - BAA",
+        id: 20,
+        name: "Halich universiteti",
+        img: "halich",
+        country: "Turkiya",
+        address: "Turkiya, Istanbul",
+        im_country: "turkiya",
+        im_uni: "halich",
+        m_address: "Örnektepe, İmrahor Cd. No: 81, 34445, 34445 Beyoğlu/İstanbul, Турция",
         fac: [
             {
                 id: 1,
-                g_fac: "MA'LUMOT TIZIMLARI VA TEXNOLOGIYALARI",
+                g_fac: "Muhandislik fakulteti",
                 they: [
                     {
-                        name: "Kiberxavfsizlik va axborotni muhofaza qilish"
+                        name: "Kompyuter muhandisligi(ingliz tili)"
                     },
                     {
-                        name: "Hisoblash va kompyuter tizimlari arxitekturasi"
+                        name: "Elektr va elektron muhandislik"
                     },
                     {
-                        name: "Dasturiy ta'minotni ishlab chiqish texnologiyasi"
+                        name: "Sanoat muhandisligi"
                     },
                     {
-                        name: "Axborot tizimlarini boshqarish"
+                        name: "Mashinasozlik"
                     },
+                    {
+                        name: "Dastiriy ta’minot muhandisligi"
+                    }
                 ]
             },
             {
                 id: 2,
-                g_fac: "MEHMONXONA VA RESTORANLAR BOSHQARUVI",
+                g_fac: "Tibbiyot fakulteti",
                 they: [
                     {
-                        name: "Mehmonxona va restoran biznesidagi raqobat"
-                    },
-                    {
-                        name: "Mehmonxona va restoran biznesida xizmat ko'rsatish texnologiyalari va standartlari"
-                    },
-                    {
-                        name: "Tadbirlarni boshqarish"
-                    },
-                    {
-                        name: "Mehmonxona va restoran biznesini loyihalashtirish va ochish"
-                    },
+                        name: "Tibbiyot"
+                    }
                 ]
             },
             {
                 id: 3,
-                g_fac: "TADBIRKORLIK",
+                g_fac: "San’at va ilm-fan fakulteti",
                 they: [
                     {
-                        name: "Inson resurslarini boshqarish"
+                        name: "Molekulyar biologiya va genetika"
                     },
                     {
-                        name: "Kompaniya iqtisodiyoti va moliya"
+                        name: "Tarjimonlik (ingliz-turk)"
                     },
                     {
-                        name: "G'oyalarni yaratish va biznesni rejalashtirish"
+                        name: "Psixologiya (ingliz tili)"
                     },
                     {
-                        name: "Raqobatbardosh startap"
+                        name: "Psixologiya"
+                    },
+                    {
+                        name: "Amerika adabiyoti va madaniyati (ingliz tili)"
+                    },
+                    {
+                        name: "Matematika"
+                    },
+                    {
+                        name: "Turk tili va adabiyoti"
                     },
                 ]
             },
             {
                 id: 4,
-                g_fac: "GLOBAL IQTISODIYOT",
+                g_fac: "Biznesni boshqarish fakulteti",
                 they: [
                     {
-                        name: "Mikroiqtisodiyot"
+                        name: "Biznesni boshqarish (ingliz tili)"
                     },
                     {
-                        name: "Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar"
+                        name: "Biznesni boshqarish\n" +
+                            "Jamoatchilik bilan aloqalar va reklama "
                     },
                     {
-                        name: "Korporativ moliya"
+                        name: "Boshqaruv axboroti tizimlari"
                     },
                     {
-                        name: "Makroiqtisodiy rejalashtirish va bashorat qilish"
+                        name: "Siyosatshunoslik va xalqaro "
+                    },
+                    {
+                        name: "Xalqaro savdo va biznes"
+                    },
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Me’morchilik fakulteti",
+                they: [
+                    {
+                        name: "Sanoat mahsulotlarini loyihalash"
+                    },
+                    {
+                        name: "Ichki me’morchilik"
+                    },
+                    {
+                        name: "Me’morchilik"
+                    },
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Sog’liqni saqlash fanlari maktabi",
+                they: [
+                    {
+                        name: "Oziqlantirish va dietetika"
+                    },
+                    {
+                        name: "Oziqlantirish va dietetika (ingliz tili)"
+                    },
+                    {
+                        name: "Fizioterapiya va reabilitatsiya"
+                    },
+                    {
+                        name:"Fizioterapiya va reabilitatsiya (ingliz tili)"
+                    },
+                    {
+                        name:"Hamshiralik"
+                    },
+                    {
+                        name:"Hamshiralik (ingliz tili)"
+                    }
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Tasviriy san’at",
+                they: [
+                    {
+                        name: "To’qimachilik va moda dizayni"
+                    },
+                    {
+                        name: "Multifilm va animatsiya "
+                    },
+                    {
+                        name: "Gastronomiya va oshpazlik "
+                    },
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Konservatoriya",
+                they: [
+                    {
+                        name: "Opera"
+                    },
+                    {
+                        name: "Teatr"
+                    },
+                    {
+                        name: "Turk klassik musiqasi"
+                    },
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Jismoniy tarbiya va sport maktabi",
+                they: [
+                    {
+                        name: "Murabbiylik ta’limi"
+                    },
+                    {
+                        name: "Jismoniy tarbiya va sportni o’qitish"
+                    },
+                    {
+                        name: "Dam olish"
+                    },
+                    {
+                        name: "Sportni boshqarish"
+                    },
+                    {
+                        name: "Sportni boshqarish (ingliz tili)"
                     },
                 ]
             },
         ],
-        info1: " Iste'dod, bilimga bo'lgan ishtiyoq, fidoyilik, kuchli va zaif tomonlar - biz aynan shu narsani asos qilib olamiz " +
-            "va ishlab chiqamiz.\n" +
-            "            Dubay shahridagi Sinergiya Universiteti talabalar shaharchasi Dubay shahrining Jumeirah Lakes Towers" +
-            " shahrida joylashgan. Universitet Dubayning akademik landshaftida alohida o'rin tutadi, chunki universitet 10 mingdan " +
-            "ziyod biznesga ega bo'lgan eng tez rivojlanayotgan biznes hamjamiyatida joylashgan bo'lib, talabalarimizga rivojlangan" +
-            " biznes markazida o'qish uchun noyob imkoniyat yaratdik." +
-            " Bundan tashqari, bizning shaharchamizda yurish masofasidan topishingiz mumkin bo'lgan narsalar:",
-        info2: "Metro stantsiyasi\n" +
-            "Butun dunyoda obro'ga ega bo'lgan IT-kompaniyalar\n" +
-            "Dunyoga mashhur mehmonxonalar\n" +
-            "Dubay olmos, oltin va marvarid birjasi\n" +
-            "            Yangi Dubayning markazida Shayx Zayd yo'lida, ikkita metro bekati Jumeirah Lakes Towers yoki " +
-            "JLT o'rtasida joylashgan mehmonxona yashash, ishlash, o'qish va o'ynash uchun ideal joy. JLT 200 gektardan" +
-            " ziyod maydonni qamrab olgan ko'l bo'yidagi jonli jamoat tarkibiga" +
-            " 64 ta jozibali turar-joy va savdo minoralari, shuningdek mehmonxonalar, dam olish joylari va 160 ta savdo " +
-            "shoxobchalari kiradi, ularda 50 mingdan ortiq odam yashaydi va ishlaydi. Jamiyat a'zolari turli xil ochiq kafe," +
-            " restoran va bolalar o'yin maydonchalaridan bahramand bo'lishlari uchun to'rtta burama sun'iy ko'l mavjud. Mashhur" +
-            " Almas minorasi JLTning markaziy qismi universitetga yurish masofasida joylashgan O'rta Sharqdagi eng baland tijorat " +
-            "minorasi.\n" +
-            "Universitet:\n" +
-            "50 ta mamlakatdan kelgan 50,000 nafardan ortiq talabalar \n" +
-            "100 ta xalqaro akkreditatsiyadan o'tgan dasturlar\n" +
-            "1988 yil Universitet tashkil etilgan\n" +
-            "Universitet manzili: Jumeirah Lakes Towers, I klaster, Platinum Tower, 32-qavat\n" +
-            "             Sinergiya universiteti nafaqat o'qitish, o'qituvchilar va uy vazifalari bilan bog'liq. Universitetdagi talabalik hayoti turli madaniyatlar, turli xil hayajonli tadbirlar va o'yin-kulgilar, shuningdek, jamoaviy ruhning kuchliligi bilan ajralib turadi. Bizning har bir o'quvchimiz noyobdir va bizning katta oilamizga o'zlarining shaxsiy xususiyatlarini keltiradi. Va biz, o'z navbatida, har bir o'quvchiga o'z imkoniyatlarini ochib berish va eng yaxshi fazilatlarni rivojlantirishga yordam berish uchun qo'limizdan kelganicha harakat qilamiz.\n" +
-            "TALABALAR HAYOTI\n" +
-            " Sport turlari\n" +
-            "Universitetdagi sport talabalar hayotining ajralmas qismidir, uni talabalar ham, universitet xodimlari ham faol qo'llab-quvvatlaydilar. Siz basketbol, ​​futbol, ​​plyaj voleyboli, sport yugurish kabi sport tadbirlarida qatnashishingiz mumkin. Bundan tashqari, agar siz o'zingizning sport manzilingizni qo'shishni xohlasangiz, biz sizni doimo qo'llab-quvvatlaymiz!\n",
-        info3: "Universitetda o'qish doimo talabalarning faol faoliyati bilan birga keladi. Siz biz bilan 4 yil birga bo'lasiz va biz ularni hayotingizdagi eng yaxshi va unutilmas daqiqalarga aylantiramiz. \n" +
-            "Do'stlaringiz bilan birgalikda siz ko'p sonli tadbirlarni va xotirangizda abadiy qoladigan joylarni ziyorat qilasiz!Universitet muntazam ravishda talabalarni ilmiy ko'rgazmalar va o'quv konferentsiyalariga yuboradi. Bu talabalarga o'zlarining shaxsiy salohiyatini ochib berish va kelajakda o'zlarining martabalarini oshirishda yordam beradigan sertifikatlar olishlariga imkon beradi." +
-            "Dam olish shahri\n" +
-            "Dubayda yashaganingizda, har kuni plyajda \"ta'til\" qilishingiz mumkin! Bundan tashqari, bu erda deyarli hech qachon yomg'ir yog'maydi.Ishga joylashish imkoniyatlari\n" +
-            "Dubay har yili 15 million tashrif buyuradigan ulkan sayyohlik maskani bo'lib, uni biznes va martaba uchun ajoyib joyga aylantiradi.Turli xil hamjamiyat\n" +
-            "Faqat bitta shaharda butun dunyo bo'ylab yangi odamlar bilan tanishing. Hayot uchun yangi do'stlar, sheriklar va ustozlar toping!Shaxsiy xavfsizlik\n" +
-            " BAA xavfsizlik bo'yicha dunyoda uchinchi o'rinda turadi. Agar siz bu yerda hamyoningizni yo'qotib qo'ysangiz ham, uni qaytarib olishingiz mumkin!"
-
+        info1: "Istanbulda joylashgan turk xususiy universiteti.\n" +
+            "Halich universiteti 1998 yilda Turkiyadagi bolalar leykemiya fondi tomonidan tashkil etilgan poydevor universiteti.\n" +
+            "Halich universiteti beshta fakultetda 21 ta akademik bo'limlarni, shu jumladan uchta maktabni, hamshiralik maktabini," +
+            " jismoniy tarbiya va sport maktabini, tibbiyot fanlari maktabini va konservatoriyani taklif etadi.",
+        info2: "Universitetda har yili" +
+            " teatrlashtirilgan, musiqiy, vizual va boshqa madaniy tadbirlar o'tkaziladi. Universitetda teatr mavjud.",
+        info3: "Halich universitetida 30 dan ortiq ijtimoiy, sport, badiiy va boshqa talabalar klublari mavjud."
     },
     {
-        id: 18,
-        name: "SINERGIYA DUBAI UNIVERSITETI",
-        img: "sinegeriya_dubay",
-        country: "Dubay",
-        address: "Dubay, Platinum",
-        im_country: "dubay",
-        im_uni: "sinegeriyaDubay",
-        m_address: "Klaster I, Platinum minorasi, 32 qavat - Dubay - BAA",
+        id: 21,
+        name: "ROSSIYA XALQLAR DO’STLIGI UNIVERSITETI",
+        img: "rxdu",
+        country: "Rossiya",
+        address: "Rossiya, Moskva",
+        im_country: "rossiya",
+        im_uni: "rxdu",
+        m_address: "ул. Миклухо-Маклая, 6, Москва, Россия, 117198",
+        info1:" Xalqlar do'stligi universiteti 1960 yil 5 fevralda SSSR hukumatining qarori bilan" +
+            " tashkil etilgan. 1961 yil 22 fevralda Universitet Afrika xalqlarining mustaqillik uchun olib" +
+            " borgan kurashining ramzlaridan biri bo'lgan Patris Lumumba nomini oldi. Talabalar va akademiklar" +
+            " do'stlik va o'zaro qo'llab-quvvatlashning buyuk tamoyillariga qat'iy amal qilib, siyosiy kontekstdan " +
+            "tashqarida o'qish va ilmiy izlanishlarda erkin bo'lishlari mumkin edi. 1992 yil 5 fevralda " +
+            "Rossiya hukumati qarori bilan Universitet Rossiyaning Xalqlar do'stligi universiteti deb o'zgartirildi.",
+        info2: "Rossiyaning Xalqlar do'stligi universiteti o'zining 60 yillik tarixi davomida xalqaro miqyosda shuhrat " +
+            "qozondi va klassik universitet sifatida munosib obro'ga ega bo'ldi, u ko'p yillar davomida Rossiyaning " +
+            "eng yaxshi universitetlari orasida " +
+            "eng yuqori o'rinlarni egallab kelmoqda va xalqaro reytinglarda tez sur'atlar bilan o'sib bormoqda.",
+        info3: "Turli madaniyat vakillari haqidagi bilimlarni birlashtirib, RUDN universiteti dunyoni" +
+            " yaxshi holatga keltiradigan yetakchilarni shakllantiradi. RUDN universiteti jahon darajasidagi" +
+            " eng yaxshi rus universitetlari qatoriga kiradi. Universitet THE, QS va RUR dunyo reytinglariga" +
+            " kiritilgan. \"Xalqaro talabalar soni\" va \"Talabalar-xodimlar nisbati\" nominatsiyalari bo'yicha" +
+            " biz yetakchilardanmiz. UI Green Metric reytingi bizning shaharchamizni Rossiyaning \"eng yashil\" " +
+            "kampusi deb topdi. RUDN universiteti xalqaro QS Stars reytingining maksimal " +
+            "\"5 yulduzi\" egasi bo'lib, reyting bo'yicha Rossiya universitetlari orasida yetakchilar qatoriga kiradi.",
         fac: [
             {
                 id: 1,
-                g_fac: "MA'LUMOT TIZIMLARI VA TEXNOLOGIYALARI",
+                g_fac: "Gumanitar va ijtimoiy fanlar fakulteti",
                 they: [
                     {
-                        name: "Kiberxavfsizlik va axborotni muhofaza qilish"
+                        name: "San'at va gumanitar fanlar"
                     },
                     {
-                        name: "Hisoblash va kompyuter tizimlari arxitekturasi"
+                        name: "Siyosatshunoslik"
                     },
                     {
-                        name: "Dasturiy ta'minotni ishlab chiqish texnologiyasi"
+                        name: "Sotsiologiya"
                     },
                     {
-                        name: "Axborot tizimlarini boshqarish"
+                        name: "Xorijiy mintaqaviy tadqiqotlar"
                     },
+                    {
+                        name: "Halqaro munosabatlar"
+                    },
+                    {
+                        name: "Falsafa"
+                    },
+                    {
+                        name: "Tarix"
+                    }
                 ]
             },
             {
                 id: 2,
-                g_fac: "MEHMONXONA VA RESTORANLAR BOSHQARUVI",
+                g_fac: "Iqtisodiyot fakulteti",
                 they: [
                     {
-                        name: "Mehmonxona va restoran biznesidagi raqobat"
+                        name: "Reklama va jamoatchilik bilan aloqalar"
                     },
                     {
-                        name: "Mehmonxona va restoran biznesida xizmat ko'rsatish texnologiyalari va standartlari"
+                        name: "Xorijiy mintaqaviy tadqiqotlar"
                     },
                     {
-                        name: "Tadbirlarni boshqarish"
+                        name: "Menejment"
                     },
                     {
-                        name: "Mehmonxona va restoran biznesini loyihalashtirish va ochish"
-                    },
+                        name: "Iqtisodiyot(Umumiy iqtisodiyot, Buxgalteriya hisobi va audit," +
+                            " Xalqaro iqtisodiy munosabatlar, Shahar" +
+                            " iqtisodiyoti, Moliya va kredit, Sug'urta, Iqtisodiyotda " +
+                            "loyihalarni tahlil qilish va modellashtirish) "
+                    }
                 ]
             },
             {
                 id: 3,
-                g_fac: "TADBIRKORLIK",
+                g_fac: "Fizika, matematika va tabiiy fanlar fakulteti",
                 they: [
                     {
-                        name: "Inson resurslarini boshqarish"
+                        name: "Fizika "
                     },
                     {
-                        name: "Kompaniya iqtisodiyoti va moliya"
+                        name: "Biznes-Informatika"
                     },
                     {
-                        name: "G'oyalarni yaratish va biznesni rejalashtirish"
+                        name: "Fundamental informatika va axborot texnologiyalari"
                     },
                     {
-                        name: "Raqobatbardosh startap"
+                        name: "Matematika va informatika"
                     },
+                    {
+                        name: "Matematika"
+                    }
                 ]
-            },
-            {
-                id: 4,
-                g_fac: "GLOBAL IQTISODIYOT",
-                they: [
-                    {
-                        name: "Mikroiqtisodiyot"
-                    },
-                    {
-                        name: "Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar"
-                    },
-                    {
-                        name: "Korporativ moliya"
-                    },
-                    {
-                        name: "Makroiqtisodiy rejalashtirish va bashorat qilish"
-                    },
-                ]
-            },
+            }
         ],
-        info1: " Iste'dod, bilimga bo'lgan ishtiyoq, fidoyilik, kuchli va zaif tomonlar - biz aynan shu narsani asos qilib olamiz " +
-            "va ishlab chiqamiz.\n" +
-            "            Dubay shahridagi Sinergiya Universiteti talabalar shaharchasi Dubay shahrining Jumeirah Lakes Towers" +
-            " shahrida joylashgan. Universitet Dubayning akademik landshaftida alohida o'rin tutadi, chunki universitet 10 mingdan " +
-            "ziyod biznesga ega bo'lgan eng tez rivojlanayotgan biznes hamjamiyatida joylashgan bo'lib, talabalarimizga rivojlangan" +
-            " biznes markazida o'qish uchun noyob imkoniyat yaratdik." +
-            " Bundan tashqari, bizning shaharchamizda yurish masofasidan topishingiz mumkin bo'lgan narsalar:",
-        info2: "Metro stantsiyasi\n" +
-            "Butun dunyoda obro'ga ega bo'lgan IT-kompaniyalar\n" +
-            "Dunyoga mashhur mehmonxonalar\n" +
-            "Dubay olmos, oltin va marvarid birjasi\n" +
-            "            Yangi Dubayning markazida Shayx Zayd yo'lida, ikkita metro bekati Jumeirah Lakes Towers yoki " +
-            "JLT o'rtasida joylashgan mehmonxona yashash, ishlash, o'qish va o'ynash uchun ideal joy. JLT 200 gektardan" +
-            " ziyod maydonni qamrab olgan ko'l bo'yidagi jonli jamoat tarkibiga" +
-            " 64 ta jozibali turar-joy va savdo minoralari, shuningdek mehmonxonalar, dam olish joylari va 160 ta savdo " +
-            "shoxobchalari kiradi, ularda 50 mingdan ortiq odam yashaydi va ishlaydi. Jamiyat a'zolari turli xil ochiq kafe," +
-            " restoran va bolalar o'yin maydonchalaridan bahramand bo'lishlari uchun to'rtta burama sun'iy ko'l mavjud. Mashhur" +
-            " Almas minorasi JLTning markaziy qismi universitetga yurish masofasida joylashgan O'rta Sharqdagi eng baland tijorat " +
-            "minorasi.\n" +
-            "Universitet:\n" +
-            "50 ta mamlakatdan kelgan 50,000 nafardan ortiq talabalar \n" +
-            "100 ta xalqaro akkreditatsiyadan o'tgan dasturlar\n" +
-            "1988 yil Universitet tashkil etilgan\n" +
-            "Universitet manzili: Jumeirah Lakes Towers, I klaster, Platinum Tower, 32-qavat\n" +
-            "             Sinergiya universiteti nafaqat o'qitish, o'qituvchilar va uy vazifalari bilan bog'liq. Universitetdagi talabalik hayoti turli madaniyatlar, turli xil hayajonli tadbirlar va o'yin-kulgilar, shuningdek, jamoaviy ruhning kuchliligi bilan ajralib turadi. Bizning har bir o'quvchimiz noyobdir va bizning katta oilamizga o'zlarining shaxsiy xususiyatlarini keltiradi. Va biz, o'z navbatida, har bir o'quvchiga o'z imkoniyatlarini ochib berish va eng yaxshi fazilatlarni rivojlantirishga yordam berish uchun qo'limizdan kelganicha harakat qilamiz.\n" +
-            "TALABALAR HAYOTI\n" +
-            " Sport turlari\n" +
-            "Universitetdagi sport talabalar hayotining ajralmas qismidir, uni talabalar ham, universitet xodimlari ham faol qo'llab-quvvatlaydilar. Siz basketbol, ​​futbol, ​​plyaj voleyboli, sport yugurish kabi sport tadbirlarida qatnashishingiz mumkin. Bundan tashqari, agar siz o'zingizning sport manzilingizni qo'shishni xohlasangiz, biz sizni doimo qo'llab-quvvatlaymiz!\n",
-        info3: "Universitetda o'qish doimo talabalarning faol faoliyati bilan birga keladi. Siz biz bilan 4 yil birga bo'lasiz va biz ularni hayotingizdagi eng yaxshi va unutilmas daqiqalarga aylantiramiz. \n" +
-            "Do'stlaringiz bilan birgalikda siz ko'p sonli tadbirlarni va xotirangizda abadiy qoladigan joylarni ziyorat qilasiz!Universitet muntazam ravishda talabalarni ilmiy ko'rgazmalar va o'quv konferentsiyalariga yuboradi. Bu talabalarga o'zlarining shaxsiy salohiyatini ochib berish va kelajakda o'zlarining martabalarini oshirishda yordam beradigan sertifikatlar olishlariga imkon beradi." +
-            "Dam olish shahri\n" +
-            "Dubayda yashaganingizda, har kuni plyajda \"ta'til\" qilishingiz mumkin! Bundan tashqari, bu erda deyarli hech qachon yomg'ir yog'maydi.Ishga joylashish imkoniyatlari\n" +
-            "Dubay har yili 15 million tashrif buyuradigan ulkan sayyohlik maskani bo'lib, uni biznes va martaba uchun ajoyib joyga aylantiradi.Turli xil hamjamiyat\n" +
-            "Faqat bitta shaharda butun dunyo bo'ylab yangi odamlar bilan tanishing. Hayot uchun yangi do'stlar, sheriklar va ustozlar toping!Shaxsiy xavfsizlik\n" +
-            " BAA xavfsizlik bo'yicha dunyoda uchinchi o'rinda turadi. Agar siz bu yerda hamyoningizni yo'qotib qo'ysangiz ham, uni qaytarib olishingiz mumkin!"
-
     },
     {
-        id: 19,
-        name: "SINERGIYA DUBAI UNIVERSITETI",
-        img: "sinegeriya_dubay",
-        country: "Dubay",
-        address: "Dubay, Platinum",
-        im_country: "dubay",
-        im_uni: "sinegeriyaDubay",
-        m_address: "Klaster I, Platinum minorasi, 32 qavat - Dubay - BAA",
+        id: 22,
+        name: " Xo'jand davlat universiteti",
+        img: "xdu",
+        country: "Tojikiston",
+        address: "Tojikiston, Xo'jand",
+        im_country: "tojikiston",
+        im_uni: "xdu",
+        m_address: "ул. Миклухо-Маклая, 6, Москва, Россия, 117198",
+        info1:"Xo'jand davlat universiteti -  1932 yilda Xo'jandda (sobiq Leninobod), " +
+            "Tojikistonda tashkil etilgan . Avval u Oliy Pedagogika Instituti sifatida tanilgan." +
+            " Sovet davrida Xo'jand davlat universiteti Leninobod davlat pedagogika instituti sifatida" +
+            " tanilgan. Leninobod davlat pedagogika instituti Tojikiston SSSR mustaqilligini qo'lga kiritgandan" +
+            " keyin Xo'jand davlat universitetiga o'zgartirildi. Ushbu universitet tojik" +
+            " akademigi Bobojon G'ofurov nomi bilan atalgan . Bitiruvchilar orasida siyosatchi Xayrinisso Yusufi ham bor . ",
+        info2: "Bugungi kunda universitetda 7 ta o'quv binolari, 7 ta o'quv binolari, \n" +
+            "umumiy maydoni 42,514,06 m.kv, 337 o'quv-o'quv xonalari va \n" +
+            "o'qituvchilar uchun 36 ta kabinet, 180 ta ixtisoslashtirilgan auditoriya, \n" +
+            "39 ta kompyuter sinfi, 6 ta yotoqxona mavjud.",
+        info3: "320 ta kompyuter, 100 ta daftar, 17 ta o'quv laboratoriyasi, kutubxona va \n" +
+            "fakultetlardagi ba'zi bo'limlar, agroiologiya bog'i baza, unda 964 ishchi \n" +
+            "ishlaydi, 59 ta elektron doska, 207 proektor, 3 ta kompyuter \n" +
+            "kompyuterlari, umumiy ichki aloqa fakultetlarning 66000 ta kitob \n" +
+            "kutubxonalari.",
         fac: [
             {
                 id: 1,
-                g_fac: "MA'LUMOT TIZIMLARI VA TEXNOLOGIYALARI",
+                g_fac: "Ko`p tarmoqli telekommunikatsion tizimlar – (очно) 420$ | (заочно) yo`q",
                 they: [
                     {
-                        name: "Kiberxavfsizlik va axborotni muhofaza qilish"
+                        name: "Ko`p tarmoqli telekommunikatsion tizimlar – (очно) 420$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                g_fac: "Amaliy matematika – (очно) 456$ | (заочно) 365$",
+                they: [
+                    {
+                        name: "Amaliy matematika – (очно) 456$ | (заочно) 365$"
+                    }
+                ]
+            },
+            {
+                id: 3,
+                g_fac: "Texnologik ma’lumotlarni ta’minlash dasturi – (очно) 525$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Texnologik ma’lumotlarni ta’minlash dasturi – (очно) 525$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                g_fac: "Radioelektronika – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Radioelektronika – (очно) 456$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Texnologiya – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Texnologiya – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Fizika – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Fizika – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Elektron asboblar – (очно) 525$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Elektron asboblar – (очно) 525$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Audit – (очно) 569$ | (заочно) 456$",
+                they: [
+                    {
+                        name: "Audit – (очно) 569$ | (заочно) 456$"
+                    }
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Soliq va soliqqa tortish – (очно) 569$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Soliq va soliqqa tortish – (очно) 569$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 10,
+                g_fac: "Bank ishi – (очно) 569$ | (заочно) 456$",
+                they: [
+                    {
+                        name: "Bank ishi – (очно) 569$ | (заочно) 456$"
+                    }
+                ]
+            },
+            {
+                id:11,
+                g_fac: "Buxgalteriya hisobi va audit – (очно) 569$ | (заочно) 456$",
+                they: [
+                    {
+                        name: "Buxgalteriya hisobi va audit – (очно) 569$ | (заочно) 456$"
+                    }
+                ]
+            },
+            {
+                id: 12,
+                g_fac: "Geografiya",
+                they: [
+                    {
+                        name: "Geografiya – (очно) 437$ | (заочно) 350$"
                     },
                     {
-                        name: "Hisoblash va kompyuter tizimlari arxitekturasi"
+                        name: "Geografik iqtisod asoslari – (очно) 437$ | (заочно) yo`q"
                     },
                     {
-                        name: "Dasturiy ta'minotni ishlab chiqish texnologiyasi"
+                        name: "Geografiya va turizm menejmenti – (очно) 437$ | (заочно) yo`q"
                     },
                     {
-                        name: "Axborot tizimlarini boshqarish"
+                        name: "Geografiya-Biologiya – (очно) 437$ | (заочно) yo`q"
+                    },
+                    {
+                        name: "Geoekologiya – (очно) 456$ | (заочно) yo`q"
+                    },
+                ]
+            },
+            {
+                id: 13,
+                g_fac: "Jahon iqtisodiyoti – (очно) 569$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Jahon iqtisodiyoti – (очно) 569$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 14,
+                g_fac: "Filologiya (Ingliz tili) – (очно) 500$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Filologiya (Ingliz tili) – (очно) 500$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 15,
+                g_fac: "Filologiya (Nemis tili) – (очно) 500$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Filologiya (Nemis tili) – (очно) 500$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 16,
+                g_fac: "Kutubxonachilik va bibliografiya (menejment) – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Kutubxonachilik va bibliografiya (menejment) – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 17,
+                g_fac: "Sharq filologiyasi (arab va ingliz tillari) – (очно) 569$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Sharq filologiyasi (arab va ingliz tillari) – (очно) 569$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 18,
+                g_fac: "Dizayn (grafika) – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Dizayn (grafika) – (очно) 456$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 19,
+                g_fac: "Tikuv-trikotaj dizayni – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Tikuv-trikotaj dizayni – (очно) 456$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 20,
+                g_fac: "Maktabgacha ta’lim (amaliy psixologiya) – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Maktabgacha ta’lim (amaliy psixologiya) – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 21,
+                g_fac: "Boshlang`ich ta’limda musiqa san’ati – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Boshlang`ich ta’limda musiqa san’ati – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+
+            {
+                id: 22,
+                g_fac: "Jurnalistika – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Jurnalistika – (очно) 456$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 23,
+                g_fac: "Tasviriy san’at va chizmachilik (Xalq hunarmandchiligi) – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Tasviriy san’at va chizmachilik (Xalq hunarmandchiligi) – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 24,
+                g_fac: "Boshlang`ich ta’lim (Logopediya) – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Boshlang`ich ta’lim (Logopediya) – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 25,
+                g_fac: "Boshlang`ich ta’lim – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Boshlang`ich ta’lim – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 26,
+                g_fac: "Boshlang`ich ta’limda ingliz tili – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Boshlang`ich ta’limda ingliz tili – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 27,
+                g_fac: "Boshlang`ich ta’limda rus tili – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Boshlang`ich ta’limda rus tili – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 28,
+                g_fac: "Rus tili va adabiyoti – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "Rus tili va adabiyoti – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 29,
+                g_fac: "O`zbek tili va adabiyoti – (очно) 437$ | (заочно) 350$",
+                they: [
+                    {
+                        name: "O`zbek tili va adabiyoti – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+            {
+                id: 30,
+                g_fac: "Tarix",
+                they: [
+                    {
+                        name: "Tarix – (очно) 437$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Tarix (Arxeologiya) – (очно) 437$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Tarix (Madaniyatshunoslik) – (очно) 437$ | (заочно) yo`q"
+                    },
+                    {
+                        name: "Tarix (Dinshunoslik) – (очно) 437$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 31,
+                g_fac: "Psixologiya – (очно) 437$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Psixologiya – (очно) 437$ | (заочно) yo`q"
+                    },
+                ]
+            },
+            {
+                id: 32,
+                g_fac: "Agroekologiya – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Agroekologiya – (очно) 456$ | (заочно) yo`q"
+                    },
+                ]
+            },
+            {
+                id: 33,
+                g_fac: "KIMYO, BIOLOGIYA",
+                they: [
+                    {
+                        name: "Biologiya – (очно) 437$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Kimyo – (очно) 437$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Ekologiya – (очно) 456$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Jismoniy tarbiya – (очно) 437$ | (заочно) 350$"
+                    },
+                    {
+                        name: "Biologiya-Kimyo – (очно) 437$ | (заочно) 350$"
+                    }
+                ]
+            },
+        ],
+    },
+    {
+        id: 23,
+        name: "ASTRAXAN DAVLAT UNIVERSITETI",
+        img: "astraxan",
+        country: "Rossiya",
+        address: "Rossiya, Astraxan",
+        im_country: "rossiya",
+        im_uni: "astraxan",
+        m_address: "ул. Татищева, 20а, Астрахань, Астраханская обл., Россия, 414056",
+        info1:"Astraxan davlat universiteti. 1996 yilgacha - S. M. Kirov nomidagi Astraxan " +
+            "davlat pedagogika instituti , 2002 yilgacha - Astraxan davlat pedagogika universiteti  - oliy" +
+            " o'quv yurti 1932 yilda Astraxan shahrida  tashkil etilgan . Rossiyaning janubi-g'arbiy qismidagi" +
+            " ta'lim, ilmiy va ijtimoiy-madaniy markaz. Butunjahon CDIO tashabbusi ishtirokchisi , Kaspiy mintaqasi" +
+            " universitetlari assotsiatsiyasi a'zosi . Universitet Shanxay " +
+            "Hamkorlik Tashkiloti Universitetini tashkil etuvchi Rossiyaning 16 ta asosiy universitetlarining " +
+            "bir qismidir.",
+        info2: " Universitet mintaqadagi eng yirik o'quv markazidir. 2018 yilda ASUda 12000 dan" +
+            " ortiq talaba tahsil oldi, shundan 2000 dan ortig'i boshqa davlatlarning fuqarolari." +
+            " Universitetda 70 dan ortiq o'quv variantlari mavjud. Lingvistik tayyorgarlikka alohida" +
+            " e'tibor qaratiladi: " +
+            "har qanday mutaxassislik vakillari o'qish davomida bir yoki bir nechta chet tillarini o'zlashtiradilar.",
+        info3: "Astraxan davlat universiteti direktorlar boshchiligidagi uchta  institutga bo'lingan." +
+            " Har bir institut tarkibiga ilmiy, tadqiqot, ilmiy va o'quv laboratoriyalari va markazlari kiradi.",
+        fac: [
+            {
+                id: 1,
+                g_fac: "Matematika",
+                they: [
+                    {
+                        name: "Matematika"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                g_fac: "Amaliy matematika va kimyo",
+                they: [
+                    {
+                        name: "Amaliy matematika va kimyo"
+                    }
+                ]
+            },
+            {
+                id: 3,
+                g_fac: "Fizika",
+                they: [
+                    {
+                        name: "Fizika"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                g_fac: "Kimyo",
+                they: [
+                    {
+                        name: "Kimyo"
+                    }
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Biologiya",
+                they: [
+                    {
+                        name: "Biologiya"
+                    }
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Geologiya",
+                they: [
+                    {
+                        name: "Geologiya"
+                    }
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Geografiya",
+                they: [
+                    {
+                        name: "Geografiya"
+                    }
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Kartografiya va geoinformatika",
+                they: [
+                    {
+                        name: "Kartografiya va geoinformatika"
+                    }
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Tuproqshunoslik",
+                they: [
+                    {
+                        name: "Tuproqshunoslik"
+                    }
+                ]
+            },
+            {
+                id: 10,
+                g_fac: "Ekologiya va tabiatni boshqarish",
+                they: [
+                    {
+                        name: "Ekologiya va tabiatni boshqarish"
+                    }
+                ]
+            },
+            {
+                id:11,
+                g_fac: "Siyosatshunoslik",
+                they: [
+                    {
+                        name: "Siyosatshunoslik"
+                    }
+                ]
+            },
+            {
+                id: 12,
+                g_fac: "Psixologiya",
+                they: [
+                    {
+                        name: "Psixologiya"
+                    },
+                ]
+            },
+            {
+                id: 13,
+                g_fac: "Tarix",
+                they: [
+                    {
+                        name: "Tarix"
+                    }
+                ]
+            },
+            {
+                id: 14,
+                g_fac: "Huquqshunoslik",
+                they: [
+                    {
+                        name: "Huquqshunoslik"
+                    }
+                ]
+            },
+            {
+                id: 15,
+                g_fac: "Jurnalistika",
+                they: [
+                    {
+                        name: "Jurnalistika"
+                    }
+                ]
+            },
+            {
+                id: 16,
+                g_fac: "Reklama va jamoatchilik bilan aloqalar",
+                they: [
+                    {
+                        name: "Reklama va jamoatchilik bilan aloqalar"
+                    }
+                ]
+            },
+            {
+                id: 17,
+                g_fac: "Sharq filologiyasi (arab va ingliz tillari) – (очно) 569$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Sharq filologiyasi (arab va ingliz tillari) – (очно) 569$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 18,
+                g_fac: "Xalqaro munosabatlar",
+                they: [
+                    {
+                        name: "Xalqaro munosabatlar"
+                    }
+                ]
+            },
+            {
+                id: 19,
+                g_fac: "Tikuv-trikotaj dizayni – (очно) 456$ | (заочно) yo`q",
+                they: [
+                    {
+                        name: "Tikuv-trikotaj dizayni – (очно) 456$ | (заочно) yo`q"
+                    }
+                ]
+            },
+            {
+                id: 20,
+                g_fac: "Madaniyatshunoslik ",
+                they: [
+                    {
+                        name: "Madaniyatshunoslik "
+                    }
+                ]
+            },
+            {
+                id: 21,
+                g_fac: "Konfliktologiya",
+                they: [
+                    {
+                        name: "Konfliktologiya"
+                    }
+                ]
+            },
+
+            {
+                id: 22,
+                g_fac: "Hujjatlarni boshqarish va arxivlash",
+                they: [
+                    {
+                        name: "Hujjatlarni boshqarish va arxivlash"
+                    }
+                ]
+            },
+            {
+                id: 23,
+                g_fac: "Tilshunoslik",
+                they: [
+                    {
+                        name: "Tilshunoslik"
+                    }
+                ]
+            },
+            {
+                id: 24,
+                g_fac: "Sotsiologiya",
+                they: [
+                    {
+                        name: "Sotsiologiya"
+                    }
+                ]
+            },
+            {
+                id: 25,
+                g_fac: "Ijtimoiy ish",
+                they: [
+                    {
+                        name: "Ijtimoiy ish"
+                    }
+                ]
+            },
+            {
+                id: 26,
+                g_fac: "Yoshlar bilan ishlashni tashkillashtirish",
+                they: [
+                    {
+                        name: "Yoshlar bilan ishlashni tashkillashtirish"
+                    }
+                ]
+            },
+            {
+                id: 27,
+                g_fac: "Pedogogik ta’lim",
+                they: [
+                    {
+                        name: "Pedogogik ta’lim"
+                    }
+                ]
+            },
+            {
+                id: 28,
+                g_fac: "Psixologik-pedogogik ta’lim",
+                they: [
+                    {
+                        name: "Psixologik-pedogogik ta’lim"
+                    }
+                ]
+            },
+            {
+                id: 29,
+                g_fac: "Ijtimoiy-madaniy faoliyat",
+                they: [
+                    {
+                        name: "Ijtimoiy-madaniy faoliyat"
+                    }
+                ]
+            },
+            {
+                id: 30,
+                g_fac: "Dizayn",
+                they: [
+                    {
+                        name: "Dizayn"
+                    }
+                ]
+            },
+            {
+                id: 31,
+                g_fac: "Iqtisod ",
+                they: [
+                    {
+                        name: "Iqtisod "
+                    },
+                ]
+            },
+            {
+                id: 32,
+                g_fac: "Boshqaruv",
+                they: [
+                    {
+                        name: "Boshqaruv"
+                    },
+                ]
+            },
+            {
+                id: 33,
+                g_fac: "Xodimlarni boshqarish",
+                they: [
+                    {
+                        name: "Xodimlarni boshqarish"
+                    }
+                ]
+            },
+            {
+                id: 34,
+                g_fac: "Biznes-informatika",
+                they: [
+                    {
+                        name: "Biznes-informatika"
+                    }
+                ]
+            },
+            {
+                id: 35,
+                g_fac: "Davlat va shahar ma’muriyati",
+                they: [
+                    {
+                        name: "Davlat va shahar ma’muriyati"
+                    }
+                ]
+            },
+            {
+                id: 36,
+                g_fac: "Axborot xavfsizligi",
+                they: [
+                    {
+                        name: "Axborot xavfsizligi"
+                    }
+                ]
+            },
+            {
+                id: 37,
+                g_fac: "Turizm",
+                they: [
+                    {
+                        name: "Turizm"
+                    }
+                ]
+            },
+            {
+                id: 38,
+                g_fac: "Savdo biznesi",
+                they: [
+                    {
+                        name: "Savdo biznesi"
+                    }
+                ]
+            },
+            {
+                id: 39,
+                g_fac: "Mehmonxona biznesi",
+                they: [
+                    {
+                        name: "Mehmonxona biznesi"
+                    }
+                ]
+            },
+            {
+                id: 40,
+                g_fac: "Agronomiya",
+                they: [
+                    {
+                        name: "Agronomiya"
+                    }
+                ]
+            },
+            {
+                id: 41,
+                g_fac: "Agroinjeneriya",
+                they: [
+                    {
+                        name: "Agroinjeneriya"
+                    }
+                ]
+            },
+            {
+                id: 42,
+                g_fac: "Zootexnika",
+                they: [
+                    {
+                        name: "Zootexnika"
+                    }
+                ]
+            },
+            {
+                id: 43,
+                g_fac: "Veterenariya",
+                they: [
+                    {
+                        name: "Veterenariya"
+                    }
+                ]
+            },
+            {
+                id: 44,
+                g_fac: "Yer tuzish va kadastrlar",
+                they: [
+                    {
+                        name: "Yer tuzish va kadastrlar"
+                    }
+                ]
+            },
+            {
+                id: 45,
+                g_fac: "Elektroenergetika va elektrotexnika",
+                they: [
+                    {
+                        name: "Elektroenergetika va elektrotexnika"
+                    }
+                ]
+            },
+            {
+                id: 46,
+                g_fac: "Mashinasozlik ",
+                they: [
+                    {
+                        name: "Mashinasozlik"
+                    }
+                ]
+            },
+            {
+                id: 46,
+                g_fac: "Biotexnik tizimlar va texnologiyalar",
+                they: [
+                    {
+                        name: "Biotexnik tizimlar va texnologiyalar"
+                    }
+                ]
+            },
+            {
+                id: 46,
+                g_fac: "Informatsion tizimlar va texnologiyalar",
+                they: [
+                    {
+                        name: "Informatsion tizimlar va texnologiyalar"
+                    }
+                ]
+            },
+            {
+                id: 47,
+                g_fac: "Me’morchilik",
+                they: [
+                    {
+                        name: "Me’morchilik"
+                    }
+                ]
+            },
+            {
+                id: 48,
+                g_fac: "Texnosfera xavfsizligi ",
+                they: [
+                    {
+                        name: "Texnosfera xavfsizligi "
+                    }
+                ]
+            },
+        ],
+    },
+    {
+        id: 24,
+        name: "LENINGRAD DAVLAT UNIVERSITETI",
+        img: "leningraddu",
+        country: "Rossiya",
+        address: "Rossiya, Sankt-Peterburg",
+        im_country: "rossiya",
+        im_uni: "leningraddu",
+        m_address: "196605, г. Санкт-Петербург, Пушкин, Петербургское шоссе, д.10",
+        info1:"A.S.Pushkin  nomidagi Leningrad davlat universiteti." +
+            " Leningrad viloyatidagi davlat avtonom oliy o'quv yurti. Universitet 1992 yil" +
+            " 28 martda Leningrad viloyati hukumatining qarori bilan tashkil etilgan va Leningrad" +
+            " viloyat pedagogika instituti deb nomlangan, yil oxirida tuzilma o'zgargan va bu nomning" +
+            " o'zgarishiga olib kelgan - Leningrad viloyati o'qituvchilar malakasini oshirish instituti. " +
+            "1999 yilda institutga rus shoiri Aleksandr Pushkin nomi berildi. Keyingi yili Leningrad " +
+            "viloyat pedagogika kolleji, 2009 yilda - Pikalevskiy va Viborg pedagogika kollejlari tarkibiga kirdi.",
+        info2: "Universitet 2008 yilda qayta tashkil etilgandan so'ng A.S.Pushkin nomidagi Leningrad davlat " +
+            "universitetining rasmiy nomini oldi " +
+            "va 2011 yilda Kiril va Metodiy nomidagi Luga dehqon davlat instituti bilan birlashishi tufayli " +
+            "kengaytirildi.",
+        info3: "2011 yilda universitet Ta'lim va fan vazirligidan talabalar uchun eksperimental kredit berish " +
+            "doirasida talabalar uchun universitetlar tomonidan past stavka bo'yicha, o'sha paytda - taxminan 5%" +
+            " ta'lim krediti oldi.  2016 yil ma'lumotlariga ko'ra," +
+            " universitetni tugatgandan so'ng, bitiruvchilarning 80 foizga yaqini ish bilan ta'minlangan.",
+        fac: [
+            {
+                id: 1,
+                g_fac: "Tabiiy fanlar, geografiya va turizm fakulteti",
+                they: [
+                    {
+                        name: "Biotexnologiya"
+                    },
+                    {
+                        name: "Xizmat"
+                    },
+                    {
+                        name: "Turizm"
+                    },
+                    {
+                        name: "Mexmonxona xizmati"
+                    },
+                    {
+                        name: "Pedogagik ta’lim"
                     },
                 ]
             },
             {
                 id: 2,
-                g_fac: "MEHMONXONA VA RESTORANLAR BOSHQARUVI",
+                g_fac: "Xorijiy til fakulteti",
                 they: [
                     {
-                        name: "Mehmonxona va restoran biznesidagi raqobat"
+                        name: "Pedogagik ta’lim (ingliz tili), (nemis tili),(fransuz tili)"
                     },
                     {
-                        name: "Mehmonxona va restoran biznesida xizmat ko'rsatish texnologiyalari va standartlari"
-                    },
-                    {
-                        name: "Tadbirlarni boshqarish"
-                    },
-                    {
-                        name: "Mehmonxona va restoran biznesini loyihalashtirish va ochish"
+                        name: "Tilshunoslik"
                     },
                 ]
             },
             {
                 id: 3,
-                g_fac: "TADBIRKORLIK",
+                g_fac: "Tarix va ijtimoiy fanlar fakulteti",
                 they: [
                     {
-                        name: "Inson resurslarini boshqarish"
-                    },
-                    {
-                        name: "Kompaniya iqtisodiyoti va moliya"
-                    },
-                    {
-                        name: "G'oyalarni yaratish va biznesni rejalashtirish"
-                    },
-                    {
-                        name: "Raqobatbardosh startap"
-                    },
+                        name: "Tarix va ijtimoiy tadqiqotlar"
+                    }
                 ]
             },
             {
                 id: 4,
-                g_fac: "GLOBAL IQTISODIYOT",
+                g_fac: "Maxsus (defektologik) ta’lim fakulteti",
                 they: [
                     {
-                        name: "Mikroiqtisodiyot"
+                        name: "Maxsus (defektologik) ta’lim fakulteti"
+                    }
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Matematika va informatika fakulteti",
+                they: [
+                    {
+                        name: "Amaliy matematika va informatika"
                     },
                     {
-                        name: "Jahon iqtisodiyoti va xalqaro iqtisodiy munosabatlar"
+                        name: "Iqtisodiyotda amaliy informatika"
                     },
                     {
-                        name: "Korporativ moliya"
-                    },
-                    {
-                        name: "Makroiqtisodiy rejalashtirish va bashorat qilish"
+                        name: "Pedogogik ta’lim ( informatika , matematika)"
                     },
                 ]
             },
+            {
+                id: 6,
+                g_fac: "Psixologiya fakulteti",
+                they: [
+                    {
+                        name: "Psixologiya"
+                    },
+                    {
+                        name: "Klinik psixologiya"
+                    },
+                    {
+                        name: "Pedogogik-psixologik ta’lim"
+                    },
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Jismoniy tarbiya fakulteti",
+                they: [
+                    {
+                        name: "Jismoniy tarbiya fakulteti"
+                    }
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Filologiya fakulteti",
+                they: [
+                    {
+                        name: "Reklama va jamoatchilik bilan aloqalar"
+                    },
+                    {
+                        name: "Jurnalistika"
+                    },
+                    {
+                        name: "Pedogogik ta’lim (rus tili va adabiyoti)"
+                    },
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Falsafa, madaniyatshunoslik va san’at fakulteti",
+                they: [
+                    {
+                        name: "Landshaft arxitekturasi"
+                    },
+                    {
+                        name: "Falsafa"
+                    },
+                    {
+                        name: "Madaniyatshunoslik"
+                    },
+                    {
+                        name: "Dizayn"
+                    },
+                ]
+            },
+            {
+                id: 10,
+                g_fac: "Iqtisodiyot fakulteti",
+                they: [
+                    {
+                        name: "Iqtisodiyot"
+                    },
+                    {
+                        name: "Boshqaruv"
+                    },
+                    {
+                        name: "Ijtimoiy masala"
+                    },
+                    {
+                        name: "Hujjatlar va arxivshunoslik"
+                    },
+                ]
+            },
+            {
+                id:11,
+                g_fac: "Huquqshunoslik fakulteti",
+                they: [
+                    {
+                        name: "Huquqshunoslik (jinoyat qonuni)"
+                    },
+                    {
+                        name: "Huquqshunoslik (fuqarolik qonuni)"
+                    },
+                ]
+            }
         ],
-        info1: " Iste'dod, bilimga bo'lgan ishtiyoq, fidoyilik, kuchli va zaif tomonlar - biz aynan shu narsani asos qilib olamiz " +
-            "va ishlab chiqamiz.\n" +
-            "            Dubay shahridagi Sinergiya Universiteti talabalar shaharchasi Dubay shahrining Jumeirah Lakes Towers" +
-            " shahrida joylashgan. Universitet Dubayning akademik landshaftida alohida o'rin tutadi, chunki universitet 10 mingdan " +
-            "ziyod biznesga ega bo'lgan eng tez rivojlanayotgan biznes hamjamiyatida joylashgan bo'lib, talabalarimizga rivojlangan" +
-            " biznes markazida o'qish uchun noyob imkoniyat yaratdik." +
-            " Bundan tashqari, bizning shaharchamizda yurish masofasidan topishingiz mumkin bo'lgan narsalar:",
-        info2: "Metro stantsiyasi\n" +
-            "Butun dunyoda obro'ga ega bo'lgan IT-kompaniyalar\n" +
-            "Dunyoga mashhur mehmonxonalar\n" +
-            "Dubay olmos, oltin va marvarid birjasi\n" +
-            "            Yangi Dubayning markazida Shayx Zayd yo'lida, ikkita metro bekati Jumeirah Lakes Towers yoki " +
-            "JLT o'rtasida joylashgan mehmonxona yashash, ishlash, o'qish va o'ynash uchun ideal joy. JLT 200 gektardan" +
-            " ziyod maydonni qamrab olgan ko'l bo'yidagi jonli jamoat tarkibiga" +
-            " 64 ta jozibali turar-joy va savdo minoralari, shuningdek mehmonxonalar, dam olish joylari va 160 ta savdo " +
-            "shoxobchalari kiradi, ularda 50 mingdan ortiq odam yashaydi va ishlaydi. Jamiyat a'zolari turli xil ochiq kafe," +
-            " restoran va bolalar o'yin maydonchalaridan bahramand bo'lishlari uchun to'rtta burama sun'iy ko'l mavjud. Mashhur" +
-            " Almas minorasi JLTning markaziy qismi universitetga yurish masofasida joylashgan O'rta Sharqdagi eng baland tijorat " +
-            "minorasi.\n" +
-            "Universitet:\n" +
-            "50 ta mamlakatdan kelgan 50,000 nafardan ortiq talabalar \n" +
-            "100 ta xalqaro akkreditatsiyadan o'tgan dasturlar\n" +
-            "1988 yil Universitet tashkil etilgan\n" +
-            "Universitet manzili: Jumeirah Lakes Towers, I klaster, Platinum Tower, 32-qavat\n" +
-            "             Sinergiya universiteti nafaqat o'qitish, o'qituvchilar va uy vazifalari bilan bog'liq. Universitetdagi talabalik hayoti turli madaniyatlar, turli xil hayajonli tadbirlar va o'yin-kulgilar, shuningdek, jamoaviy ruhning kuchliligi bilan ajralib turadi. Bizning har bir o'quvchimiz noyobdir va bizning katta oilamizga o'zlarining shaxsiy xususiyatlarini keltiradi. Va biz, o'z navbatida, har bir o'quvchiga o'z imkoniyatlarini ochib berish va eng yaxshi fazilatlarni rivojlantirishga yordam berish uchun qo'limizdan kelganicha harakat qilamiz.\n" +
-            "TALABALAR HAYOTI\n" +
-            " Sport turlari\n" +
-            "Universitetdagi sport talabalar hayotining ajralmas qismidir, uni talabalar ham, universitet xodimlari ham faol qo'llab-quvvatlaydilar. Siz basketbol, ​​futbol, ​​plyaj voleyboli, sport yugurish kabi sport tadbirlarida qatnashishingiz mumkin. Bundan tashqari, agar siz o'zingizning sport manzilingizni qo'shishni xohlasangiz, biz sizni doimo qo'llab-quvvatlaymiz!\n",
-        info3: "Universitetda o'qish doimo talabalarning faol faoliyati bilan birga keladi. Siz biz bilan 4 yil birga bo'lasiz va biz ularni hayotingizdagi eng yaxshi va unutilmas daqiqalarga aylantiramiz. \n" +
-            "Do'stlaringiz bilan birgalikda siz ko'p sonli tadbirlarni va xotirangizda abadiy qoladigan joylarni ziyorat qilasiz!Universitet muntazam ravishda talabalarni ilmiy ko'rgazmalar va o'quv konferentsiyalariga yuboradi. Bu talabalarga o'zlarining shaxsiy salohiyatini ochib berish va kelajakda o'zlarining martabalarini oshirishda yordam beradigan sertifikatlar olishlariga imkon beradi." +
-            "Dam olish shahri\n" +
-            "Dubayda yashaganingizda, har kuni plyajda \"ta'til\" qilishingiz mumkin! Bundan tashqari, bu erda deyarli hech qachon yomg'ir yog'maydi.Ishga joylashish imkoniyatlari\n" +
-            "Dubay har yili 15 million tashrif buyuradigan ulkan sayyohlik maskani bo'lib, uni biznes va martaba uchun ajoyib joyga aylantiradi.Turli xil hamjamiyat\n" +
-            "Faqat bitta shaharda butun dunyo bo'ylab yangi odamlar bilan tanishing. Hayot uchun yangi do'stlar, sheriklar va ustozlar toping!Shaxsiy xavfsizlik\n" +
-            " BAA xavfsizlik bo'yicha dunyoda uchinchi o'rinda turadi. Agar siz bu yerda hamyoningizni yo'qotib qo'ysangiz ham, uni qaytarib olishingiz mumkin!"
+    },
+    {
+        id: 25,
+        name: "MOSKVA TADBIRKORLIK AKADEMIYASI",
+        img: "mda",
+        country: "Rossiya",
+        address: "Rossiya, Moskva",
+        im_country: "rossiya",
+        im_uni: "mda",
+        m_address: "ул. Планетная, 36, Москва, Россия, 125319",
+        info1:"\"Moskva tadbirkorlik akademiyasi\" nodavlat oliy ta'lim muassasasi 1997 " +
+            "yilda tashkil etilgan. 22 yil davomida Akademiya yangi avlod talab qilinadigan " +
+            "oliy o'quv yurtlaridan biriga aylandi, tadbirkorlar, davlat xizmatchilari va tashkilot " +
+            "rahbarlarini kasbiy tayyorgarligi uchun yangi talablarni " +
+            "belgilab berdi. Akademiya o'zining rivojlanish yillari davomida muhim ilmiy salohiyatga ega bo'ldi.",
+        info2: "Biz mutaxassislarni tayyorlash uchun tashkiliy tuzilmalar, usullar," +
+            " jarayonlar va moddiy resurslarni o'z ichiga olgan sifat menejmenti tizimini yaratishga muvaffaq bo'ldik.",
+        info3: "  Akademiyaning asosiy vazifasi - Rossiyaning iqtisodiy va innovatsion rivojlanishiga" +
+            " ko'maklashish, Rossiya tadbirkorligini tiklash, " +
+            "zamonaviy iqtisodiy va ijtimoiy sharoitlarda samarali ishlay oladigan yuqori malakali " +
+            "kadrlarni tayyorlash.",
+        fac: [
+            {
+                id: 1,
+                g_fac: "Bank ishi",
+                they: [
+                    {
+                        name: "Bank ishi"
+                    },
+                ]
+            },
+            {
+                id: 2,
+                g_fac: "Buxgalteriya hisobi, tahlil va audit",
+                they: [
+                    {
+                        name: "Buxgalteriya hisobi, tahlil va audit"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                g_fac: "Moliya va kredit",
+                they: [
+                    {
+                        name: "Moliya va kredit"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                g_fac: "Korporativ moliya",
+                they: [
+                    {
+                        name: "Korporativ moliya"
+                    }
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Tadbirkorlik",
+                they: [
+                    {
+                        name: "Tadbirkorlik"
+                    },
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Marketing",
+                they: [
+                    {
+                        name: "Marketing"
+                    },
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Logistika",
+                they: [
+                    {
+                        name: "Logistika"
+                    }
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Sog’liqni saqlashni boshqarish",
+                they: [
+                    {
+                        name: "Sog’liqni saqlashni boshqarish"
+                    },
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Qurilishni boshqarish",
+                they: [
+                    {
+                        name: "Qurilishni boshqarish"
+                    },
+                ]
+            },
+            {
+                id: 10,
+                g_fac: "Mehmonxona va restoran biznesini boshqarish",
+                they: [
+                    {
+                        name: "Mehmonxona va restoran biznesini boshqarish"
+                    },
+                ]
+            },
+            {
+                id:11,
+                g_fac: "Davlat kommunal xizmati",
+                they: [
+                    {
+                        name: "Davlat kommunal xizmati"
+                    },
+                ]
+            },
+            {
+                id:12,
+                g_fac: "Savdo sohasida biznesni tashkil etish va boshqarish",
+                they: [
+                    {
+                        name: "Savdo sohasida biznesni tashkil etish va boshqarish"
+                    }
+                ]
+            },
+            {
+                id:13,
+                g_fac: "Fuqarolik qonuni ",
+                they: [
+                    {
+                        name: "Fuqarolik qonuni "
+                    }
+                ]
+            },
+            {
+                id:14,
+                g_fac: "Jinoyat qonuni",
+                they: [
+                    {
+                        name: "Jinoyat qonuni"
+                    }
+                ]
+            },
+            {
+                id:15,
+                g_fac: "Logistika va ta’minot zanjirini boshqarish",
+                they: [
+                    {
+                        name: "Logistika va ta’minot zanjirini boshqarish"
+                    }
+                ]
+            },
+            {
+                id:16,
+                g_fac: "Logistika va ta’minot zanjirini boshqarish",
+                they: [
+                    {
+                        name: "Sport boshqaruvi"
+                    }
+                ]
+            }
+        ],
+    },
+    {
+        id: 26,
+        name: "Sankt-Peterburg Davlat Universiteti",
+        img: "sdu",
+        country: "Rossiya",
+        address: "Rossiya, Moskva",
+        im_country: "rossiya",
+        im_uni: "sdu",
+        m_address: "ул. Планетная, 36, Москва, Россия, 125319",
+        info1:" Federal davlat byudjetli oliy ta'lim muassasasi (Sankt-Peterburg davlat universiteti)" +
+            " eng qadimgi, yirik va  yetakchi klassik" +
+            " universitetlardan biridir. Universitet Rossiyadagi eng muhim fan, ta'lim va madaniyat" +
+            " markazlaridan biridir.",
+        info2: "Universitet tashkil topgan sana masalasi 1990 yilgi 1999 yilligini nishonlash" +
+            " arafasida qizg'in munozaralarga sabab bo'ldi.\n" +
+            "Bir fikrga ko'ra, dastlab faqat Leningrad tarixchilari tomonidan qo'llab-quvvatlangan ," +
+            " zamonaviy Avliyo 1758-1765 yillarda M.V. Lomonosov Akademik Universitet rektori " +
+            "bo'lgan. Hozirda ushbu versiya universitet va shtat rahbariyati tomonidan rasmiy ravishda " +
+            "qabul qilingan. ",
+        info3: " Rossiya podsholigida boshqa talabalar singari Universitet " +
+            "talabalari ham forma kiyib yurishgan." +
+            " Universitet talabalarining qalpoqchasi quyuq yashil rangda," +
+            " moviy truboprovod va ko'k tasma bilan bo'yalgan.",
+        fac: [
+            {
+                id: 1,
+                g_fac: "Biologiya fakulteti",
+                they: [
+                    {
+                        name: "Biologiya"
+                    },
+                    {
+                        name: "Ekologiya va tabiatni boshqarish"
+                    }
+                ]
+            },
+            {
+                id: 2,
+                g_fac: "Sharqshunoslik fakulteti",
+                they: [
+                    {
+                        name: "Sharq va Afrika tadqiqotlari"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                g_fac: "San’at fakulteti",
+                they: [
+                    {
+                        name: "Restavratsiya"
+                    },
+                    {
+                        name: "Musiqiy va cholg’u san’ati"
+                    },
+                    {
+                        name: "Amaliy informatika"
+                    },
+                    {
+                        name: "Dizayn "
+                    },
+                    {
+                        name: "Dekorativ-amaliy san’at va xalq hunarmandchiligi"
+                    },
+                    {
+                        name: "Vokal san’ati"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                g_fac: "Matematika va mexanika fakulteti",
+                they: [
+                    {
+                        name: "Axborot tizimlarini dasturlash va boshqarish"
+                    },
+                    {
+                        name: "Dasturiy ta’minot"
+                    },
+                    {
+                        name: "Mexanik va matematik modellashtirish"
+                    },
+                    {
+                        name: "Matematika"
+                    },
+                    {
+                        name: "Amaliy matematika va informatika"
+                    },
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Xalqaro munosabatlar fakulteti",
+                they: [
+                    {
+                        name: "Xalqaro munosabatlar"
+                    },
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Siyosatshunoslik fakulteti",
+                they: [
+                    {
+                        name: "Siyosatshunoslik"
+                    },
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Amaliy matematika va boshqarish jarayonlari fakulteti",
+                they: [
+                    {
+                        name: "Amaliy matematika va fizika"
+                    },
+                    {
+                        name: "Amaliy matematika va informatika"
+                    },
+                    {
+                        name: "Fundamental informatika va axborot texnologiyalari"
+                    },
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Sog’liqni saqlashni boshqarish",
+                they: [
+                    {
+                        name: "Sog’liqni saqlashni boshqarish"
+                    },
+                ]
+            },
+            {
+                id: 9,
+                g_fac: "Liberal san’at va fanlar fakulteti",
+                they: [
+                    {
+                        name: "Restavratsiya"
+                    },
+                    {
+                        name: "Musiqiy va cholg’u san’ati"
+                    },
+                    {
+                        name: "Dizayn "
+                    },
+                    {
+                        name: "Vokal san’ati"
+                    },
+                    {
+                        name: "Muzeologiya, madaniy va tabiiy meros   ob’ektlarini muhofaza qilish"
+                    },
+                    {
+                        name: "Kulturologiya"
+                    },
+                    {
+                        name: " San’at va gumanitar fanlar"
+                    },
+                    {
+                        name: "MDekorativ-amaliy san’at va xalq hunarmandchiligi"
+                    },
+                    {
+                        name: "San’at tarixi"
+                    },
+                ]
+            },
+            {
+                id: 10,
+                g_fac: "Sotsiologiya fakulteti ",
+                they: [
+                    {
+                        name: "Ijtimoiy masala"
+                    },
+                    {
+                        name: "Sotsiologiya "
+                    },
+
+                ]
+            },
+            {
+                id:11,
+                g_fac: "Fizika fakulteti",
+                they: [
+                    {
+                        name: "Amaliy matematika va fizika"
+                    },
+                    {
+                        name: "Fizika"
+                    },
+                    {
+                        name: "Radiofizika"
+                    },
+                ]
+            },
+            {
+                id:12,
+                g_fac: "Savdo sohasida biznesni tashkil etish va boshqarish",
+                they: [
+                    {
+                        name: "Savdo sohasida biznesni tashkil etish va boshqarish"
+                    }
+                ]
+            },
+            {
+                id:13,
+                g_fac: "Filologiya fakulteti",
+                they: [
+                    {
+                        name: "Tilshunoslik"
+                    },
+                    {
+                        name: "Filologiya"
+                    }
+                ]
+            },
+            {
+                id:14,
+                g_fac: "Iqtisodiyot fakulteti",
+                they: [
+                    {
+                        name: "Xodimlarni boshqarish"
+                    },
+                    {
+                        name: "Biznes-informatika"
+                    },
+                    {
+                        name: "Iqtisod"
+                    },
+                ]
+            },
+            {
+                id:15,
+                g_fac: "Huquqshunoslik fakulteti",
+                they: [
+                    {
+                        name: "Huquqshunoslik"
+                    }
+                ]
+            }
+        ],
     },
 
 ]

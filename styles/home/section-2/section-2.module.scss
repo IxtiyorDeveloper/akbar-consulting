@@ -61,6 +61,7 @@
         letter-spacing: 1px;
         font-family: $Montserrat-font;
         text-align: center;
+        font-weight: 600;
       }
 
       .text {
@@ -70,6 +71,7 @@
         letter-spacing: 1px;
         text-align: center;
         margin-top: 25px;
+        font-weight: 600;
       }
     }
 
@@ -101,7 +103,7 @@
         height: 400px;
 
         &:first-child {
-          background: url('../../../public/home/countries/russian1.jpg') rgba(0, 0, 15, 0.6);
+          background: url('../../../public/home/countries/r1.jpg') rgba(0, 0, 15, 0.6);
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -151,7 +153,7 @@
         }
 
         &:nth-child(2) {
-          background: url("../../../public/home/countries/kazakhistan.jpg") rgba(0, 0, 15, 0.6);
+          background: url("../../../public/home/countries/q1.jpeg") rgba(0, 0, 15, 0.6);
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -298,7 +300,7 @@
         }
 
         &:nth-child(5) {
-          background: url("../../../public/home/countries/dubai.jpg");
+          background: url("../../../public/home/countries/d1.jpg");
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -347,7 +349,7 @@
         }
 
         &:nth-child(6) {
-          background: url("../../../public/home/three.jpg");
+          background: url("../../../public/home/countries/t1.jpg");
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;

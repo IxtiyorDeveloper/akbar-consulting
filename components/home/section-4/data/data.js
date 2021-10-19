@@ -1,7 +1,7 @@
 export default  [
     {
         id: 1,
-        name: "Jumaniyazov Ruslan",
+        name: "Abdullayev Toshqinboy",
         text: "Men O’sh Davlat Texnologiya unversiteti “Komputer texnologiyalari”" +
             " fakultetiga topshirdim. “Akbar Consulting “ firmasi yordami bilan talabalikka erishdim" +
             " va menga 1 yillik sug’urta polisini sovg’a sifatida taqdim qildi. " +
@@ -22,7 +22,7 @@ export default  [
     },
     {
         id: 3,
-        name: "Abdullayev Toshqinboy",
+        name: "Jumaniyazov Ruslan",
         text: "Rossiyadagi xalqaro miqyosga ega “Sinergiya “ universitetini tanladim va " +
             "unga o’qishga kirdim. Sizlarga ham shuni tavsiya qilaman. O’qishga kira olmadim" +
             " deb tushkunlikka tushib" +

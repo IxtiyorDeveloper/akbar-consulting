@@ -38,15 +38,15 @@ function Footer({LinkHandler}) {
                             </a>
                         </div>
                         <div className={styles.linksIn}>
-                        <a className={`${styles1.spin3} ${styles1.circle3}`}
-                           href="https://www.youtube.com/channel/UCNe_4Kv8DA2Q00D_w6klUeg">
-                            <GrYoutube className={styles1.icon3}/>
-                        </a>
+                            <a className={`${styles1.spin3} ${styles1.circle3}`}
+                               href="https://www.youtube.com/channel/UCNe_4Kv8DA2Q00D_w6klUeg">
+                                <GrYoutube className={styles1.icon3}/>
+                            </a>
                         </div>
                         <div className={styles.linksIn}>
-                        <a className={`${styles1.spin4} ${styles1.circle4}`} href="http://t.me/akbarconsulting">
-                            <FaTelegramPlane className={styles1.icon4}/>
-                        </a>
+                            <a className={`${styles1.spin4} ${styles1.circle4}`} href="http://t.me/akbarconsulting">
+                                <FaTelegramPlane className={styles1.icon4}/>
+                            </a>
                         </div>
                     </div>
                     <div className={styles.applyWr}>
@@ -71,9 +71,9 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='asosiyLink'
-                      onClick={() =>LinkScrollHandler('asosiyLink')}
+                      onClick={() => LinkScrollHandler('asosiyLink')}
                 >
-                    <IoHome className={styles.icon}/>    Asosiy
+                    <IoHome className={styles.icon}/> Asosiy
                 </Link>
                 <Link activeClass="active"
                       to="davlatlar"
@@ -84,7 +84,7 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='davlatlarLink'
-                      onClick={() =>LinkScrollHandler('davlatlarLink')}
+                      onClick={() => LinkScrollHandler('davlatlarLink')}
                 >
                     <GiWorld className={styles.icon}/> Davlatlar
                 </Link>
@@ -97,7 +97,7 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='sertifikatlarLink'
-                      onClick={() =>LinkScrollHandler('sertifikatlarLink')}
+                      onClick={() => LinkScrollHandler('sertifikatlarLink')}
                 >
                     <AiOutlineFileProtect className={styles.icon}/> Sertifikatlar
                 </Link>
@@ -110,7 +110,7 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='talabalarLink'
-                      onClick={() =>LinkScrollHandler('talabalarLink')}
+                      onClick={() => LinkScrollHandler('talabalarLink')}
                 >
                     <FaGraduationCap className={styles.icon}/> Talabalar
                 </Link>
@@ -123,7 +123,7 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='servislarLink'
-                      onClick={() =>LinkScrollHandler('servislarLink')}
+                      onClick={() => LinkScrollHandler('servislarLink')}
                 >
                     <IoMdSettings className={styles.icon}/> Servislar
                 </Link>
@@ -136,9 +136,9 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='savollarLink'
-                      onClick={() =>LinkScrollHandler('savollarLink')}
+                      onClick={() => LinkScrollHandler('savollarLink')}
                 >
-                    <FaQuestion className={styles.icon}/>    Savollar
+                    <FaQuestion className={styles.icon}/> Savollar
                 </Link>
                 <Link activeClass="active"
                       to="aloqa"
@@ -149,7 +149,7 @@ function Footer({LinkHandler}) {
                       isDynamic={true}
                       ignoreCancelEvents={false}
                       id='aloqaLink'
-                      onClick={() =>LinkScrollHandler('aloqaLink')}
+                      onClick={() => LinkScrollHandler('aloqaLink')}
                 >
                     <FiPhoneCall className={styles.icon}/> Aloqa
                 </Link>
@@ -162,23 +162,43 @@ function Footer({LinkHandler}) {
                     <div className={styles.flex}>
                         <div className={styles.col1}>
                             <div className={styles.row}>
-                                <a className={styles.two} href="tel:+99893 093 26 26">
-                                    +99893 093 26 26
+                                <a className={styles.two} href="tel:+99893914340077">
+                                    Bosh office: 91 434 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="tel:+99893 093 26 26">
-                                    +99893 093 27 27
+                                <a className={styles.two} href="tel:+99893914350077">
+                                    Bosh office: 91 435 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
-                                <div className={styles.two}>
-                                    consultation@gmail.com
-                                </div>
+                                <a className={styles.two} href="mailto:info@akbarconsulting.uz">
+                                    info@akbarconsulting.uz
+                                </a>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="http://t.me/akbarconsulting">
-                                    @akbarconsulting
+                                <a className={styles.two} href="tel:+998906480077">
+                                    Namangan: 90 648 00 77
+                                </a>
+                            </div>
+                            <div className={styles.row}>
+                                <a className={styles.two} href="tel:+998886380077">
+                                    Yangibozor: 88 638 00 77
+                                </a>
+                            </div>
+                            <div className={styles.row}>
+                                <a className={styles.two} href="tel:+998976380077">
+                                    Bog`ot: 97 638 00 77
+                                </a>
+                            </div>
+                            <div className={styles.row}>
+                                <a className={styles.two} href="tel:+998976390077">
+                                    Yangiariq: 97 639 00 77
+                                </a>
+                            </div>
+                            <div className={styles.row}>
+                                <a className={styles.two} href="tel:+998886390077">
+                                    Beruniy: 88 639 00 77
                                 </a>
                             </div>
                         </div>
@@ -203,8 +223,8 @@ function Footer({LinkHandler}) {
                                 </div>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="http://t.me/akbarconsulting">
-                                    www.akbar-consulting.com
+                                <a className={styles.two} href="https://akbarconsulting.uz">
+                                    akbarconsulting.com
                                 </a>
                             </div>
                         </div>
@@ -217,11 +237,11 @@ function Footer({LinkHandler}) {
 
 const mapStateToProps = (state) => ({
     country: state.sidebar.country,
-    click:state.sidebar.click,
-    sidebar:state.sidebar.sidebar,
+    click: state.sidebar.click,
+    sidebar: state.sidebar.sidebar,
 });
 
 export default connect(
     mapStateToProps,
-    {LinkHandler,toggle}
+    {LinkHandler, toggle}
 )(Footer);

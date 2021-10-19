@@ -14,12 +14,11 @@ const {Search} = Input;
 
 export default function Faculties({id}) {
 
-    const [list, setList] = useState(data[parseInt(id)].fac)
+    const [list, setList] = useState(data.find(h => h.id === parseInt(id)).fac)
     const [bool, setBool] = useState(true)
     const onSearch = value => {
-        setList(data[parseInt(id)].fac.filter(i => i.g_fac.toLowerCase().includes(value.toLowerCase())))
+        setList(data.find(h => h.id === parseInt(id)).fac.filter(i => i.g_fac.toLowerCase().includes(value.toLowerCase())))
     }
-    console.log(id)
     const stylesSearch = {
         display: "flex"
     }

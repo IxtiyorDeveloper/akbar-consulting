@@ -21,11 +21,11 @@ function Home() {
             <Section2/>
             <Section3
                 text1={"Davlatlar"}
-                num1={6}
+                num1={20}
                 text2={"Universitetlar"}
-                num2={50}
+                num2={100}
                 text3={"Talabalar"}
-                num3={800}
+                num3={1000}
                 button = {"Batafsil"}
                 link={'/universities'}
             />

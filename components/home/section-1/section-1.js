@@ -219,8 +219,8 @@ function Section1({click, toggle,sidebar}) {
                         >
                             Aloqa
                         </Link>
-                        <a href="tel:+99893 093 27 27" className={styles.menu}>
-                            +99893 093 27 27
+                        <a href="tel:+998942557777" className={styles.menu}>
+                            +998 94 255 77 77
                         </a>
                     </div>
                     <div className={styles.sidebarToggle} onClick={() => toggle()}>

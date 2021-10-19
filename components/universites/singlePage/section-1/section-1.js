@@ -212,7 +212,7 @@ function Section1({ country }) {
                                 </div>
                                 <Section3
                                     text1={"Fakultetlar"}
-                                    num1={data[parseInt(router.query.id)].fac.map(i => i.they.length).reduce((sum, i) => sum + i)}
+                                    num1={data.find(i => i.id === parseInt(router.query.id)).fac.map(i => i.they.length).reduce((sum, i) => sum + i)}
                                     text2={"Studentlar"}
                                     num2={55000}
                                     text3={"Expertlar"}
