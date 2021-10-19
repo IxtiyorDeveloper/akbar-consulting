@@ -2113,10 +2113,10 @@ export default [
     },
     {
         id: 12,
-        name: "O'sh gumanitar pedagogika instituti",
+        name: "O'sh davlat pedagogika instituti",
         img: "oshgpi",
         country: "Qirg'iziston",
-        address: "Osh davlat universiteti",
+        address: "Qirg'iziston, Osh shahri",
         im_country: "qirgiziston",
         im_uni: "oshgpi",
         m_address: "Qirg’iziston Respublikasi, O’sh viloyati, O’sh shahri, Isanova ko’chasi",
