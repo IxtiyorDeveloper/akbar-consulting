@@ -163,17 +163,12 @@ function Footer({LinkHandler}) {
                         <div className={styles.col1}>
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+99893914340077">
-                                    Bosh office: 91 434 00 77
+                                     ofis: 91 434 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+99893914350077">
-                                    Bosh office: 91 435 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="mailto:info@akbarconsulting.uz">
-                                    info@akbarconsulting.uz
+                                     ofis: 91 435 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
@@ -199,6 +194,11 @@ function Footer({LinkHandler}) {
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+998886390077">
                                     Beruniy: 88 639 00 77
+                                </a>
+                            </div>
+                            <div className={styles.row}>
+                                <a className={styles.two} href="mailto:info@akbarconsulting.uz">
+                                    info@akbarconsulting.uz
                                 </a>
                             </div>
                         </div>
