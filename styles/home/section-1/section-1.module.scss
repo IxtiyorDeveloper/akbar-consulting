@@ -129,6 +129,7 @@
         font-family: $Montserrat-font;
         font-size: 32px;
         background-color: $main-color;
+        font-weight: 600;
       }
 
       .text {
@@ -137,6 +138,7 @@
         font-size: 24px;
         background-color: $black-one;
         color: white;
+        font-weight: 600;
       }
 
       .apply {
@@ -152,6 +154,7 @@
           font-size: 18px;
           background-color: $black-two;
           color: white;
+          font-weight: 600;
           display: flex;
           text-transform: uppercase;
           letter-spacing: 1px;
