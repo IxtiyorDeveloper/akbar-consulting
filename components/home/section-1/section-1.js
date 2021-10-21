@@ -24,7 +24,7 @@ function Section1({click, toggle,sidebar}) {
             return 0;
         }
     }
-
+   console.log(link)
     const [offTop, setOffTop] = useState(getPageYOffSet());
 
     useEffect(() => {
@@ -103,7 +103,7 @@ function Section1({click, toggle,sidebar}) {
     return (
         <div>
             <div style={stylesMain} onClick={() => toggle()}/>
-            <div className={styles.container} id="asosiy">
+            <div className={styles.container}>
                 <div className={styles.header} style={stylesHeader}>
                     <div className={styles.then}>
                         <img src="/home/logosvg.svg" alt="" className={styles.img}/>
@@ -231,7 +231,7 @@ function Section1({click, toggle,sidebar}) {
                     {
                         data.map((i, k) => {
                             return (
-                                <div key={k}>
+                                <div key={k} id="asosiy">
                                     <div className={styles.sliderWrapper}
                                          style={{backgroundImage: `url('/home/${i.img}.jpg')`}}
                                     >

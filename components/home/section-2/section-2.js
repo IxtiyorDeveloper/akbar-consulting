@@ -7,7 +7,7 @@ import {UNChange} from "../../redux/reducers/reducer/universities";
 function Section2({UNChange, country}) {
 
     return (
-        <div className={styles.container} id="davlatlar">
+        <div className={styles.container}>
             <div className={styles.boxWrapper}>
                 <div className={styles.box}>
                     <div className={styles.title}>
@@ -44,7 +44,7 @@ function Section2({UNChange, country}) {
                     </div>
                 </div>
             </div>
-            <div className={styles.countries}>
+            <div className={styles.countries} id="davlatlar">
                 <div className={styles.cTitle}>
                     Hamkor davlatlar
                 </div>
