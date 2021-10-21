@@ -163,12 +163,12 @@ function Footer({LinkHandler}) {
                         <div className={styles.col1}>
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+99893914340077">
-                                     ofis: 91 434 00 77
+                                    Bosh ofis: 91 434 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+99893914350077">
-                                     ofis: 91 435 00 77
+                                  Bosh ofis: 91 435 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
