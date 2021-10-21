@@ -162,12 +162,12 @@ function Footer({LinkHandler}) {
                     <div className={styles.flex}>
                         <div className={styles.col1}>
                             <div className={styles.row}>
-                                <a className={styles.two} href="tel:+99893914340077">
+                                <a className={styles.two} href="tel:+998914340077">
                                     Bosh ofis: 91 434 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="tel:+99893914350077">
+                                <a className={styles.two} href="tel:+998914350077">
                                   Bosh ofis: 91 435 00 77
                                 </a>
                             </div>
