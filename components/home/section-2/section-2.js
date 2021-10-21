@@ -27,7 +27,7 @@ function Section2({UNChange, country}) {
                 <div className={styles.box}>
                     <img src='/home/section-2/paper.svg' className={styles.img}/>
                     <div className={styles.title1}>
-                        Xujjat
+                        Hujjat
                     </div>
                     <div className={styles.text}>
                         Online va offline hujjat topshirish imkoniyati va universitetdan beriladigan barcha

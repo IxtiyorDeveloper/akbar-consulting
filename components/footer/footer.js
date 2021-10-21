@@ -167,8 +167,8 @@ function Footer({LinkHandler}) {
                                 </a>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998914350077">
-                                  Bosh ofis: 91 435 00 77
+                                <a className={styles.two} href="tel:+998904350077">
+                                  Bosh ofis: 90 435 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>
@@ -223,8 +223,8 @@ function Footer({LinkHandler}) {
                                 </div>
                             </div>
                             <div className={styles.row}>
-                                <a className={styles.two} href="https://akbarconsulting.uz">
-                                    akbarconsulting.com
+                                <a className={styles.two} href="https://everbestlab.com">
+                                 Powered by EverbestLab
                                 </a>
                             </div>
                         </div>

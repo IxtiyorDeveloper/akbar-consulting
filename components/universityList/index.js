@@ -4265,7 +4265,7 @@ export default [
         name: "Sankt-Peterburg Davlat Universiteti",
         img: "sdu",
         country: "Rossiya",
-        address: "Rossiya, Moskva",
+        address: "Rossiya, Sankt-Peterburg",
         im_country: "rossiya",
         im_uni: "sdu",
         m_address: "ул. Планетная, 36, Москва, Россия, 125319",
