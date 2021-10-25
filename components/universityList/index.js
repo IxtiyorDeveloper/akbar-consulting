@@ -932,7 +932,7 @@ export default [
             },
         ],
         url:"none",
-        price:1360,
+        price:950,
         info1: "Rossiya Federatsiyasi Prezidenti huzuridagi Rossiya Xalq xo'jaligi va davlat boshqaruvi akademiyasi (RXXvDBA)ning eng yirik mintaqaviy kampusi Sankt-Peterburgda joylashgan. Biz qiyin, ammo juda muhim vazifani bajaramiz - samarali qarorlar qabul qilishni o'rgatamiz, o'quvchilarimizga xalqaro standartlarga javob beradigan ta'lim beramiz va ular uchun tubdan yangi imkoniyatlar dunyosini ochamiz. Har bir inson tanlagan kasbini o'rganadigan, haqiqiy do'stlarini topadigan," +
             " o'z loyihalarini amalga oshiradigan va imkonsiz narsa bo'lmagan dunyo insoniga aylanadigan bo’lib yetishadi.",
         info2: "Bugungi kunda RXXvDBA:\n" +
