@@ -110,23 +110,13 @@
 }
 @media (max-width: 1100px) {
   .container {
-
-      .link {
-        .menu {
-          padding: 16px;
-          font-size: 14px;
-        }
+    .link {
+      display: none;
+    }
+    .sidebarToggle{
+      display: flex;
     }
   }
 }
-@media (max-width: 992px) {
-  .container {
-      .link {
-        display: none;
-      }
-      .sidebarToggle{
-        display: flex;
-      }
-  }
-}
+
 

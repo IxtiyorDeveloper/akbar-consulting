@@ -16,6 +16,8 @@ import {BsCamera, BsCardHeading} from "react-icons/bs"
 import Link from "next/link"
 import Faculties from "../faculties/faculties";
 import {useRouter} from "next/router";
+import ReactPlayer from "react-player";
+import {useMediaQuery} from "react-responsive";
 
 
 function Arrow(props) {
@@ -29,16 +31,17 @@ function Arrow(props) {
     );
 }
 
-function Section1({ country }) {
+function Section1({country}) {
     const router = useRouter();
+    const is900 = useMediaQuery({query: '(max-width: 900px)'});
 
 
     const [dropdown, setDropdown] = useState(false);
     const [currency, setCurrency] = useState('USA DOLLAR');
     const [currencySym, setCurrencySm] = useState('$');
     const [currencyList, setCurrencyList] = useState({})
-    const [sum, setSum] = useState(710)
-    const [sum1, setSum1] = useState(710)
+    const [sum, setSum] = useState(data.find(i => i.id === parseInt(router.query.id)).price)
+    const [sum1, setSum1] = useState(data.find(i => i.id === parseInt(router.query.id)).price)
     const bg = {
         display: `${dropdown ? "block" : "none"}`,
         width: "100%",
@@ -64,9 +67,7 @@ function Section1({ country }) {
     const handleCur = (a) => {
         if (a === 'uz') {
             setCurrency('UZ SUM');
-            // const cal1 = sum / currencyList.rates.USD
-            // const cal2 = cal1 * currencyList.rates.UZS
-            const cal2 = sum * 10500
+            const cal2 = sum * 10700
             setSum1(Math.floor(cal2))
             setCurrencySm('UZS')
         }
@@ -75,46 +76,7 @@ function Section1({ country }) {
             setCurrency('USA DOLLAR');
             setSum1(Math.floor(cal2))
             setCurrencySm('$')
-            // const cal1 = sum / currencyList.rates.USD
-            // const cal2 = cal1 * currencyList.rates.USD
         }
-        // if (a === 'try') {
-        //     setCurrency('TRY LIRA');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.TRY
-        //     setSum1(Math.floor(cal2))
-        // }
-        // if (a === 'tj') {
-        //     setCurrency('TJ SOMONI');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.TJS
-        //     setSum1(Math.floor(cal2))
-        // }
-        // if (a === 'kr') {
-        //     setCurrency('KR SUM');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.KGS
-        //     setSum1(Math.floor(cal2))
-        // }
-        // if (a === 'kz') {
-        //     setCurrency('KZ TENGE');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.KZT
-        //     setSum1(Math.floor(cal2))
-        // }
-        // if (a === 'uae') {
-        //     setCurrency('UAE DIRHAM');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.AED
-        //     setSum1(Math.floor(cal2))
-        // }
-        // if (a === 'ru') {
-        //     setCurrency('RU RUBL');
-        //     const cal1 = sum / currencyList.rates.USD
-        //     const cal2 = cal1 * currencyList.rates.RUB
-        //     setSum1(Math.floor(cal2))
-        // }
-
     }
     const settings = {
         arrows: true,
@@ -144,7 +106,13 @@ function Section1({ country }) {
             id: 4,
             img: "four"
         },
-    ]
+    ];
+    const [width,setWidth] = useState("60%")
+    useEffect(() => {
+        if (is900){
+            setWidth("90%")
+        }
+    },[is900])
     return (
         <div>
             <div onClick={() => setDropdown(!dropdown)} style={bg}/>
@@ -161,7 +129,7 @@ function Section1({ country }) {
                                             {i.name}
                                         </div>
                                         <div className={styles.address}>
-                                            {i.address}
+                                            Manzil: {i.address}
                                         </div>
                                         <Link className={styles.button}
                                               href={{pathname: '/apply', query: {keyword: router.query.id}}}>
@@ -184,7 +152,10 @@ function Section1({ country }) {
                                                         <div key={k} className={styles.carousel}>
                                                             <div
                                                                 className={styles.wrS}
-                                                                style={{backgroundImage: `url('/home/universities/${i.im_country}/${i.im_uni}/${item.img}.jpg')`}}
+                                                                style={{
+                                                                    backgroundImage:
+                                                                        `url('/home/universities/${i.im_country}/${i.im_uni}/${item.img}.jpg')`
+                                                                }}
                                                             >
                                                             </div>
                                                         </div>
@@ -209,6 +180,15 @@ function Section1({ country }) {
                                             {i.info2}
                                         </div>
                                     </div>
+                                </div>
+                                <div className={styles.wre}>
+                                    {
+                                        (i.url && i.url !== "none") &&
+                                        <ReactPlayer
+                                            url={i.url}
+                                            width={width}
+                                        />
+                                    }
                                 </div>
                                 <Section3
                                     text1={"Fakultetlar"}

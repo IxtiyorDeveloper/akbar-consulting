@@ -58,6 +58,12 @@ function Section1({country,UNChange}) {
                             <div className={styles.drC} onClick={() => UNChange("Dubay")}>
                                 Dubay
                             </div>
+                            <div className={styles.drC} onClick={() => UNChange("Latviya")}>
+                                Latviya
+                            </div>
+                            <div className={styles.drC} onClick={() => UNChange("Polsha")}>
+                                Polsha
+                            </div>
                         </div>
                     </div>
                 </div>

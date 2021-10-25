@@ -121,6 +121,30 @@ function Section2({UNChange, country}) {
                             </div>
                         </Link>
                     </div>
+                    <div className={styles.list} onClick={() => UNChange("Latviya")}>
+                        <Link href={'/universities'}>
+                            <div className={styles.darkMaker}>
+                                <div className={styles.dr}>
+                                    Batafsil
+                                </div>
+                                <div className={styles.absolute}>
+                                    Latviya
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.list} onClick={() => UNChange("Polsha")}>
+                        <Link href={'/universities'}>
+                            <div className={styles.darkMaker}>
+                                <div className={styles.dr}>
+                                    Batafsil
+                                </div>
+                                <div className={styles.absolute}>
+                                    Polsha
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

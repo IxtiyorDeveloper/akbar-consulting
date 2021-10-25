@@ -11,6 +11,7 @@ import {AiOutlineArrowUp} from "react-icons/ai";
 import FAQ from "../faq/index";
 import Sidebar from "../sidebar/sidebar";
 import Certificates from "./certificates";
+import VideoCarousel from "./video_carousel/videoCarousel";
 
 
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
                 link={'/universities'}
             />
             <Certificates/>
+            <VideoCarousel/>
             <Section4/>
             <hr/>
             <Services/>

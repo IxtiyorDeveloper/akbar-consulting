@@ -52,7 +52,7 @@ function Certificates(props) {
     return (
         <div id="sertifikatlar" className={styles.container}>
             <div className={styles.title}>
-                Sertfikatlar
+                Sertifikatlar
             </div>
             <Slider {...settings}>
                 {

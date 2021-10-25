@@ -8,6 +8,8 @@ export default [
         im_country: "rossiya",
         im_uni: "sinegeriya",
         m_address: "Ленинградский пр-т, д. 80, корпуса Г, Е, Ж",
+        price:720,
+        url:"none",
         fac: [
             {
                 id: 1,
@@ -819,6 +821,8 @@ export default [
                 ]
             }
         ],
+        url:"https://www.youtube.com/watch?v=JYqPIQizCXY",
+        price:465,
         info1: "Ta'lim tashkilotining tashkil etilgan sanasi: 1804 yil 5 (17) noyabr.\n" +
             "To'liq nomi: \"Qozon (Volga viloyati) Federal universiteti\" Federal davlat avtonom oliy ta'lim muassasasi.\n" +
             "Nomi: Qozon (Volgabo'yi) Federal universiteti.\n" +
@@ -927,6 +931,8 @@ export default [
                 ]
             },
         ],
+        url:"none",
+        price:1360,
         info1: "Rossiya Federatsiyasi Prezidenti huzuridagi Rossiya Xalq xo'jaligi va davlat boshqaruvi akademiyasi (RXXvDBA)ning eng yirik mintaqaviy kampusi Sankt-Peterburgda joylashgan. Biz qiyin, ammo juda muhim vazifani bajaramiz - samarali qarorlar qabul qilishni o'rgatamiz, o'quvchilarimizga xalqaro standartlarga javob beradigan ta'lim beramiz va ular uchun tubdan yangi imkoniyatlar dunyosini ochamiz. Har bir inson tanlagan kasbini o'rganadigan, haqiqiy do'stlarini topadigan," +
             " o'z loyihalarini amalga oshiradigan va imkonsiz narsa bo'lmagan dunyo insoniga aylanadigan bo’lib yetishadi.",
         info2: "Bugungi kunda RXXvDBA:\n" +
@@ -994,6 +1000,7 @@ export default [
         im_country: "qozogiston",
         im_uni: "satbayev",
         m_address: "Olmaota, Satpayev ko’chasi 22a 050013",
+        url:"https://www.youtube.com/watch?v=nYd8pOeRmrU",
         fac: [
             {
                 id: 1,
@@ -1117,6 +1124,7 @@ export default [
                 ]
             },
         ],
+        price:1500,
         info1: "Satbayev universiteti (Каныша Имантаевич Сатпаев)Qozog'istondagi konchilik va neft biznesi sohasidagi ishlanmalari bilan tanilgan eng qadimiy va eng obro'li texnik universitetlardan biri. 80 yildan ortiq vaqt mobaynida ushbu universitet Qozog'istondagi texnologik taraqqiyot va yetakchilik bilan sinonimga ega. Satbayev universitetining vizitkasida texnik mutaxassisliklar ustun bo'lsa-da, bu arxitektura va " +
             "menejment bo'yicha o'qish mumkin bo'lgan ko'p tarmoqli universitetdir.",
         info2: "Bugungi kunda universitetda:\n" +
@@ -1149,6 +1157,8 @@ export default [
         address: "Qozog'iston, Aktau",
         im_country: "qozogiston",
         im_uni: "yessenov",
+        price:980,
+        url:"https://www.youtube.com/watch?v=HRFlN26OCf0",
         m_address: "Universitet manzili: Qozog’iston Respublikasi, Mangistan viloyati, Aktau shahri, 32-kichik daha",
         fac: [
             {
@@ -1707,7 +1717,9 @@ export default [
         address: "Qozog'iston, olmaota",
         im_country: "qozogiston",
         im_uni: "qxajtu",
+        price:1410,
         m_address: "O'sh shahri, N. Isanov ko'chasi, 81-uy.",
+        url:"none",
         fac: [
             {
                 id: 1,
@@ -1841,12 +1853,13 @@ export default [
     },
     {
         id: 11,
-        name: "O’sh Texnologiya universiteti",
+        name: "Osh Texnologiya universiteti",
         img: "oshtu",
         country: "Qirg'iziston",
         address: "Qirg'iziston, Osh shahri",
         im_country: "qirgiziston",
         im_uni: "oshtu",
+        price:630,
         m_address: "O'sh shahri, N. Isanov ko'chasi, 81-uy.",
         fac: [
             {
@@ -2090,6 +2103,7 @@ export default [
                 ]
             },
         ],
+        url:"none",
         info1: "Akademik M.M. Adysheva Nomidagi O'sh Texnologik Universiteti (O`shTU) - bu Qirg'izistonning muhandislik, " +
             "texnologik, ekologik, geologik, iqtisodiy, pedagogik va boshqa zamonaviy ta'lim sohalarida yuqori malakali " +
             "mutaxassislarni tayyorlash bo'yicha davlat oliy o'quv yurti, Ta'lim vazirligining AL № 004 litsenziyasiga ega." +
@@ -2113,7 +2127,7 @@ export default [
     },
     {
         id: 12,
-        name: "O'sh davlat pedagogika instituti",
+        name: "Osh davlat pedagogika instituti",
         img: "oshgpi",
         country: "Qirg'iziston",
         address: "Qirg'iziston, Osh shahri",
@@ -2276,6 +2290,8 @@ export default [
                 ]
             },
         ],
+        price:395,
+        url:"none",
         info1: "O'sh gumanitar pedagogika instituti - bu Qirg'izistondagi o'rta ta'lim maktablari uchun mutaxassislar o'qituvchisi. Ta'lim muassasasi " +
             "1925 yilda mamlakat janubida birinchi maxsus pedagogik o'quv muassasasi ochilishi bilan boshlangan.",
         info2: "1994-yili Ta’lim vazirligi buyrug’iga asosan, O’sh pedagogika kolleji bo’lib tuzilib, bir qator yangi mutaxassisliklari ochilgan. 1996-yili Qirg’iz hukumatining № 470-son qarori asosida O’sh pedagogika-O’sh oliy kolleji bo’lib tuzilgan, " +
@@ -2294,6 +2310,7 @@ export default [
         im_country: "qirgiziston",
         im_uni: "jdu",
         m_address: "Qirg’iziston Respublikasi, Jalol-obod shahri, Lenin ko’chasi 57 ",
+        url:"https://www.youtube.com/watch?v=3UuCbzbj7nk",
         fac: [
             {
                 id: 1,
@@ -2461,6 +2478,7 @@ export default [
                 ]
             },
         ],
+        price:400,
         info1: "Jalolobod davlat universiteti Qirg'izistonning Jalolobod shahrida tashkil etilgan. " +
             "Bu tibbiyot, elektronika, energetika, qurilish, agrosanoat " +
             "kompleksi kabi sohalarda oliy ma'lumot olish uchun mo'ljallangan davlat muassasasi.",
@@ -2479,6 +2497,8 @@ export default [
         address: "Qirg'iziston, Botken shahri",
         im_country: "qirgiziston",
         im_uni: "bdu",
+        price:310,
+        url:"https://www.youtube.com/watch?v=3vZ6FclwXp0",
         m_address: "Qirg’iziston Respublikasi, Botken viloyati, Botken shahri, I.Jusupova ko’chasi",
         fac: [
             {
@@ -2666,13 +2686,6 @@ export default [
             "asosida ishlaydi, ulardan 5 nafari fan doktorlari, professorlar, 43 nafari nomzodlar, dotsentlar.\n"
     },
     {
-        id: 15,
-        name: "Osh davlat universiteti",
-        img: "one",
-        country: "Qirg'iziston",
-        address: "Qirg'iziston, Osh shahri",
-    },
-    {
         id: 16,
         name: "SINERGIYA DUBAI UNIVERSITETI",
         img: "sinegeriya_dubay",
@@ -2680,6 +2693,8 @@ export default [
         address: "Dubay, Platinum",
         im_country: "dubay",
         im_uni: "sinegeriyaDubay",
+        price:9000,
+        url:"https://www.youtube.com/watch?v=ehDqHMZ_S1k",
         m_address: "Klaster I, Platinum minorasi, 32 qavat - Dubay - BAA",
         fac: [
             {
@@ -2972,6 +2987,8 @@ export default [
                 ]
             },
         ],
+        url:"https://www.youtube.com/watch?v=EJUrnwNcM-M",
+        price:3500,
         info1: "Istanbulda joylashgan turk xususiy universiteti.\n" +
             "Halich universiteti 1998 yilda Turkiyadagi bolalar leykemiya fondi tomonidan tashkil etilgan poydevor universiteti.\n" +
             "Halich universiteti beshta fakultetda 21 ta akademik bo'limlarni, shu jumladan uchta maktabni, hamshiralik maktabini," +
@@ -2988,6 +3005,8 @@ export default [
         address: "Rossiya, Moskva",
         im_country: "rossiya",
         im_uni: "rxdu",
+        price:1290,
+        url:"none",
         m_address: "ул. Миклухо-Маклая, 6, Москва, Россия, 117198",
         info1:" Xalqlar do'stligi universiteti 1960 yil 5 fevralda SSSR hukumatining qarori bilan" +
             " tashkil etilgan. 1961 yil 22 fevralda Universitet Afrika xalqlarining mustaqillik uchun olib" +
@@ -3086,6 +3105,8 @@ export default [
         address: "Tojikiston, Xo'jand",
         im_country: "tojikiston",
         im_uni: "xdu",
+        price:350,
+        url:"none",
         m_address: "ул. Миклухо-Маклая, 6, Москва, Россия, 117198",
         info1:"Xo'jand davlat universiteti -  1932 yilda Xo'jandda (sobiq Leninobod), " +
             "Tojikistonda tashkil etilgan . Avval u Oliy Pedagogika Instituti sifatida tanilgan." +
@@ -3444,6 +3465,8 @@ export default [
         address: "Rossiya, Astraxan",
         im_country: "rossiya",
         im_uni: "astraxan",
+        price:600,
+        url:"https://www.youtube.com/watch?v=SWZu9RNQqHU",
         m_address: "ул. Татищева, 20а, Астрахань, Астраханская обл., Россия, 414056",
         info1:"Astraxan davlat universiteti. 1996 yilgacha - S. M. Kirov nomidagi Astraxan " +
             "davlat pedagogika instituti , 2002 yilgacha - Astraxan davlat pedagogika universiteti  - oliy" +
@@ -3921,6 +3944,8 @@ export default [
         address: "Rossiya, Sankt-Peterburg",
         im_country: "rossiya",
         im_uni: "leningraddu",
+        price:830,
+        url:"none",
         m_address: "196605, г. Санкт-Петербург, Пушкин, Петербургское шоссе, д.10",
         info1:"A.S.Pushkin  nomidagi Leningrad davlat universiteti." +
             " Leningrad viloyatidagi davlat avtonom oliy o'quv yurti. Universitet 1992 yil" +
@@ -4101,6 +4126,8 @@ export default [
         address: "Rossiya, Moskva",
         im_country: "rossiya",
         im_uni: "mda",
+        price:490,
+        url:"none",
         m_address: "ул. Планетная, 36, Москва, Россия, 125319",
         info1:"\"Moskva tadbirkorlik akademiyasi\" nodavlat oliy ta'lim muassasasi 1997 " +
             "yilda tashkil etilgan. 22 yil davomida Akademiya yangi avlod talab qilinadigan " +
@@ -4268,6 +4295,8 @@ export default [
         address: "Rossiya, Sankt-Peterburg",
         im_country: "rossiya",
         im_uni: "sdu",
+        price:3500,
+        url:"none",
         m_address: "ул. Планетная, 36, Москва, Россия, 125319",
         info1:" Federal davlat byudjetli oliy ta'lim muassasasi (Sankt-Peterburg davlat universiteti)" +
             " eng qadimgi, yirik va  yetakchi klassik" +
@@ -4500,5 +4529,104 @@ export default [
             }
         ],
     },
-
+    {
+        id: 27,
+        name: "Latviya transport va axborot instituti",
+        img: "ltai",
+        country: "Latviya",
+        address: "Latviya, Riga",
+        im_country: "latviya",
+        im_uni: "ltai",
+        price:2700,
+        url:"https://www.youtube.com/watch?v=uXsi2yZQLjE",
+        m_address: "Lomonosova iela 1, Latgales priekšpilsēta, Rīga, LV-1019, Латвия",
+        info1:"Butun dunyoda STEM bitiruvchilariga talab ortib bormoqda va tobora" +
+            " o'zaro bog'liq va globallashib borayotgan dunyoda transport, ta'minot zanjiri, " +
+            "aviatsiya menejmenti, logistika, robototexnika va avtonom avtotransport vositalari" +
+            " va ularning shahar va jamiyatlarga ta'siri bo'yicha tajriba va yechimlarga bo'lgan " +
+            "ehtiyoj ortib bormoqda.",
+        info2: "Transport va axborot instituti (TAI)ning merosi, bilimlari va tajribasi unga nafaqat " +
+            "Latviyada, balki Boltiq dengizi mintaqasida ham " +
+            "bu sohadagi bilimlarni ilgari surish bo'yicha yetakchi sifatida kuchli raqobatbardosh" +
+            " ustunlikni beradi.",
+        info3: "\n" +
+            "TAIning 2020-2025 yillarga mo'ljallangan strategiyasi TAIning Boltiq dengizi mintaqasida" +
+            " yetakchi xususiy texnik universitet bo'lish istagini aks ettirish uchun" +
+            " mo'ljallangan va TAI Boltiq dengizi mintaqasida o'z talabalari, sanoati va oliy ta'lim " +
+            "sektori uchun farq qiladi.",
+        fac: [
+            {
+                id: 1,
+                g_fac: "Robototexnika",
+                they: [
+                    {
+                        name: "Robototexnika"
+                    },
+                ]
+            },
+            {
+                id: 2,
+                g_fac: "Kompyuter fanlari",
+                they: [
+                    {
+                        name: "Kompyuter fanlari"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                g_fac: "Sun'iy intellekt - 2 daraja",
+                they: [
+                    {
+                        name: "Sun'iy intellekt - 2 daraja"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                g_fac: "Transport va biznes logistikasi",
+                they: [
+                    {
+                        name: "Transport va biznes logistikasi"
+                    },
+                ]
+            },
+            {
+                id: 5,
+                g_fac: "Havo transporti",
+                they: [
+                    {
+                        name: "Havo transporti"
+                    },
+                ]
+            },
+            {
+                id: 6,
+                g_fac: "Biznes va boshqaruv",
+                they: [
+                    {
+                        name: "Biznes va boshqaruv"
+                    },
+                ]
+            },
+            {
+                id: 7,
+                g_fac: "Telekommunikatsiya tizimlari va kompyuter tarmoqlari",
+                they: [
+                    {
+                        name: "Telekommunikatsiya tizimlari va kompyuter tarmoqlari"
+                    },
+                ]
+            },
+            {
+                id: 8,
+                g_fac: "Elektronika",
+                they: [
+                    {
+                        name: "Elektronika"
+                    },
+                ]
+            }
+        ],
+    },
 ]

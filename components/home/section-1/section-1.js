@@ -54,21 +54,21 @@ function Section1({click, toggle,sidebar}) {
             title: "Chet el nufuzli oliygohlarida o'qish",
             text: "bizda oson va kafolatlangan",
             ariza: "Ariza",
-            img: "slide1"
+            img: "slidemain1"
         },
         {
             id: 2,
             title: "Imtihonsiz talaba bo'lish imkoniyati",
             text: "buni qo'ldan boy bermang",
             ariza: "Ariza",
-            img: "slide2"
+            img: "slidemain2"
         },
         {
             id: 3,
             title: "Masofadan turib hujjat topshiring",
             text: "qolganini bizga qo'yib bering",
             ariza: "Ariza",
-            img: "slide3"
+            img: "slidemain3"
         },
     ]
     const settings = {
@@ -233,7 +233,7 @@ function Section1({click, toggle,sidebar}) {
                             return (
                                 <div key={k} id="asosiy">
                                     <div className={styles.sliderWrapper}
-                                         style={{backgroundImage: `url('/home/${i.img}.jpg')`}}
+                                         style={{backgroundImage: `url('/home/${i.img}.JPG')`}}
                                     >
                                         <div className={styles.contentWrapper}>
                                             <div className={styles.title}>
