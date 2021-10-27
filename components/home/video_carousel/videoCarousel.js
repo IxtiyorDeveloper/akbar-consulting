@@ -90,7 +90,7 @@ function VideoCarousel(props) {
             >
                 {
                     links.map((i, k) => {
-                        if (i.id === 1 || i.id === 2){
+                        if (i.id === 8 || i.id === 9){
                             return (
                                 <div className={styles.inThen}>
                                     <div className={styles.player}>
