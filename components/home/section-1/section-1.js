@@ -24,7 +24,6 @@ function Section1({click, toggle,sidebar}) {
             return 0;
         }
     }
-   console.log(link)
     const [offTop, setOffTop] = useState(getPageYOffSet());
 
     useEffect(() => {
@@ -54,21 +53,21 @@ function Section1({click, toggle,sidebar}) {
             title: "Chet el nufuzli oliygohlarida o'qish",
             text: "bizda oson va kafolatlangan",
             ariza: "Ariza",
-            img: "slidemain1"
+            img: "slide1"
         },
         {
             id: 2,
             title: "Imtihonsiz talaba bo'lish imkoniyati",
             text: "buni qo'ldan boy bermang",
             ariza: "Ariza",
-            img: "slidemain2"
+            img: "slide2"
         },
         {
             id: 3,
             title: "Masofadan turib hujjat topshiring",
             text: "qolganini bizga qo'yib bering",
             ariza: "Ariza",
-            img: "slidemain3"
+            img: "slide3"
         },
     ]
     const settings = {

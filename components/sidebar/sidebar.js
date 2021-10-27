@@ -31,7 +31,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
     return (
         <div className={styles.container} style={stylesMain}>
             <div className={styles.title}>
-                Akbar-consulting
+                Akbar Consulting
             </div>
             <Link activeClass="active"
                   to="asosiy"

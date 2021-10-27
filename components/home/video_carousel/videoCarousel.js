@@ -34,44 +34,85 @@ function VideoCarousel(props) {
         pauseOnHover: false
     };
 
-    const [width,setWidth] = useState("60%");
+    const [width, setWidth] = useState("60%");
 
     useEffect(() => {
-        if (is900){
+        if (is900) {
             setWidth("90%")
         }
-    },[is900])
+    }, [is900])
     const links = [
         {
             id:1,
-            url:"https://www.youtube.com/watch?v=TdwBFzfvRhM"
+            img: "six"
         },
         {
             id:2,
-            url:"https://www.youtube.com/watch?v=Xre0e976sEw"
-        }
+            img: "seven"
+        },
+        {
+            id:3,
+            img: "one"
+        },
+        {
+            id:4,
+            img: "two"
+        },
+        {
+            id:5,
+            img: "three"
+        },
+        {
+            id:6,
+            img: "four"
+        },
+        {
+            id:7,
+            img: "five"
+        },
+        {
+            id: 8,
+            url: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
+        },
+        {
+            id: 9,
+            url: "https://www.youtube.com/watch?v=Xre0e976sEw"
+        },
     ];
     return (
         <div>
+            <div className={styles.title}>
+                Galereya
+            </div>
             <Slider {...settings} className={styles.car}
                     nextArrow={<Arrow type="next"/>}
                     prevArrow={<Arrow type="prev"/>}
             >
                 {
-                    links.map((i,k) => {
-                        return(
-                            <div className={styles.inThen}>
-                                <div className={styles.player}>
-                                    <div className={styles.text1}>
-                                        {i.id} - video
+                    links.map((i, k) => {
+                        if (i.id === 1 || i.id === 2){
+                            return (
+                                <div className={styles.inThen}>
+                                    <div className={styles.player}>
+                                        <ReactPlayer
+                                            url={i.url}
+                                            width={width}
+                                            height="500px"
+                                        />
                                     </div>
-                                    <ReactPlayer
-                                        url={i.url}
-                                        width={width}
-                                    />
                                 </div>
-                            </div>
-                        )
+                            )
+                        }
+                        else {
+                            return (
+                                <div className={styles.inThen}>
+                                    <div className={styles.player1}
+                                         style={{backgroundImage:`url('/home/gallery/${i.img}.JPG')`}}>
+
+                                    </div>
+                                </div>
+                            )
+                        }
                     })
                 }
             </Slider>
