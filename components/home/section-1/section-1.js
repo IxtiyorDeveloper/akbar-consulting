@@ -232,7 +232,7 @@ function Section1({click, toggle,sidebar}) {
                             return (
                                 <div key={k} id="asosiy">
                                     <div className={styles.sliderWrapper}
-                                         style={{backgroundImage: `url('/home/${i.img}.JPG')`}}
+                                         style={{backgroundImage: `url('/home/${i.img}.jpg')`}}
                                     >
                                         <div className={styles.contentWrapper}>
                                             <div className={styles.title}>
