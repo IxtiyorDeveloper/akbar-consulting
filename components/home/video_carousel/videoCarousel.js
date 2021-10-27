@@ -43,31 +43,31 @@ function VideoCarousel(props) {
     }, [is900])
     const links = [
         {
-            id:1,
+            id: 1,
             img: "six"
         },
         {
-            id:2,
+            id: 2,
             img: "seven"
         },
         {
-            id:3,
+            id: 3,
             img: "one"
         },
         {
-            id:4,
+            id: 4,
             img: "two"
         },
         {
-            id:5,
+            id: 5,
             img: "three"
         },
         {
-            id:6,
+            id: 6,
             img: "four"
         },
         {
-            id:7,
+            id: 7,
             img: "five"
         },
         {
@@ -90,7 +90,7 @@ function VideoCarousel(props) {
             >
                 {
                     links.map((i, k) => {
-                        if (i.id === 8 || i.id === 9){
+                        if (i.id === 8 || i.id === 9) {
                             return (
                                 <div className={styles.inThen}>
                                     <div className={styles.player}>
@@ -102,12 +102,12 @@ function VideoCarousel(props) {
                                     </div>
                                 </div>
                             )
-                        }
-                        else {
+                        } else {
                             return (
                                 <div className={styles.inThen}>
-                                    <div className={styles.player1}
-                                         style={{backgroundImage:`url('/home/gallery/${i.img}.JPG')`}}>
+                                    <div
+                                    >
+                                        <img src={`/home/gallery/${i.img}.JPG`} alt="" className={styles.player1}/>
                                     </div>
                                 </div>
                             )
