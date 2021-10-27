@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
-import styles from '../../../styles/home/videoCarousel/videoCarousel.module.scss'
-import ReactPlayer from "react-player";
+import styles from '../../../styles/home/certificates/certificates.module.scss'
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
+import ReactPlayer from "react-player";
 import {useMediaQuery} from "react-responsive";
-
 
 function Arrow(props) {
     let className = props.type === "next" ? "nextArrow2" : "prevArrow2";
@@ -20,28 +19,8 @@ function Arrow(props) {
 }
 
 function VideoCarousel(props) {
-    const is900 = useMediaQuery({query: '(max-width: 900px)'});
-
-    const settings = {
-        arrows: true,
-        dots: false,
-        infinite: true,
-        speed: 2000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 300000,
-        pauseOnHover: false
-    };
-
-    const [width, setWidth] = useState("60%");
-
-    useEffect(() => {
-        if (is900) {
-            setWidth("90%")
-        }
-    }, [is900])
-    const links = [
+    const isResponsive = useMediaQuery({query: '(max-width: 600px)'});
+    const data = [
         {
             id: 1,
             img: "six"
@@ -72,43 +51,56 @@ function VideoCarousel(props) {
         },
         {
             id: 8,
-            url: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
+            img: "https://www.youtube.com/watch?v=Xre0e976sEw&t=1s"
         },
         {
             id: 9,
-            url: "https://www.youtube.com/watch?v=Xre0e976sEw"
-        },
+            img: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
+        }
     ];
+    const settings = {
+        arrows: true,
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 9000,
+        pauseOnHover: false
+    }
+
     return (
-        <div>
+        <div id="sertifikatlar" className={styles.container}>
             <div className={styles.title}>
                 Galereya
             </div>
-            <Slider {...settings} className={styles.car}
-                    nextArrow={<Arrow type="next"/>}
-                    prevArrow={<Arrow type="prev"/>}
+            <Slider
+                nextArrow={<Arrow type="next"/>}
+                prevArrow={<Arrow type="prev"/>}
+                {...settings}
             >
                 {
-                    links.map((i, k) => {
-                        if (i.id === 8 || i.id === 9) {
+                    data.map((i, k) => {
+                        if (i.id === 9 || i.id === 8) {
                             return (
-                                <div className={styles.inThen}>
-                                    <div className={styles.player}>
-                                        <ReactPlayer
-                                            url={i.url}
-                                            width={width}
-                                            height="500px"
-                                        />
-                                    </div>
+                                <div key={k}>
+                                    <ReactPlayer
+                                        url={`${i.img}`}
+                                        height='500px'
+                                        width={`${isResponsive ? "90%":"60%"}`}
+                                        className={styles.re}
+                                        style={{marginLeft:`${isResponsive ? "5%":"20%"}`}}
+                                    />
                                 </div>
                             )
                         } else {
                             return (
-                                <div className={styles.inThen}>
+                                <div key={k}>
                                     <div
-                                    >
-                                        <img src={`/home/gallery/${i.img}.JPG`} alt="" className={styles.player1}/>
-                                    </div>
+                                        style={{backgroundImage: `url('/gallery/${i.img}.JPG')`}}
+                                        className={styles.img}
+                                    />
                                 </div>
                             )
                         }

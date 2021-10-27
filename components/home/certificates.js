@@ -56,15 +56,15 @@ function Certificates(props) {
             </div>
             <Slider {...settings}>
                 {
-                  data.map((i,k) => {
-                      return(
-                          <div key={k}>
-                              <div style={{backgroundImage:`url(/ser/JPG/${i.img}.jpg)`}}
-                              className={styles.img}
-                              />
-                          </div>
-                      )
-                  })
+                    data.map((i, k) => {
+                        return (
+                            <div key={k}>
+                                <div style={{backgroundImage: `url(/ser/JPG/${i.img}.jpg)`}}
+                                     className={styles.img}
+                                />
+                            </div>
+                        )
+                    })
                 }
             </Slider>
         </div>
