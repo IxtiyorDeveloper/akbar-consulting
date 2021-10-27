@@ -107,8 +107,7 @@ function VideoCarousel(props) {
                             return (
                                 <div className={styles.inThen}>
                                     <div className={styles.player1}
-                                         style={{backgroundImage:`url('/home/gallery/${i.img}.jpg')`}}>
-
+                                         style={{backgroundImage:`url('/home/gallery/${i.img}.JPG')`}}>
                                     </div>
                                 </div>
                             )
