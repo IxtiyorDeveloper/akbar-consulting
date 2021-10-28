@@ -145,8 +145,8 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             >
              <IoCallSharp className={styles.icon}/>   Aloqa
             </Link>
-            <a href="tel:+99893 093 27 27" className={styles.menu}>
-                +99893 093 27 27
+            <a href="tel:+998942557777" className={styles.menu}>
+                +998 94 255 77 77
             </a>
         </div>
     );
