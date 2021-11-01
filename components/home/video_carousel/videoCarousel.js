@@ -212,7 +212,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    style={{backgroundImage: `url('/gallery/eight.jpg')`}}
+                    style={{backgroundImage: `url('/gallery/eight.JPG')`}}
                     onClick={() =>  handleZoom("y0")}
                 >
                     <div className={styles.hover}>
@@ -226,7 +226,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    style={{backgroundImage: `url('/gallery/nine.jpg')`}}
+                    style={{backgroundImage: `url('/gallery/nine.JPG')`}}
                     onClick={() =>  handleZoom("y1")}
                 >
                     <div className={styles.hover}>
@@ -240,7 +240,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    style={{backgroundImage: `url('/gallery/ten.jpg')`}}
+                    style={{backgroundImage: `url('/gallery/ten.JPG')`}}
                     onClick={() =>  handleZoom("y2")}
                 >
                     <div className={styles.hover}>

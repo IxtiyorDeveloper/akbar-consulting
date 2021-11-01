@@ -41,13 +41,19 @@ function Home() {
             <div style={bg} onClick={() => handleClose()}/>
             <div
                 className={styles.pop}
-                style={{backgroundImage: `url(${img})`, display: `${isV ? "block" : "none"}`}}
+                style={{display: `${isV ? "block" : "none"}`}}
             >
                 <div
                     className={styles.abs}
                     onClick={() => setIsV(false)}
                 >
                     <AiOutlineClose/>
+                </div>
+                <div
+                    className={styles.popIn}
+                    style={{backgroundImage: `url(${img})`, display: `${isV ? "block" : "none"}`}}
+                >
+
                 </div>
             </div>
             <div
@@ -56,9 +62,10 @@ function Home() {
             >
                 <ReactPlayer
                     width="100%"
-                    height="80vh"
+                    height="70vh"
                     url={vid}
                     playing={isV1}
+                    style={{marginTop:"5vh"}}
                 />
                 <div className={styles.abs1} onClick={() => setIsV1(false)}>
                     <AiOutlineClose/>
