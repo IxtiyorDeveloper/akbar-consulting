@@ -91,7 +91,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
         arrows: true,
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
