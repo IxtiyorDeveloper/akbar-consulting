@@ -1,0 +1,44 @@
+
+.pop{
+  width: 60%;
+  height: 80vh;
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  z-index: 100!important;
+  background-size: cover;
+  background-position: center;
+  .abs{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+}
+.vid{
+  width: 60%;
+  height: 80vh;
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  z-index: 100!important;
+  background-size: cover;
+  background-position: center;
+  background-color: #2EA6E2;
+  .abs1{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -3,9 +3,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
 import styles from '../../styles/home/certificates/certificates.module.scss'
+import {FaSearchPlus} from "react-icons/fa";
+import {useMediaQuery} from "react-responsive";
 
 
-function Certificates(props) {
+function Certificates({setIsV,setImg}) {
+    const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
+
     const data = [
         {
             img: "p1"
@@ -40,14 +44,48 @@ function Certificates(props) {
     ];
     const settings = {
         arrows: true,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1000,
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 9000,
-        pauseOnHover: false
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 2,
+                    dots:true
+                }
+            }
+        ]
+    }
+
+    const handleZoom = (a) => {
+        if (!isResponsive){
+            setImg(a);
+            setIsV(true)
+        }
     }
     return (
         <div id="sertifikatlar" className={styles.container}>
@@ -61,7 +99,16 @@ function Certificates(props) {
                             <div key={k}>
                                 <div style={{backgroundImage: `url(/ser/JPG/${i.img}.jpg)`}}
                                      className={styles.img}
-                                />
+                                     onClick={() => handleZoom(`/ser/JPG/${i.img}.jpg`)}
+                                >
+                                <div className={styles.hover}>
+                                    <div className={styles.circ}
+                                         onClick={() =>  handleZoom("two")}
+                                    >
+                                        <FaSearchPlus className={styles.icon}/>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         )
                     })

@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
-import styles from '../../../styles/home/certificates/certificates.module.scss'
+import styles from '../../../styles/home/videoCarousel/videoCarousel.module.scss'
 import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
 import ReactPlayer from "react-player";
 import {useMediaQuery} from "react-responsive";
+import {FaSearchPlus} from "react-icons/fa";
+import {AiOutlinePicture,AiOutlineVideoCamera} from "react-icons/ai";
+
 
 function Arrow(props) {
     let className = props.type === "next" ? "nextArrow2" : "prevArrow2";
@@ -18,8 +21,8 @@ function Arrow(props) {
     );
 }
 
-function VideoCarousel(props) {
-    const isResponsive = useMediaQuery({query: '(max-width: 600px)'});
+function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
+    const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
     const data = [
         {
             id: 1,
@@ -56,8 +59,34 @@ function VideoCarousel(props) {
         {
             id: 9,
             img: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
+        },
+        {
+            id: 10,
+            img: "https://www.youtube.com/watch?v=rudBdJxb_TE"
         }
     ];
+    const handleZoom = (a) => {
+        if (a === "y0"){
+            setIsV1(true);
+            setVid("https://www.youtube.com/watch?v=Xre0e976sEw&t=1s")
+        }
+        else {
+            if (a === "y1"){
+                setIsV1(true);
+                setVid("https://www.youtube.com/watch?v=TdwBFzfvRhM")
+            }
+            else {
+                if (a === "y2"){
+                    setIsV1(true);
+                    setVid("https://www.youtube.com/watch?v=rudBdJxb_TE")
+                }
+                else {
+                    setImg(a);
+                    setIsV(true)
+                }
+            }
+        }
+    }
     const settings = {
         arrows: true,
         dots: false,
@@ -66,47 +95,198 @@ function VideoCarousel(props) {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 9000,
+        autoplaySpeed: 300000,
         pauseOnHover: false
     }
-
+    const styles2 = {
+        display: `${isResponsive ? "none" : "flex"} `
+    }
+    const styles1 = {
+        display: `${isResponsive ? "block" : "none"} `
+    }
     return (
         <div id="sertifikatlar" className={styles.container}>
             <div className={styles.title}>
                 Galereya
             </div>
-            <Slider
-                nextArrow={<Arrow type="next"/>}
-                prevArrow={<Arrow type="prev"/>}
-                {...settings}
-            >
-                {
-                    data.map((i, k) => {
-                        if (i.id === 9 || i.id === 8) {
-                            return (
-                                <div key={k}>
-                                    <ReactPlayer
-                                        url={`${i.img}`}
-                                        height='500px'
-                                        width={`${isResponsive ? "90%":"60%"}`}
-                                        className={styles.re}
-                                        style={{marginLeft:`${isResponsive ? "5%":"20%"}`}}
-                                    />
-                                </div>
-                            )
-                        } else {
-                            return (
-                                <div key={k}>
-                                    <div
-                                        style={{backgroundImage: `url('/gallery/${i.img}.JPG')`}}
-                                        className={styles.img}
-                                    />
-                                </div>
-                            )
-                        }
-                    })
-                }
-            </Slider>
+            <div className={styles.wr} style={styles2}>
+                <div
+                    className={`${styles.col}`}
+                    style={{backgroundImage: `url('/gallery/one.JPG')`}}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ} onClick={() =>  handleZoom("/gallery/one.JPG")}
+                        >
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={`${styles.col}`}
+                    style={{backgroundImage: `url('/gallery/two.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/two.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}
+                             onClick={() =>  handleZoom("two")}
+                        >
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={`${styles.col}`}
+                    style={{backgroundImage: `url('/gallery/three.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/three.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={`${styles.col}`}
+                    style={{backgroundImage: `url('/gallery/four.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/four.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={`${styles.col}`}
+                    style={{backgroundImage: `url('/gallery/five.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/five.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    style={{backgroundImage: `url('/gallery/six.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/six.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    style={{backgroundImage: `url('/gallery/seven.JPG')`}}
+                    onClick={() =>  handleZoom("/gallery/seven.JPG")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlinePicture className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    style={{backgroundImage: `url('/gallery/eight.jpg')`}}
+                    onClick={() =>  handleZoom("y0")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    style={{backgroundImage: `url('/gallery/nine.jpg')`}}
+                    onClick={() =>  handleZoom("y1")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    style={{backgroundImage: `url('/gallery/ten.jpg')`}}
+                    onClick={() =>  handleZoom("y2")}
+                >
+                    <div className={styles.hover}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style={styles1}>
+                <Slider
+                    nextArrow={<Arrow type="next"/>}
+                    prevArrow={<Arrow type="prev"/>}
+                    {...settings}
+                >
+                    {
+                        data.map((i, k) => {
+                            if (i.id === 9 || i.id === 8 || i.id === 10) {
+                                return (
+                                    <div key={k}>
+                                        <ReactPlayer
+                                            url={`${i.img}`}
+                                            height='400px'
+                                            width={`${isResponsive ? "90%" : "60%"}`}
+                                            className={styles.re}
+                                            style={{marginLeft: `${isResponsive ? "5%" : "20%"}`}}
+                                        />
+                                    </div>
+                                )
+                            } else {
+                                return (
+                                    <div key={k}>
+                                        <div
+                                            style={{backgroundImage: `url('/gallery/${i.img}.JPG')`}}
+                                            className={styles.img}
+                                        />
+                                    </div>
+                                )
+                            }
+                        })
+                    }
+                </Slider>
+            </div>
         </div>
     );
 }

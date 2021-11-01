@@ -7,16 +7,63 @@ import Footer from "../footer/footer";
 import Services from "./services/services";
 import React, {useState, useRef, useEffect} from "react";
 import window from "global/window";
-import {AiOutlineArrowUp} from "react-icons/ai";
+import {AiOutlineArrowUp, AiOutlineClose} from "react-icons/ai";
 import FAQ from "../faq/index";
 import Sidebar from "../sidebar/sidebar";
 import Certificates from "./certificates";
 import VideoCarousel from "./video_carousel/videoCarousel";
+import styles from '../../styles/home/popUp.module.scss'
+import ReactPlayer from "react-player";
+
 
 
 function Home() {
+    const [isV, setIsV] = useState(false);
+    const [isV1, setIsV1] = useState(false);
+    const [img, setImg] = useState(false);
+    const [vid, setVid] = useState(false);
+    const bg = {
+        width: "100%",
+        height: "100vh",
+        top: 0,
+        left: 0,
+        backgroundColor: "rgba(0,0,0,0.6)",
+        zIndex: 99,
+        position: "fixed",
+        display: `${isV ? "block" : "none"}`
+    }
+    const handleClose = () => {
+        setIsV(false);
+        setIsV1(false);
+    }
     return (
         <>
+            <div style={bg} onClick={() => handleClose()}/>
+            <div
+                className={styles.pop}
+                style={{backgroundImage: `url(${img})`, display: `${isV ? "block" : "none"}`}}
+            >
+                <div
+                    className={styles.abs}
+                    onClick={() => setIsV(false)}
+                >
+                    <AiOutlineClose/>
+                </div>
+            </div>
+            <div
+                className={styles.vid}
+                style={{display: `${isV1 ? "block" : "none"}`}}
+            >
+                <ReactPlayer
+                    width="100%"
+                    height="80vh"
+                    url={vid}
+                    playing={isV1}
+                />
+                <div className={styles.abs1} onClick={() => setIsV1(false)}>
+                    <AiOutlineClose/>
+                </div>
+            </div>
             <Sidebar/>
             <Section1/>
             <Section2/>
@@ -27,12 +74,17 @@ function Home() {
                 num2={100}
                 text3={"Talabalar"}
                 num3={1000}
-                button = {"Batafsil"}
+                button={"Batafsil"}
                 link={'/universities'}
             />
-            <Certificates/>
-            <VideoCarousel/>
+            <Certificates setImg={setImg} setIsV={setIsV}/>
             <Section4/>
+            <VideoCarousel
+                setImg={setImg}
+                setIsV={setIsV}
+                setIsV1={setIsV1}
+                setVid={setVid}
+            />
             <hr/>
             <Services/>
             <FAQ num={8}/>

@@ -353,11 +353,11 @@ a {
 
 @media (max-width: 500px) {
     .nextArrow2 {
-       right: -20px;
+        right: -20px;
     }
 
     .prevArrow2 {
-      left: 27px;
+        left: 27px;
     }
 }
 
@@ -578,6 +578,22 @@ a {
     align-items: center;
 }
 
+.c1 {
+    margin-left: 20px;
+}
+
+.c2 {
+    margin-left: 0 !important;
+}
+
+/*.slick-slide{*/
+/*    margin: 0 20px!important;*/
+/*    padding: 0!important;*/
+/*}*/
+/*.slick-list {*/
+/*    margin: 0 -27px!important;*/
+/*    padding: 0!important;*/
+/*}*/
 @media (max-width: 1125px) {
     .inputPhone1 {
         width: 100% !important;
