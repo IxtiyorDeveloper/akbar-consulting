@@ -16,7 +16,6 @@ import styles from '../../styles/home/popUp.module.scss'
 import ReactPlayer from "react-player";
 
 
-
 function Home() {
     const [isV, setIsV] = useState(false);
     const [isV1, setIsV1] = useState(false);
@@ -30,7 +29,7 @@ function Home() {
         backgroundColor: "rgba(0,0,0,0.6)",
         zIndex: 99,
         position: "fixed",
-        display: `${isV ? "block" : "none"}`
+        display: `${(isV || isV1) ? "block" : "none"}`
     }
     const handleClose = () => {
         setIsV(false);
@@ -41,7 +40,7 @@ function Home() {
             <div style={bg} onClick={() => handleClose()}/>
             <div
                 className={styles.pop}
-                style={{display: `${(isV || isV1) ? "block" : "none"}`}}
+                style={{display: `${isV ? "block" : "none"}`}}
             >
                 <div
                     className={styles.abs}
@@ -65,7 +64,7 @@ function Home() {
                     height="70vh"
                     url={vid}
                     playing={isV1}
-                    style={{marginTop:"5vh"}}
+                    style={{marginTop: "5vh"}}
                 />
                 <div className={styles.abs1} onClick={() => setIsV1(false)}>
                     <AiOutlineClose/>
