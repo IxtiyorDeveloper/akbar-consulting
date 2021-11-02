@@ -53,7 +53,7 @@ function Section1({click, toggle,sidebar}) {
             title: "Chet el nufuzli oliygohlarida o'qish",
             text: "bizda oson va kafolatlangan",
             ariza: "Ariza",
-            img: "slide1"
+            img: "slide0"
         },
         {
             id: 2,
