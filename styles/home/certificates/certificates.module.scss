@@ -28,6 +28,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      .imgWr{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+        .icImg{
+          color: #ffdd00;
+          font-size: 28px;
+        }
+      }
+      &:hover .imgWr{
+        display: block;
+      }
       .circ {
         justify-content: center;
         align-items: center;

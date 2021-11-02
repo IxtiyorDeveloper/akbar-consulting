@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import styles from '../../styles/home/certificates/certificates.module.scss'
 import {FaSearchPlus} from "react-icons/fa";
 import {useMediaQuery} from "react-responsive";
+import {AiOutlinePicture} from "react-icons/ai";
 
 
 function Certificates({setIsV,setImg}) {
@@ -106,6 +107,9 @@ function Certificates({setIsV,setImg}) {
                                          onClick={() =>  handleZoom("two")}
                                     >
                                         <FaSearchPlus className={styles.icon}/>
+                                    </div>
+                                    <div className={styles.imgWr}>
+                                        <AiOutlinePicture className={styles.icImg}/>
                                     </div>
                                 </div>
                                 </div>
