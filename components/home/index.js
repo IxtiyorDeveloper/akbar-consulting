@@ -41,7 +41,7 @@ function Home() {
             <div style={bg} onClick={() => handleClose()}/>
             <div
                 className={styles.pop}
-                style={{display: `${isV ? "block" : "none"}`}}
+                style={{display: `${(isV || isV1) ? "block" : "none"}`}}
             >
                 <div
                     className={styles.abs}
