@@ -10,7 +10,6 @@ import {BsQuestionCircleFill} from "react-icons/bs"
 import {RiGalleryLine} from "react-icons/ri";
 
 function Sidebar({sidebar,toggle,LinkHandler}) {
-    const [link, setLink] = useState('asosiy')
     const [display, setDisplay] = useState('none')
     useEffect(() => {
             if (sidebar === true){
@@ -72,8 +71,8 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
                 <BsQuestionCircleFill className={styles.icon}/>    Savollar
                 </div>
             </Link>
-            <a href="tel:+998942557777" className={styles.menu}>
-                +998 94 255 77 77
+            <a href="tel:+998914350077" className={styles.menu}>
+                +998 91 435 00 77
             </a>
         </div>
     );

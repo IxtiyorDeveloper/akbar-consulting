@@ -277,7 +277,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                                 return (
                                     <div key={k}>
                                         <div
-                                            style={{backgroundImage: `url('/gallery/${i.img}.JPG')`}}
+                                            style={{backgroundImage: `url('/gallery/${i.img}.webp')`}}
                                             className={styles.img}
                                         />
                                     </div>
