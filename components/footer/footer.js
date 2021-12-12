@@ -9,8 +9,8 @@ import {IoMdSettings} from "react-icons/io";
 import router from "next/router";
 import {LinkHandler, toggle} from "../redux/reducers/reducer/universities";
 import {connect} from "react-redux";
-import React from "react";
-import {Link} from 'react-scroll'
+import React, {useState} from "react";
+import Link from 'next/link'
 import {AiOutlineFileProtect} from "react-icons/ai";
 
 function Footer({LinkHandler}) {
@@ -18,6 +18,8 @@ function Footer({LinkHandler}) {
         LinkHandler(p)
         router.push('/');
     }
+    const [link, setLink] = useState('asosiy');
+
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -62,96 +64,50 @@ function Footer({LinkHandler}) {
                 <div className={styles.title1}>
                     Sahifalar
                 </div>
-                <Link activeClass="active"
-                      to="asosiy"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='asosiyLink'
-                      onClick={() => LinkScrollHandler('asosiyLink')}
+                <Link href={'/'}
+                      onClick={() => setLink("asosiy")}
                 >
-                    <IoHome className={styles.icon}/> Asosiy
+                    <div
+                        className={`${styles.menu}`}
+                    >
+                        Asosiy sahifa
+                    </div>
                 </Link>
-                <Link activeClass="active"
-                      to="davlatlar"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='davlatlarLink'
-                      onClick={() => LinkScrollHandler('davlatlarLink')}
+                <Link href={'/universities'}
+                      onClick={() => setLink("un")}
                 >
-                    <GiWorld className={styles.icon}/> Davlatlar
+                    <div
+                        className={`${styles.menu}`}
+                    >
+                        Universitetlar
+                    </div>
                 </Link>
-                <Link activeClass="active"
-                      to="sertifikatlar"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='sertifikatlarLink'
-                      onClick={() => LinkScrollHandler('sertifikatlarLink')}
+                <Link href={'/filiallar'}
+                      onClick={() => setLink("fil")}
                 >
-                    <AiOutlineFileProtect className={styles.icon}/> Sertifikatlar
+                    <div
+                        className={`${styles.menu}`}
+                    >
+                        Filiallar
+                    </div>
                 </Link>
-                <Link activeClass="active"
-                      to="talabalar"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='talabalarLink'
-                      onClick={() => LinkScrollHandler('talabalarLink')}
+                <Link href={'/gallery'}
+                      onClick={() => setLink("gal")}
                 >
-                    <FaGraduationCap className={styles.icon}/> Talabalar
+                    <div
+                        className={`${styles.menu}`}
+                    >
+                        Galereya & Sertifikatlar
+                    </div>
                 </Link>
-                <Link activeClass="active"
-                      to="servislar"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='servislarLink'
-                      onClick={() => LinkScrollHandler('servislarLink')}
+                <Link href={'/faq'}
+                      onClick={() => setLink("ser")}
                 >
-                    <IoMdSettings className={styles.icon}/> Servislar
-                </Link>
-                <Link activeClass="active"
-                      to="savollar"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='savollarLink'
-                      onClick={() => LinkScrollHandler('savollarLink')}
-                >
-                    <FaQuestion className={styles.icon}/> Savollar
-                </Link>
-                <Link activeClass="active"
-                      to="aloqa"
-                      smooth={true}
-                      className={`${styles.menu}`}
-                      offset={50}
-                      duration={500}
-                      isDynamic={true}
-                      ignoreCancelEvents={false}
-                      id='aloqaLink'
-                      onClick={() => LinkScrollHandler('aloqaLink')}
-                >
-                    <FiPhoneCall className={styles.icon}/> Aloqa
+                    <div
+                        className={`${styles.menu}`}
+                    >
+                        Savollar
+                    </div>
                 </Link>
             </div>
             <div className={styles.wrapper}>
@@ -164,36 +120,6 @@ function Footer({LinkHandler}) {
                             <div className={styles.row}>
                                 <a className={styles.two} href="tel:+998914340077">
                                     Bosh ofis: 91 434 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998904350077">
-                                  Bosh ofis: 90 435 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998906480077">
-                                    Namangan: 90 648 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998886380077">
-                                    Yangibozor: 88 638 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998976380077">
-                                    Bog`ot: 97 638 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998976390077">
-                                    Yangiariq: 97 639 00 77
-                                </a>
-                            </div>
-                            <div className={styles.row}>
-                                <a className={styles.two} href="tel:+998886390077">
-                                    Beruniy: 88 639 00 77
                                 </a>
                             </div>
                             <div className={styles.row}>

@@ -1,0 +1,53 @@
+@import "styles/constants";
+
+.filiallar {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .title {
+    font-family: $Montserrat-font;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .card {
+    padding-left: 5%;
+    padding-right: 5%;
+    .tit {
+      font-family: $Montserrat-font;
+      font-size: 24px;
+      margin-top: 50px;
+      font-weight: 700;
+    }
+
+    .box {
+      border-top: 1px solid rgb(239,239,239);
+      .flex {
+        display: flex;
+        margin-top: 25px;
+        align-items: flex-start;
+
+        .man {
+          font-family: $Montserrat-font;
+          font-size: 16px;
+          font-weight: 500;
+          color: $black-one;
+          display: flex;
+          align-items: center;
+        }
+
+        .in {
+          font-family: $Montserrat-font;
+          font-size: 16px;
+          font-weight: 500;
+          color: $black-one;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

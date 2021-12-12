@@ -43,7 +43,7 @@
     float: right;
     background-color: transparent;
     position: absolute;
-    right: 20px;
+    right: 30px;
     height: 80px;
     align-items: center;
     display: none;
@@ -57,21 +57,20 @@
     display: flex;
     background-color: transparent;
     position: absolute;
-    right: 50px;
+    right: 30px!important;
     height:80px;
     align-items: center;
-    .menu{
-      padding: 20px;
-      height:80px;
+    .menuAnd{
+      padding: 17px;
+      height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: $Montserrat-font;
       font-size: 14px;
       &.another{
-        cursor: pointer;
         background-color: $main-color;
-        color: black;
+        color: $black-one!important;
       }
       //&:first-child{
       //  background-color: $main-color;

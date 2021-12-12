@@ -1,19 +1,15 @@
 import styles from "../../styles/header/header.module.scss"
 import {GiHamburgerMenu} from "react-icons/gi";
-import React, {useState} from "react";
-import {Link} from 'react-scroll'
+import React from "react";
+import Link from 'next/link'
 import {LinkHandler, toggle} from "../redux/reducers/reducer/universities";
 import {connect} from "react-redux";
-import sidebar from "../sidebar/sidebar";
-import router from "next/router";
+import {useRouter} from "next/router";
 
 
 
-function Header({LinkHandler,toggle,sidebar}) {
-    const LinkScrollHandler = p => {
-        LinkHandler(p)
-        router.push('/');
-    }
+function Header({toggle,sidebar}) {
+
     const stylesMain = {
         position:"fixed",
         top:"0",
@@ -24,104 +20,62 @@ function Header({LinkHandler,toggle,sidebar}) {
         height:"100vh",
         display:`${sidebar ? "block" : "none"}`
     }
+    const location = useRouter();
     return (
         <div>
             <div style={stylesMain} onClick={() =>toggle()}/>
             <div className={styles.container}>
                 <div className={styles.then}>
-                    <img src="/home/logosvg.svg" alt="" className={styles.img}/>
-                    <img src="/home/logotitle.svg" alt="" className={styles.img1}/>
+                    <Link href={'/'}>
+                            <img src="/home/logosvg.svg" alt="" className={styles.img}/>
+                    </Link>
+                    <Link href={'/'}>
+                        <img src="/home/logotitle.svg" alt="" className={styles.img1}/>
+                    </Link>
                     {/*<div className={styles.title}>*/}
                     {/*    Akbar-consulting*/}
                     {/*</div>*/}
                 </div>
                 <div className={styles.link}>
-                    <Link activeClass="active"
-                          to="asosiy"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('asosiyLink')}
-                    >
-                        Asosiy
+                    <Link href={'/'}>
+                        <div
+                            className={`${styles.menuAnd} ${location.pathname === '/' ? styles.another : ""}`}
+                        >
+                            Asosiy sahifa
+                        </div>
                     </Link>
-                    <Link activeClass="active"
-                          to="davlatlar"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          delay={100}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('davlatlarLink')}
-                    >
-                        Davlatlar
+                    <Link href={'/universities'}>
+                        <div
+                            className={`${styles.menuAnd} ${location.pathname === '/universities' ? styles.another : ""}`}
+                        >
+                            Universitetlar
+                        </div>
                     </Link>
-                    <Link activeClass="active"
-                          to="sertifikatlar"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('sertifikatlarLink')}
+                    <Link href={'/filiallar'}
                     >
-                       Sertifikatlar
+                        <div
+                            className={`${styles.menuAnd} ${location.pathname === '/filiallar' ? styles.another : ""}`}
+                        >
+                            Filiallar
+                        </div>
                     </Link>
-                    <Link activeClass="active"
-                          to="talabalar"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('talabalarLink')}
+                    <Link href={'/gallery'}
                     >
-                        Talabalar
+                        <div
+                            className={`${styles.menuAnd} ${location.pathname === '/gallery' ? styles.another : ""}`}
+                        >
+                            Galereya & Sertifikatlar
+                        </div>
                     </Link>
-                    <Link activeClass="active"
-                          to="servislar"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('servislarLink')}
+                    <Link href={'/faq'}
                     >
-                        Servislar
+                        <div
+                            className={`${styles.menuAnd}  ${location.pathname === '/faq' ? styles.another : ""}`}
+                        >
+                            Savollar
+                        </div>
                     </Link>
-                    <Link activeClass="active"
-                          to="savollar"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={50}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('savollarLink')}
-                    >
-                        Savollar
-                    </Link>
-                    <Link activeClass="aloqa"
-                          to="aloqa"
-                          smooth={true}
-                          className={`${styles.menu}`}
-                          offset={0}
-                          duration={500}
-                          isDynamic={true}
-                          ignoreCancelEvents={false}
-                          onClick={() =>LinkScrollHandler('aloqaLink')}
-                    >
-                        Aloqa
-                    </Link>
-                    <a href="tel:+99893 093 27 27" className={styles.menu}>
+                    <a href="tel:+99893 093 27 27" className={styles.menuAnd}>
                         +99893 093 27 27
                     </a>
                 </div>

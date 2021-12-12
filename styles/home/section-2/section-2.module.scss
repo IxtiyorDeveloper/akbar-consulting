@@ -102,397 +102,56 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 400px;
+        position: relative;
+        .img{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
 
-        &:first-child {
-          background: url('../../../public/home/countries/r1.jpg') rgba(0, 0, 15, 0.6);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          overflow: hidden;
+        .darkMaker {
+          height: 100%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
 
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
+          .dr {
+            color: $main-color;
+            border: 2px solid $main-color;
+            padding: 5px 20px;
+            display: inline-block;
+            transform: scale(0);
+            transition: all 0.3s linear;
+            text-transform: uppercase;
 
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
+            &:hover {
+              background: $main-color;
+              color: black;
             }
           }
 
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
+          .absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 32px;
+            font-family: $Montserrat-font;
           }
         }
 
-        &:nth-child(2) {
-          background: url("../../../public/home/countries/q1.jpeg") rgba(0, 0, 15, 0.6);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
+        &:hover .darkMaker {
+          background: rgba(0, 0, 15, 0.6);
+          cursor: pointer;
         }
 
-        &:nth-child(3) {
-          background: url("../../../public/home/countries/kirgizikhistan.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
-        }
-
-        &:nth-child(4) {
-          background: url("../../../public/home/countries/tadjikistan.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
-        }
-
-        &:nth-child(5) {
-          background: url("../../../public/home/countries/d1.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
-        }
-
-        &:nth-child(6) {
-          background: url("../../../public/home/countries/t1.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
-        }
-
-        &:nth-child(7) {
-          background: url("../../../public/home/countries/latvia.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
-        }
-        &:nth-child(8) {
-          background: url("../../../public/home/countries/poland.jpg");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-
-          .darkMaker {
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s;
-
-            .dr {
-              color: $main-color;
-              border: 2px solid $main-color;
-              padding: 5px 20px;
-              display: inline-block;
-              transform: scale(0);
-              transition: all 0.3s linear;
-              text-transform: uppercase;
-
-              &:hover {
-                background: $main-color;
-                color: black;
-              }
-            }
-
-            .absolute {
-              position: absolute;
-              top: 20px;
-              left: 20px;
-              color: white;
-              font-size: 32px;
-              font-family: $Montserrat-font;
-            }
-          }
-
-          &:hover .darkMaker {
-            background: rgba(0, 0, 15, 0.6);
-            cursor: pointer;
-          }
-
-          &:hover .darkMaker .dr {
-            transform: scale(1);
-          }
+        &:hover .darkMaker .dr {
+          transform: scale(1);
         }
       }
     }

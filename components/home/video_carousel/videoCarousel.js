@@ -111,10 +111,10 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
             </div>
             <div className={styles.wr} style={styles2}>
                 <div
-                    className={`${styles.col}`}
-                    style={{backgroundImage: `url('/gallery/one.JPG')`}}
+                    className={styles.col}
                 >
-                    <div className={styles.hover}>
+                    <img src="/gallery/one.JPG" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ} onClick={() =>  handleZoom("/gallery/one.JPG")}
                         >
                             <FaSearchPlus className={styles.icon}/>
@@ -125,11 +125,11 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     </div>
                 </div>
                 <div
-                    className={`${styles.col}`}
-                    style={{backgroundImage: `url('/gallery/two.JPG')`}}
+                    className={styles.col}
                     onClick={() =>  handleZoom("/gallery/two.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <img src="/gallery/two.JPG" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}
                              onClick={() =>  handleZoom("two")}
                         >
@@ -145,7 +145,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/three.JPG')`}}
                     onClick={() =>  handleZoom("/gallery/three.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -159,7 +159,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/four.JPG')`}}
                     onClick={() =>  handleZoom("/gallery/four.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -173,7 +173,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/five.JPG')`}}
                     onClick={() =>  handleZoom("/gallery/five.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -187,7 +187,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/six.JPG')`}}
                     onClick={() =>  handleZoom("/gallery/six.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -201,7 +201,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/seven.JPG')`}}
                     onClick={() =>  handleZoom("/gallery/seven.JPG")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -215,7 +215,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/eight.JPG')`}}
                     onClick={() =>  handleZoom("y0")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -229,7 +229,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/nine.JPG')`}}
                     onClick={() =>  handleZoom("y1")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -243,7 +243,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                     style={{backgroundImage: `url('/gallery/ten.JPG')`}}
                     onClick={() =>  handleZoom("y2")}
                 >
-                    <div className={styles.hover}>
+                    <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
                         </div>

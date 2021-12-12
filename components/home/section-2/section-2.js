@@ -5,7 +5,48 @@ import {UNChange} from "../../redux/reducers/reducer/universities";
 
 
 function Section2({UNChange, country}) {
-
+    const data = [
+        {
+            id: 1,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041538/r1_ivegqp.webp",
+            name:"Rossiya"
+        },
+        {
+            id: 2,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041527/q1_tvyro7.webp",
+            name:"Qozog'iston"
+        },
+        {
+            id: 3,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041486/kirgizikhistan_ieoicr.webp",
+            name:"Qirg'iziston"
+        },
+        {
+            id: 4,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041558/tadjikistan_j5suvf.webp",
+            name:"Tojikiston"
+        },
+        {
+            id: 5,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639049568/dubai_v5ev0j.webp",
+            name:"Dubay"
+        },
+        {
+            id: 6,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041549/t1_ptri4i.webp",
+            name:"Turkiya"
+        },
+        {
+            id: 7,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041499/latvia_xtju5t.webp",
+            name:"Latviya"
+        },
+        {
+            id: 8,
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639041508/poland_b9ckfs.webp",
+            name:"Polsha"
+        },
+    ]
     return (
         <div className={styles.container}>
             <div className={styles.boxWrapper}>
@@ -49,102 +90,25 @@ function Section2({UNChange, country}) {
                     Hamkor davlatlar
                 </div>
                 <div className={styles.countriesList}>
-                    <div className={styles.list} onClick={() => UNChange("Rossiya")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
+                    {
+                        data.map((i,k) => {
+                            return(
+                                <div className={styles.list} onClick={() => UNChange(i.name)}>
+                                    <img src={i.img} alt="" className={styles.img} loading="lazy"/>
+                                        <Link href={'/universities'}>
+                                            <div className={styles.darkMaker}>
+                                                <div className={styles.dr}>
+                                                    Batafsil
+                                                </div>
+                                                <div className={styles.absolute}>
+                                                    {i.name}
+                                                </div>
+                                            </div>
+                                        </Link>
                                 </div>
-                                <div className={styles.absolute}>
-                                    Rossiya
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Qozog'iston")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Qozog'iston
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Qirg'iziston")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Qirg'iziston
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Tojikiston")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Tojikiston
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Dubay")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Dubay
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Turkiya")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Turkiya
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Latviya")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Latviya
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className={styles.list} onClick={() => UNChange("Polsha")}>
-                        <Link href={'/universities'}>
-                            <div className={styles.darkMaker}>
-                                <div className={styles.dr}>
-                                    Batafsil
-                                </div>
-                                <div className={styles.absolute}>
-                                    Polsha
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

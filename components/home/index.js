@@ -83,14 +83,7 @@ function Home() {
                 button={"Batafsil"}
                 link={'/universities'}
             />
-            <Certificates setImg={setImg} setIsV={setIsV}/>
             <Section4/>
-            <VideoCarousel
-                setImg={setImg}
-                setIsV={setIsV}
-                setIsV1={setIsV1}
-                setVid={setVid}
-            />
             <hr/>
             <Services/>
             <FAQ num={8}/>

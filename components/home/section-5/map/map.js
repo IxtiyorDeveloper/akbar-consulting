@@ -19,8 +19,9 @@ const Ymap = () =>{
                 <div>
                     <Map     defaultState={{
                         center: [41.54511464579863, 60.616101453975695],
-                        zoom: 10,
+                        zoom: 13,
                         controls: ['zoomControl', 'fullscreenControl'],
+                        behaviors: ['multiTouch']
                     }}
                              style={{width: '100%', height: h}}
                              modules={['control.ZoomControl', 'control.FullscreenControl']}

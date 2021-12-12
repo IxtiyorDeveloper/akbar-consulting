@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from "react-scroll";
-import {IoCallSharp, IoEarthSharp, IoHome, IoSettingsSharp} from "react-icons/io5";
-import {FaQuestion, FaUserGraduate} from "react-icons/fa";
+import Link from "next/link";
 import {connect} from "react-redux";
 import styles from "../../styles/sidebar/sidebar.module.scss"
 import {LinkHandler, toggle} from "../redux/reducers/reducer/universities";
 import router from "next/router";
-import {AiOutlineFileProtect} from 'react-icons/ai'
+import {FaHome, FaUniversity} from "react-icons/fa"
+import {BiGitBranch} from "react-icons/bi"
+import {BsQuestionCircleFill} from "react-icons/bs"
+import {RiGalleryLine} from "react-icons/ri";
 
 function Sidebar({sidebar,toggle,LinkHandler}) {
     const [link, setLink] = useState('asosiy')
@@ -33,117 +34,43 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <div className={styles.title}>
                 Akbar Consulting
             </div>
-            <Link activeClass="active"
-                  to="asosiy"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'asosiy' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('asosiy')}
-                  ignoreCancelEvents={false}
-                  id="asosiyLink1"
-                  onClick={() => {linkHandler('asosiyLink1')}}
-            >
-              <IoHome className={styles.icon}/>  Asosiy
+            <Link href={'/'}>
+                <div
+                    className={`${styles.menu} ${location.pathname === '/' ? styles.another : ""}`}
+                >
+                  <FaHome className={styles.icon}/>  Asosiy sahifa
+                </div>
             </Link>
-            <Link activeClass="active"
-                  to="davlatlar"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'davlatlar' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('davlatlar')}
-                  ignoreCancelEvents={false}
-                  id="davlatlarLink1"
-                  onClick={() => linkHandler('davlatlarLink1')}
-            >
-             <IoEarthSharp className={styles.icon}/>   Davlatlar
+            <Link href={'/universities'}>
+                <div
+                    className={`${styles.menu} ${location.pathname === '/universities' ? styles.another : ""}`}
+                >
+                <FaUniversity className={styles.icon}/>    Universitetlar
+                </div>
             </Link>
-            <Link activeClass="active"
-                  to="sertifikatlar"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'sertifikatlar' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('sertifikatlar')}
-                  ignoreCancelEvents={false}
-                  id="sertifikatlarLink1"
-                  onClick={() => linkHandler('sertifikatlarLink1')}
+            <Link href={'/filiallar'}
             >
-                <AiOutlineFileProtect className={styles.icon}/> Sertifikatlar
+                <div
+                    className={`${styles.menu} ${location.pathname === '/filiallar' ? styles.another : ""}`}
+                >
+                 <BiGitBranch className={styles.icon}/>   Filiallar
+                </div>
             </Link>
-            <Link activeClass="active"
-                  to="talabalar"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'talabalar' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('talabalar')}
-                  ignoreCancelEvents={false}
-                  id="talabalarLink1"
-                  onClick={() => linkHandler('talabalarLink1')}
+            <Link href={'/gallery'}
             >
-           <FaUserGraduate className={styles.icon}/>     Talabalar
+                <div
+                    className={`${styles.menu} ${location.pathname === '/gallery' ? styles.another : ""}`}
+                >
+                    <RiGalleryLine className={styles.icon}/>  Galereya & Sertifikatlar
+                </div>
             </Link>
-            <Link activeClass="active"
-                  to="servislar"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'servislar' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('servislar')}
-                  ignoreCancelEvents={false}
-                  id="servislarLink1"
-                  onClick={() => linkHandler('servislarLink1')}
+            <Link href={'/faq'}
             >
-            <IoSettingsSharp className={styles.icon}/>    Servislar
-            </Link>
-            <Link activeClass="active"
-                  to="savollar"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'savollar' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('savollar')}
-                  ignoreCancelEvents={false}
-                  id="savollarLink1"
-                  onClick={() => linkHandler('savollarLink1')}
-            >
-            <FaQuestion className={styles.icon}/>    Savollar
-            </Link>
-            <Link activeClass="aloqa"
-                  to="aloqa"
-                  spy={true}
-                  smooth={true}
-                  className={`${styles.menu} ${link === 'aloqa' ? styles.another : ""}`}
-                  offset={-50}
-                  duration={500}
-                  delay={100}
-                  isDynamic={true}
-                  onSetActive={() => setLink('aloqa')}
-                  ignoreCancelEvents={false}
-                  id="aloqaLink1"
-                  onClick={() => linkHandler('aloqaLink1')}
-            >
-             <IoCallSharp className={styles.icon}/>   Aloqa
+                <div
+                    className={`${styles.menu}  ${location.pathname === '/faq' ? styles.another : ""}`}
+                >
+                <BsQuestionCircleFill className={styles.icon}/>    Savollar
+                </div>
             </Link>
             <a href="tel:+998942557777" className={styles.menu}>
                 +998 94 255 77 77
