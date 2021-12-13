@@ -4,11 +4,13 @@ import styles from "../styles/filiallar/filiallar.module.scss"
 import {IoLocationSharp} from "react-icons/io5"
 import {AiTwotonePhone} from "react-icons/ai"
 import Ymap from "../components/map/map";
+import Sidebar from "../components/sidebar/sidebar";
 
 
 function Filiallar(props) {
     return (
         <div>
+            <Sidebar/>
             <Header/>
             <div className={styles.filiallar}>
                 <div className={styles.title}>
