@@ -14,7 +14,6 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
     useEffect(() => {
             if (sidebar === true){
                 setDisplay('0')
-                console.log(sidebar)
             }
             if (sidebar === false){
                 setDisplay('-200px')
@@ -27,6 +26,9 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
     }
     const stylesMain = {
         left:display
+    };
+    const hide = () => {
+      toggle();
     }
     return (
         <div className={styles.container} style={stylesMain}>
@@ -36,12 +38,14 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <Link href={'/'}>
                 <div
                     className={`${styles.menu} ${location.pathname === '/' ? styles.another : ""}`}
+                    onClick={() => hide()}
                 >
                   <FaHome className={styles.icon}/>  Asosiy sahifa
                 </div>
             </Link>
             <Link href={'/universities'}>
                 <div
+                    onClick={() => hide()}
                     className={`${styles.menu} ${location.pathname === '/universities' ? styles.another : ""}`}
                 >
                 <FaUniversity className={styles.icon}/>    Universitetlar
@@ -50,6 +54,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <Link href={'/filiallar'}
             >
                 <div
+                    onClick={() => hide()}
                     className={`${styles.menu} ${location.pathname === '/filiallar' ? styles.another : ""}`}
                 >
                  <BiGitBranch className={styles.icon}/>   Filiallar
@@ -58,6 +63,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <Link href={'/gallery'}
             >
                 <div
+                    onClick={() => hide()}
                     className={`${styles.menu} ${location.pathname === '/gallery' ? styles.another : ""}`}
                 >
                     <RiGalleryLine className={styles.icon}/>  Galereya & Sertifikatlar
@@ -66,6 +72,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <Link href={'/faq'}
             >
                 <div
+                    onClick={() => hide()}
                     className={`${styles.menu}  ${location.pathname === '/faq' ? styles.another : ""}`}
                 >
                 <BsQuestionCircleFill className={styles.icon}/>    Savollar
