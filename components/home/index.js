@@ -18,7 +18,7 @@ function Home() {
     const [isV, setIsV] = useState(false);
     const [isV1, setIsV1] = useState(false);
     const [img, setImg] = useState(false);
-    const [vid, setVid] = useState(false);
+    const [vid, setVid] = useState("");
     const bg = {
         width: "100%",
         height: "100vh",
