@@ -93,7 +93,7 @@ function Section2({UNChange, country}) {
                     {
                         data.map((i,k) => {
                             return(
-                                <div className={styles.list} onClick={() => UNChange(i.name)}>
+                                <div className={styles.list} onClick={() => UNChange(i.name)} key={k}>
                                     <img src={i.img} alt="" className={styles.img} loading="lazy"/>
                                         <Link href={'/universities'}>
                                             <div className={styles.darkMaker}>
