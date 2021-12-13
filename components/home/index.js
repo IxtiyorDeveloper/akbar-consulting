@@ -5,15 +5,13 @@ import Section4 from "./section-4/section-4";
 import Section5 from "./section-5/section-5";
 import Footer from "../footer/footer";
 import Services from "./services/services";
-import React, {useState, useRef, useEffect} from "react";
-import window from "global/window";
-import {AiOutlineArrowUp, AiOutlineClose} from "react-icons/ai";
+import React, {useState} from "react";
+import {AiOutlineClose} from "react-icons/ai";
 import FAQ from "../faq/index";
 import Sidebar from "../sidebar/sidebar";
-import Certificates from "./certificates";
-import VideoCarousel from "./video_carousel/videoCarousel";
 import styles from '../../styles/home/popUp.module.scss'
 import ReactPlayer from "react-player";
+import Filial from "./filial/filial";
 
 
 function Home() {
@@ -87,6 +85,7 @@ function Home() {
             <hr/>
             <Services/>
             <FAQ num={8}/>
+            <Filial/>
             <Section5/>
             <Footer/>
         </>

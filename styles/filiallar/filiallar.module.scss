@@ -26,26 +26,54 @@
 
     .box {
       border-top: 1px solid rgb(239,239,239);
-      .flex {
+      .tr{
         display: flex;
-        margin-top: 25px;
-        align-items: flex-start;
+        width: 100%;
+        .well{
+          width: 50%;
+          .flex {
+            display: flex;
+            margin-top: 25px;
+            align-items: flex-start;
+            width: 100%;
 
-        .man {
-          font-family: $Montserrat-font;
-          font-size: 16px;
-          font-weight: 500;
-          color: $black-one;
-          display: flex;
-          align-items: center;
+            .man {
+              font-family: $Montserrat-font;
+              font-size: 16px;
+              font-weight: 500;
+              color: $black-one;
+              display: flex;
+              align-items: center;
+            }
+
+            .in {
+              font-family: $Montserrat-font;
+              font-size: 16px;
+              font-weight: 500;
+              color: $black-one;
+              margin-left: 10px;
+            }
+          }
         }
-
-        .in {
-          font-family: $Montserrat-font;
-          font-size: 16px;
-          font-weight: 500;
-          color: $black-one;
-          margin-left: 10px;
+        .map{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 786px) {
+  .filiallar{
+    .box{
+      .tr{
+        flex-direction: column;
+        width: 100%;
+        .well{
+          width: 100%!important;
+        }
+        .map{
+          width: 100% !important;
+          margin-top: 30px;
         }
       }
     }

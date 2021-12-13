@@ -51,17 +51,17 @@ function Section1({click, toggle, sidebar}) {
     const data = [
         {
             id: 1,
-            title: "Chet el nufuzli oliygohlarida o'qish",
-            text: "bizda oson va kafolatlangan",
-            ariza: "Ariza",
-            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639043499/slide3_gbwlt9.webp"
-        },
-        {
-            id: 2,
             title: "Imtihonsiz talaba bo'lish imkoniyati",
             text: "buni qo'ldan boy bermang",
             ariza: "Ariza",
             img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639043486/slide2_vnp4zn.webp"
+        },
+        {
+            id: 2,
+            title: "Chet el nufuzli oliygohlarida o'qish",
+            text: "bizda oson va kafolatlangan",
+            ariza: "Ariza",
+            img: "https://res.cloudinary.com/dzomhjx1c/image/upload/v1639043499/slide3_gbwlt9.webp"
         },
         {
             id: 3,
