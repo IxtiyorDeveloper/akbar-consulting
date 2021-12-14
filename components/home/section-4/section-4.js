@@ -72,7 +72,7 @@ function Section4(props) {
                         data.map((i, k) => {
                             return (
                                 <div key={k} className={styles.slideContainer}>
-                                    <div style={{backgroundImage: `url('/home/students/${i.img}.png')`}}
+                                    <div style={{backgroundImage: `url('/home/students/${i.img}.webp')`}}
                                          className={styles.img}>
                                     </div>
                                     <div className={styles.contentWr}>

@@ -10,7 +10,7 @@ function Filial(props) {
             </div>
             <div className={styles.next}>
                 <div className={styles.img}>
-                    <img src="/map.jpeg" alt=""/>
+                    <img src="/map.webp" alt=""/>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.num}>
