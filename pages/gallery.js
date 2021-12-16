@@ -6,6 +6,7 @@ import ReactPlayer from "react-player";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Certificates from "../components/home/certificates";
+import Sidebar from "../components/sidebar/sidebar";
 
 function Gallery(props) {
     const [isV, setIsV] = useState(false);
@@ -29,6 +30,7 @@ function Gallery(props) {
     return (
         <div>
             <Header/>
+            <Sidebar/>
             <div style={bg} onClick={() => handleClose()}/>
             <div
                 className={styles.pop}
