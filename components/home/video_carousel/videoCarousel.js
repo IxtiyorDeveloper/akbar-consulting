@@ -25,7 +25,38 @@ function myArrow({type, onClick, isEdge}) {
 function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
     const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
     const is500 = useMediaQuery({query: '(max-width: 900px)'});
-
+    const data1 = [
+        {
+            img: "p1"
+        },
+        {
+            img: "p2"
+        },
+        {
+            img: "p3"
+        },
+        {
+            img: "p4"
+        },
+        {
+            img: "p5"
+        },
+        {
+            img: "p6"
+        },
+        {
+            img: "p7"
+        },
+        {
+            img: "p8"
+        },
+        {
+            img: "p9"
+        },
+        {
+            img: "p10"
+        },
+    ];
 
     const data = [
         {
@@ -284,10 +315,10 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     {/*    )*/}
                     {/*}*/}
                     {
-                        data && data.map((i, k) => {
+                        data1 && data1.map((i, k) => {
                                     return (
                                         <div key={k}>
-                                            <img src={`/gallery/${i.img}.webp`} alt="" className={styles.img}/>
+                                            <img src={`/ser/JPG/${i.img}.jpg`} alt="" className={styles.img}/>
                                         </div>
                                     )
                             }
