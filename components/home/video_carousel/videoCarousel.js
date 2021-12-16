@@ -270,7 +270,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                         data && data.map((i, k) => {
                                 if (i.id === 9 || i.id === 8 || i.id === 10) {
                                     return (
-                                        <div key={k} style={{width:"100%"}}>
+                                        <div key={k} style={{width: "100%"}}>
                                             <ReactPlayer
                                                 url={`${i.img}`}
                                                 height={is500 ? "250px" : "400px"}
@@ -279,7 +279,13 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                                             />
                                         </div>
                                     )
-                                } else {
+                                }
+                            }
+                        )
+                    }
+                    {
+                        data && data.map((i, k) => {
+                                if (i.id === 1 || i.id === 2 || i.id === 3 || i.id === 4 || i.id === 5 || i.id === 6 || i.id === 7) {
                                     return (
                                         <div key={k}>
                                             <img src={`/gallery/${i.img}.webp`} alt="" className={styles.img}/>
@@ -287,7 +293,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                                     )
                                 }
                             }
-                            )
+                        )
                     }
                 </Carousel>
             </div>
