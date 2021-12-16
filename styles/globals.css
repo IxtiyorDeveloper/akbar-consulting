@@ -322,13 +322,34 @@ a {
     left: 100px;
     color: rgb(237, 237, 0);
 }
+.w1200A {
+    max-width: 600px;
+    margin-inline: auto;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    overflow: hidden;
+}
 
+.before {
+    max-width: 600px;
+    margin-inline: auto;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+}
 .arrow2 {
     position: absolute;
     color: rgb(64, 63, 69);
     font-size: 3.5em;
     font-weight: bold;
-    transform: translate(-50%, -50%)
+    display: flex;
+    align-items: center;
 }
 
 .arrow2:hover {
@@ -336,31 +357,22 @@ a {
     color: rgb(48, 47, 47);
 }
 
-.nextArrow2 {
+.nextArrow22 {
     top: 50%;
     right: 0;
     z-index: 67;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     color: rgb(237, 237, 0);
 }
 
-.prevArrow2 {
-    top: 50%;
+.prevArrow22 {
+    top:50%;
     z-index: 67;
-    transform: translate(-50%, -50%);
-    left: 45px;
+    left: 0px;
     color: rgb(237, 237, 0);
+    transform: translate(0%, -50%);
 }
 
-@media (max-width: 500px) {
-    .nextArrow2 {
-        right: -20px;
-    }
-
-    .prevArrow2 {
-        left: 27px;
-    }
-}
 
 .player {
     position: fixed;
@@ -578,7 +590,10 @@ a {
     justify-content: center;
     align-items: center;
 }
-
+.iconTop{
+    color: rgb(1,22,95);
+    font-size: 25px;
+}
 .c1 {
     margin-left: 20px;
 }
@@ -617,5 +632,15 @@ a {
 @media (max-width: 450px) {
     .col1 {
         font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .slick-slider
+    .slick-track,
+    .slick-slider
+    .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        height: 250px;
     }
 }

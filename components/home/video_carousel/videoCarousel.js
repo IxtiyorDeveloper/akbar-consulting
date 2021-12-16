@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
@@ -7,22 +7,25 @@ import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
 import ReactPlayer from "react-player";
 import {useMediaQuery} from "react-responsive";
 import {FaSearchPlus} from "react-icons/fa";
-import {AiOutlinePicture,AiOutlineVideoCamera} from "react-icons/ai";
+import {AiOutlinePicture, AiOutlineVideoCamera} from "react-icons/ai";
 
 
 function Arrow(props) {
-    let className = props.type === "next" ? "nextArrow2" : "prevArrow2";
+    let className = props.type === "next" ? "nextArrow22" : "prevArrow22";
     className += " arrow2";
     const char = props.type === "next" ? <BsChevronRight/> : <BsChevronLeft/>;
     return (
-        <span className={className} onClick={props.onClick}>
-      {char}
-    </span>
+        <div className={`${props.type === "next" ? "w1200A" : "before"}`}>
+            <div className={className} onClick={props.onClick}>
+                {char}
+            </div>
+        </div>
     );
 }
 
-function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
+function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
     const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
+    const is500 = useMediaQuery({query: '(max-width: 900px)'});
     const data = [
         {
             id: 1,
@@ -66,21 +69,18 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
         }
     ];
     const handleZoom = (a) => {
-        if (a === "y0"){
+        if (a === "y0") {
             setIsV1(true);
             setVid("https://www.youtube.com/watch?v=Xre0e976sEw&t=1s")
-        }
-        else {
-            if (a === "y1"){
+        } else {
+            if (a === "y1") {
                 setIsV1(true);
                 setVid("https://www.youtube.com/watch?v=TdwBFzfvRhM")
-            }
-            else {
-                if (a === "y2"){
+            } else {
+                if (a === "y2") {
                     setIsV1(true);
                     setVid("https://www.youtube.com/watch?v=rudBdJxb_TE")
-                }
-                else {
+                } else {
                     setImg(a);
                     setIsV(true)
                 }
@@ -115,7 +115,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 >
                     <img src="/gallery/one.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
-                        <div className={styles.circ} onClick={() =>  handleZoom("/gallery/one.webp")}
+                        <div className={styles.circ} onClick={() => handleZoom("/gallery/one.webp")}
                         >
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -126,12 +126,12 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("/gallery/two.webp")}
+                    onClick={() => handleZoom("/gallery/two.webp")}
                 >
                     <img src="/gallery/two.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}
-                             onClick={() =>  handleZoom("two")}
+                             onClick={() => handleZoom("two")}
                         >
                             <FaSearchPlus className={styles.icon}/>
                         </div>
@@ -142,7 +142,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={`${styles.col}`}
-                    onClick={() =>  handleZoom("/gallery/three.webp")}
+                    onClick={() => handleZoom("/gallery/three.webp")}
                 >
                     <img src="/gallery/three.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -156,7 +156,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={`${styles.col}`}
-                    onClick={() =>  handleZoom("/gallery/four.webp")}
+                    onClick={() => handleZoom("/gallery/four.webp")}
                 >
                     <img src="/gallery/four.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -170,7 +170,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={`${styles.col}`}
-                    onClick={() =>  handleZoom("/gallery/five.webp")}
+                    onClick={() => handleZoom("/gallery/five.webp")}
                 >
                     <img src="/gallery/five.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -184,7 +184,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("/gallery/six.webp")}
+                    onClick={() => handleZoom("/gallery/six.webp")}
                 >
                     <img src="/gallery/six.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -198,7 +198,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("/gallery/seven.webp")}
+                    onClick={() => handleZoom("/gallery/seven.webp")}
                 >
                     <img src="/gallery/seven.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -212,7 +212,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("y0")}
+                    onClick={() => handleZoom("y0")}
                 >
                     <img src="/gallery/eight.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -226,7 +226,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("y1")}
+                    onClick={() => handleZoom("y1")}
                 >
                     <img src="/gallery/nine.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -240,7 +240,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() =>  handleZoom("y2")}
+                    onClick={() => handleZoom("y2")}
                 >
                     <img src="/gallery/ten.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
@@ -266,7 +266,7 @@ function VideoCarousel({setImg,setIsV,setIsV1,setVid}) {
                                     <div key={k}>
                                         <ReactPlayer
                                             url={`${i.img}`}
-                                            height='400px'
+                                            height={is500 ? "250px" : "400px"}
                                             width={`${isResponsive ? "90%" : "60%"}`}
                                             className={styles.re}
                                             style={{marginLeft: `${isResponsive ? "5%" : "20%"}`}}

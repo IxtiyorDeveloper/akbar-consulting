@@ -45,7 +45,7 @@ function Index() {
                  style={{
                      display: `${offTop > 400 ? "flex" : "none"}`
                  }}
-            ><AiOutlineArrowUp className="icon"/>
+            ><AiOutlineArrowUp className="iconTop"/>
             </div>
         </div>
     );
