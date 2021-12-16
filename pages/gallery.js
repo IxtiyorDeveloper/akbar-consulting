@@ -69,7 +69,6 @@ function Gallery(props) {
                     setIsV1={setIsV1}
                     setVid={setVid}
                 />
-                <Certificates setImg={setImg} setIsV={setIsV}/>
             </div>
             <Footer/>
         </div>

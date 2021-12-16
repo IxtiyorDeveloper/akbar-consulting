@@ -12,6 +12,7 @@ import Sidebar from "../sidebar/sidebar";
 import styles from '../../styles/home/popUp.module.scss'
 import ReactPlayer from "react-player";
 import Filial from "./filial/filial";
+import Certificates from "./certificates";
 
 
 function Home() {
@@ -82,6 +83,7 @@ function Home() {
                 link={'/universities'}
             />
             <Section4/>
+            <Certificates setImg={setImg} setIsV={setIsV}/>
             <hr/>
             <Services/>
             <FAQ num={8}/>

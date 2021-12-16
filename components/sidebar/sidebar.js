@@ -66,7 +66,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
                     onClick={() => hide()}
                     className={`${styles.menu} ${location.pathname === '/gallery' ? styles.another : ""}`}
                 >
-                    <RiGalleryLine className={styles.icon}/>  Galereya & Sertifikatlar
+                    <RiGalleryLine className={styles.icon}/>  Galereya
                 </div>
             </Link>
             <Link href={'/faq'}

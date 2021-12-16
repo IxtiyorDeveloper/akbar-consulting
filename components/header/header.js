@@ -64,7 +64,7 @@ function Header({toggle,sidebar}) {
                         <div
                             className={`${styles.menuAnd} ${location.pathname === '/gallery' ? styles.another : ""}`}
                         >
-                            Galereya & Sertifikatlar
+                            Galereya
                         </div>
                     </Link>
                     <Link href={'/faq'}

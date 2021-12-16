@@ -5,6 +5,7 @@ import {IoLocationSharp} from "react-icons/io5"
 import {AiTwotonePhone} from "react-icons/ai"
 import Ymap from "../components/map/map";
 import Sidebar from "../components/sidebar/sidebar";
+import Footer from "../components/footer/footer";
 
 
 function Filiallar(props) {
@@ -209,6 +210,7 @@ function Filiallar(props) {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
