@@ -263,7 +263,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     onPrevStart={onPrevStart}
                     onNextStart={onNextStart}
                     disableArrowsOnEnd={false}
-                    autoPlaySpeed={1000}
+                    autoPlaySpeed={0}
                     className="car"
                 >
                     {
