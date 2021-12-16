@@ -41,10 +41,10 @@ function Section1({click, toggle, sidebar}) {
     }
 
     const stylesHeader = {
-        top: `${offTop > 120 || isResponsive ? "0" : "40px"}`,
+        top:0,
         zIndex: "21",
-        width: `${offTop > 120 || isResponsive ? "100%" : "80%"}`,
-        marginLeft: `${offTop > 120 || isResponsive ? "0%" : "10%"}`
+        width: "100%",
+        marginLeft: 0
     }
     const data = [
         {

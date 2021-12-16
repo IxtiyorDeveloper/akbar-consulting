@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 .container{
   width: 100%;
-  padding: 20px;
   background-color: $black-one;
   color: white;
   display: flex;
@@ -108,7 +107,6 @@
 }
 @media (max-width: 1100px) {
   .container {
-    padding: 0;
     .link {
       display: none;
     }
