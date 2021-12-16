@@ -46,7 +46,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             <Link href={'/universities'}>
                 <div
                     onClick={() => hide()}
-                    className={`${styles.menu} ${location.pathname === '/universities' ? styles.another : ""}`}
+                    className={`${styles.menu} ${location.pathname === '/universities/' ? styles.another : ""}`}
                 >
                 <FaUniversity className={styles.icon}/>    Universitetlar
                 </div>
@@ -55,7 +55,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             >
                 <div
                     onClick={() => hide()}
-                    className={`${styles.menu} ${location.pathname === '/filiallar' ? styles.another : ""}`}
+                    className={`${styles.menu} ${location.pathname === '/filiallar/' ? styles.another : ""}`}
                 >
                  <BiGitBranch className={styles.icon}/>   Filiallar
                 </div>
@@ -64,7 +64,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             >
                 <div
                     onClick={() => hide()}
-                    className={`${styles.menu} ${location.pathname === '/gallery' ? styles.another : ""}`}
+                    className={`${styles.menu} ${location.pathname === '/gallery/' ? styles.another : ""}`}
                 >
                     <RiGalleryLine className={styles.icon}/>  Galereya
                 </div>
@@ -73,7 +73,7 @@ function Sidebar({sidebar,toggle,LinkHandler}) {
             >
                 <div
                     onClick={() => hide()}
-                    className={`${styles.menu}  ${location.pathname === '/faq' ? styles.another : ""}`}
+                    className={`${styles.menu}  ${location.pathname === '/faq/' ? styles.another : ""}`}
                 >
                 <BsQuestionCircleFill className={styles.icon}/>    Savollar
                 </div>

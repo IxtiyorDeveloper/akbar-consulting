@@ -24,7 +24,7 @@ function myArrow({type, onClick, isEdge}) {
 
 function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
     const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
-    const is500 = useMediaQuery({query: '(max-width: 900px)'});
+    const is500 = useMediaQuery({query: '(max-width: 500px)'});
 
 
     const data = [

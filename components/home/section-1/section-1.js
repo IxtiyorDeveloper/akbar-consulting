@@ -9,8 +9,6 @@ import {useEffect, useState} from "react";
 import window from "global";
 import {useMediaQuery} from 'react-responsive';
 import React from "react";
-import {GiHamburgerMenu} from "react-icons/gi";
-import Link from "next/link"
 import Header from "../../header/header";
 
 
@@ -113,7 +111,7 @@ function Section1({click, toggle, sidebar}) {
                             return (
                                 <div key={k} id="asosiy">
                                     <div className={styles.sliderWrapper}
-                                         style={{backgroundImage: `url('${i.img}')`}}
+                                         style={{backgroundImage: `url('${i.img}')`,backgroundSize:"cover"}}
                                     >
                                         <div className={styles.contentWrapper}>
                                             <div className={styles.title}>
