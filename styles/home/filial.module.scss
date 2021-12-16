@@ -21,6 +21,9 @@
       width: 50%;
       display: flex;
       justify-content: center;
+      img{
+        width: 80%;
+      }
     }
 
     .right {
@@ -28,13 +31,18 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: flex-start;
 
       .num {
         font-family: $Montserrat-font;
-        font-size: 36px;
+        font-size: 27px;
         font-weight: 700;
         text-align: center;
         color: $black-one;
+        span{
+          font-size: 48px;
+          line-height: 48px;
+        }
       }
 
       .t1 {
@@ -66,7 +74,6 @@
         border: 2px solid $black-one;
         width: fit-content;
         margin-top: 25px;
-        margin-inline: auto;
 
         &:hover {
           cursor: pointer;
@@ -94,6 +101,7 @@
       }
       .right {
        width: 100%;
+        align-items: center;
       }
     }
   }

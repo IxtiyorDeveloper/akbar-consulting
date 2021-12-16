@@ -10,14 +10,11 @@ function Filial(props) {
             </div>
             <div className={styles.next}>
                 <div className={styles.img}>
-                    <img src="/map.webp" alt=""/>
+                    <img src="/map1.jpeg" alt="map"/>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.num}>
-                        6
-                    </div>
-                    <div className={styles.t1}>
-                        O'zbekiston bo'ylab filiallar
+                        O'zbekiston bo'ylab <span>6</span> ta filial
                     </div>
                     <div className={styles.t2}>
                         O'zingizga eng yaqin bo'lgan filialimizga murojaat qilishingiz mumkin.
