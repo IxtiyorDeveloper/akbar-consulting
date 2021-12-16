@@ -97,7 +97,7 @@ function Footer({LinkHandler}) {
                     <div
                         className={`${styles.menu}`}
                     >
-                        Galereya & Sertifikatlar
+                        Galereya
                     </div>
                 </Link>
                 <Link href={'/faq'}
