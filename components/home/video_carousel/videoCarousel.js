@@ -1,31 +1,32 @@
 import React from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Slider from "react-slick";
 import styles from '../../../styles/home/videoCarousel/videoCarousel.module.scss'
-import {BsChevronLeft, BsChevronRight} from "react-icons/bs";
+import {BsArrowLeft, BsArrowRight} from "react-icons/bs";
 import ReactPlayer from "react-player";
 import {useMediaQuery} from "react-responsive";
 import {FaSearchPlus} from "react-icons/fa";
 import {AiOutlinePicture, AiOutlineVideoCamera} from "react-icons/ai";
+import Carousel, {consts} from "react-elastic-carousel";
 
 
-function Arrow(props) {
-    let className = props.type === "next" ? "nextArrow22" : "prevArrow22";
-    className += " arrow2";
-    const char = props.type === "next" ? <BsChevronRight/> : <BsChevronLeft/>;
+function myArrow({type, onClick, isEdge}) {
+    const pointer = type === consts.PREV ? <BsArrowLeft/> : <BsArrowRight/>
     return (
-        <div className={`${props.type === "next" ? "w1200A" : "before"}`}>
-            <div className={className} onClick={props.onClick}>
-                {char}
+        <div className={`${type === consts.PREV ? "before" : "w1200A"}`}>
+            <div onClick={onClick} disabled={isEdge}
+                 className={type === consts.PREV ? "prevArrow22 arrow2" : "nextArrow22 arrow2"}>
+                {pointer}
             </div>
         </div>
-    );
+    )
 }
 
 function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
     const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
     const is500 = useMediaQuery({query: '(max-width: 900px)'});
+
+
     const data = [
         {
             id: 1,
@@ -87,22 +88,24 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
             }
         }
     }
-    const settings = {
-        arrows: true,
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 300000,
-        pauseOnHover: false
-    }
     const styles2 = {
         display: `${isResponsive ? "none" : "flex"} `
     }
     const styles1 = {
         display: `${isResponsive ? "block" : "none"} `
+    }
+    const carouselRef = React.useRef(null);
+    const onNextStart = (currentItem, nextItem) => {
+        if (currentItem.index === nextItem.index) {
+            // we hit the last item, go to first item
+            carouselRef.current.goTo(0);
+        }
+    };
+    const onPrevStart = (currentItem, nextItem) => {
+        if (currentItem.index === nextItem.index) {
+            // we hit the first item, go to last item
+            carouselRef.current.goTo(data.length);
+        }
     }
     return (
         <div id="sertifikatlar" className={styles.container}>
@@ -254,38 +257,39 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                 </div>
             </div>
             <div style={styles1}>
-                <Slider
-                    nextArrow={<Arrow type="next"/>}
-                    prevArrow={<Arrow type="prev"/>}
-                    {...settings}
+                <Carousel
+                    renderArrow={myArrow}
+                    ref={carouselRef}
+                    onPrevStart={onPrevStart}
+                    onNextStart={onNextStart}
+                    disableArrowsOnEnd={false}
+                    autoPlaySpeed={1000}
+                    className="car"
                 >
                     {
-                        data.map((i, k) => {
-                            if (i.id === 9 || i.id === 8 || i.id === 10) {
-                                return (
-                                    <div key={k}>
-                                        <ReactPlayer
-                                            url={`${i.img}`}
-                                            height={is500 ? "250px" : "400px"}
-                                            width={`${isResponsive ? "90%" : "60%"}`}
-                                            className={styles.re}
-                                            style={{marginLeft: `${isResponsive ? "5%" : "20%"}`}}
-                                        />
-                                    </div>
-                                )
-                            } else {
-                                return (
-                                    <div key={k}>
-                                        <div
-                                            style={{backgroundImage: `url('/gallery/${i.img}.webp')`}}
-                                            className={styles.img}
-                                        />
-                                    </div>
-                                )
+                        data && data.map((i, k) => {
+                                if (i.id === 9 || i.id === 8 || i.id === 10) {
+                                    return (
+                                        <div key={k} style={{width:"100%"}}>
+                                            <ReactPlayer
+                                                url={`${i.img}`}
+                                                height={is500 ? "250px" : "400px"}
+                                                width={`${isResponsive ? "100%" : "100%"}`}
+                                                className={styles.re}
+                                            />
+                                        </div>
+                                    )
+                                } else {
+                                    return (
+                                        <div key={k}>
+                                            <img src={`/gallery/${i.img}.webp`} alt="" className={styles.img}/>
+                                        </div>
+                                    )
+                                }
                             }
-                        })
+                            )
                     }
-                </Slider>
+                </Carousel>
             </div>
         </div>
     );
