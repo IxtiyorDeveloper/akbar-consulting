@@ -25,40 +25,23 @@ function myArrow({type, onClick, isEdge}) {
 function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
     const isResponsive = useMediaQuery({query: '(max-width: 900px)'});
     const is500 = useMediaQuery({query: '(max-width: 900px)'});
-    const data1 = [
-        {
-            img: "p1"
-        },
-        {
-            img: "p2"
-        },
-        {
-            img: "p3"
-        },
-        {
-            img: "p4"
-        },
-        {
-            img: "p5"
-        },
-        {
-            img: "p6"
-        },
-        {
-            img: "p7"
-        },
-        {
-            img: "p8"
-        },
-        {
-            img: "p9"
-        },
-        {
-            img: "p10"
-        },
-    ];
+
 
     const data = [
+        {
+            id: 8,
+            img: "https://www.youtube.com/watch?v=Xre0e976sEw&t=1s"
+        },
+        {
+            id: 9,
+            img: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
+        },
+        {
+            id: 10,
+            img: "https://www.youtube.com/watch?v=rudBdJxb_TE"
+        }
+    ];
+    const data2 = [
         {
             id: 1,
             img: "six"
@@ -87,19 +70,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
             id: 7,
             img: "five"
         },
-        {
-            id: 8,
-            img: "https://www.youtube.com/watch?v=Xre0e976sEw&t=1s"
-        },
-        {
-            id: 9,
-            img: "https://www.youtube.com/watch?v=TdwBFzfvRhM"
-        },
-        {
-            id: 10,
-            img: "https://www.youtube.com/watch?v=rudBdJxb_TE"
-        }
-    ];
+    ]
     const handleZoom = (a) => {
         if (a === "y0") {
             setIsV1(true);
@@ -297,30 +268,28 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     autoPlaySpeed={0}
                     className="car"
                 >
-                    {/*{*/}
-                    {/*    data && data.map((i, k) => {*/}
-                    {/*            if (i.id === 9 || i.id === 8 || i.id === 10) {*/}
-                    {/*                return (*/}
-                    {/*                    <div key={k} style={{width: "100%"}}>*/}
-                    {/*                        <ReactPlayer*/}
-                    {/*                            url={`${i.img}`}*/}
-                    {/*                            height={is500 ? "250px" : "400px"}*/}
-                    {/*                            width={`${isResponsive ? "100%" : "100%"}`}*/}
-                    {/*                            className={styles.re}*/}
-                    {/*                        />*/}
-                    {/*                    </div>*/}
-                    {/*                )*/}
-                    {/*            }*/}
-                    {/*        }*/}
-                    {/*    )*/}
-                    {/*}*/}
                     {
-                        data1 && data1.map((i, k) => {
-                                    return (
-                                        <div key={k}>
-                                            <img src={`/ser/JPG/${i.img}.jpg`} alt="" className={styles.img}/>
-                                        </div>
-                                    )
+                        data && data.map((i, k) => {
+                                return (
+                                    <div key={k} style={{width: "100%"}}>
+                                        <ReactPlayer
+                                            url={`${i.img}`}
+                                            height={is500 ? "250px" : "400px"}
+                                            width={`${isResponsive ? "100%" : "100%"}`}
+                                            className={styles.re}
+                                        />
+                                    </div>
+                                )
+                            }
+                        )
+                    }
+                    {
+                        data2 && data2.map((i, k) => {
+                                return (
+                                    <div key={k}>
+                                        <img src={`/gallery/${i.img}.webp`} alt="menya" className={styles.img}/>
+                                    </div>
+                                )
                             }
                         )
                     }
