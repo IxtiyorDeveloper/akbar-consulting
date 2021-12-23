@@ -55,10 +55,9 @@ function Gallery(props) {
             >
                 <ReactPlayer
                     width="100%"
-                    height="70vh"
+                    height="80vh"
                     url={vid}
                     playing={isV1}
-                    style={{marginTop: "5vh"}}
                 />
                 <div className={styles.abs1} onClick={() => setIsV1(false)}>
                     <IoCloseSharp/>

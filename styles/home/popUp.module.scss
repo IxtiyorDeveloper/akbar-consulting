@@ -35,21 +35,24 @@
   width: 60%;
   height: 80vh;
   position: fixed;
-  top: 10vh;
   left: 20%;
   z-index: 100!important;
   background-size: cover;
   background-position: center;
-  background-color: black;
+  background-color: #334960;
   .abs1{
     position: absolute;
-    right: 25px;
-    top: 3px;
-    font-size: 28px;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+    line-height: 16px;
     cursor: pointer;
-    color: red;
-    font-weight: 700;
+    color: $main-color;
+    font-weight: 900;
     display: flex;
     align-items: center;
+    background-color: $black-one;
+    border-radius: 50%;
+    padding: 8px;
   }
 }
