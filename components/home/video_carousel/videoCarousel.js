@@ -304,7 +304,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     className={styles.col}
                     onClick={() => handleZoom("y3")}
                 >
-                    <img src="/gallery/a1.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a1.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -318,7 +318,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     className={styles.col}
                     onClick={() => handleZoom("y4")}
                 >
-                    <img src="/gallery/a2.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a2.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -332,7 +332,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     className={styles.col}
                     onClick={() => handleZoom("y5")}
                 >
-                    <img src="/gallery/a3.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a3.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -346,7 +346,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     className={styles.col}
                     onClick={() => handleZoom("y7")}
                 >
-                    <img src="/gallery/a5.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a5.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -360,7 +360,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     className={styles.col}
                     onClick={() => handleZoom("y6")}
                 >
-                    <img src="/gallery/a4.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a4.webp" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -383,7 +383,9 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                 >
                     {
                         data && data.map((i, k) => {
-                                if (i.id === 9 || i.id === 8 || i.id === 10 || i.id === 11) {
+                                if (i.id === 9 || i.id === 8 || i.id === 10 || i.id === 11
+                                    || i.id === 12 || i.id === 13 || i.id === 14 || i.id === 15
+                                ) {
                                     return (
                                         <div key={k} style={{width: "100%"}}>
                                             <ReactPlayer
