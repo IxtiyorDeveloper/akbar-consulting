@@ -67,6 +67,26 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
         {
             id: 10,
             img: "https://www.youtube.com/watch?v=rudBdJxb_TE"
+        },
+        {
+            id: 11,
+            img: "https://www.youtube.com/watch?v=XnziiH0XIb8"
+        },
+        {
+            id: 12,
+            img: "https://www.youtube.com/watch?v=mHOE6OApSlE"
+        },
+        {
+            id: 13,
+            img: "https://www.youtube.com/watch?v=6mtzBSyo_IU"
+        },
+        {
+            id: 14,
+            img: "https://www.youtube.com/watch?v=NQXehQSFBp4"
+        },
+        {
+            id: 15,
+            img: "https://www.youtube.com/watch?v=JutAeRv6djA&t=4s"
         }
     ];
     const handleZoom = (a) => {
@@ -82,8 +102,33 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                     setIsV1(true);
                     setVid("https://www.youtube.com/watch?v=rudBdJxb_TE")
                 } else {
-                    setImg(a);
-                    setIsV(true)
+                    if (a === "y3") {
+                        setIsV1(true);
+                        setVid("https://www.youtube.com/watch?v=XnziiH0XIb8")
+                    } else {
+                        if (a === "y4") {
+                            setIsV1(true);
+                            setVid("https://www.youtube.com/watch?v=mHOE6OApSlE")
+                        } else {
+                            if (a === "y5") {
+                                setIsV1(true);
+                                setVid("https://www.youtube.com/watch?v=6mtzBSyo_IU")
+                            } else {
+                                if (a === "y6") {
+                                    setIsV1(true);
+                                    setVid("https://www.youtube.com/watch?v=NQXehQSFBp4")
+                                } else {
+                                    if (a === "y7") {
+                                        setIsV1(true);
+                                        setVid("https://www.youtube.com/watch?v=JutAeRv6djA&t=4s")
+                                    } else {
+                                        setImg(a);
+                                        setIsV(true)
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -255,6 +300,76 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                         </div>
                     </div>
                 </div>
+                <div
+                    className={styles.col}
+                    onClick={() => handleZoom("y3")}
+                >
+                    <img src="/gallery/a1.png" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    onClick={() => handleZoom("y4")}
+                >
+                    <img src="/gallery/a2.png" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    onClick={() => handleZoom("y5")}
+                >
+                    <img src="/gallery/a3.png" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    onClick={() => handleZoom("y6")}
+                >
+                    <img src="/gallery/a4.png" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className={styles.col}
+                    onClick={() => handleZoom("y7")}
+                >
+                    <img src="/gallery/a5.png" alt="" className={styles.imgIt}/>
+                    <div className={styles.hoverIt}>
+                        <div className={styles.circ}>
+                            <FaSearchPlus className={styles.icon}/>
+                        </div>
+                        <div className={styles.imgWr}>
+                            <AiOutlineVideoCamera className={styles.icImg}/>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div style={styles1}>
                 <Carousel
@@ -268,7 +383,7 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                 >
                     {
                         data && data.map((i, k) => {
-                                if (i.id === 9 || i.id === 8 || i.id === 10) {
+                                if (i.id === 9 || i.id === 8 || i.id === 10 || i.id === 11) {
                                     return (
                                         <div key={k} style={{width: "100%"}}>
                                             <ReactPlayer
