@@ -344,9 +344,9 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() => handleZoom("y6")}
+                    onClick={() => handleZoom("y7")}
                 >
-                    <img src="/gallery/a4.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a5.png" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
@@ -358,9 +358,9 @@ function VideoCarousel({setImg, setIsV, setIsV1, setVid}) {
                 </div>
                 <div
                     className={styles.col}
-                    onClick={() => handleZoom("y7")}
+                    onClick={() => handleZoom("y6")}
                 >
-                    <img src="/gallery/a5.png" alt="" className={styles.imgIt}/>
+                    <img src="/gallery/a4.png" alt="" className={styles.imgIt}/>
                     <div className={styles.hoverIt}>
                         <div className={styles.circ}>
                             <FaSearchPlus className={styles.icon}/>
